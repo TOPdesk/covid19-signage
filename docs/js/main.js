@@ -60,7 +60,7 @@ const content = {
 			</footer>
 		</div>
 		<footer class="noprint">
-			<a href="https://github.com/TOPdesk/covid19-signage/issues">Feedback</a>
+			<a href="https://github.com/TOPdesk/covid19-signage/issues" target="_blank" rel="noreferrer noopener">Feedback</a>
 		</footer>
     </div>`,
 	data() {
