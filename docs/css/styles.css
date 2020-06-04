@@ -21,3 +21,12 @@
 .translation-container:nth-child(even) {
 	background-color: #eeeeee;
 }
+
+.button {
+	margin-bottom: 0.2em;
+}
+
+.outer-container .subtitle {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}

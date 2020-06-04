@@ -5,25 +5,25 @@ const content = {
 	template: `
 	<div class="outer-container">
 		<div>
-			<h1>COVID-19 Signage Generator</h1>
-			<h2>Step 1: Select languages to include</h2>
+			<h1 class="title">COVID-19 Signage Generator</h1>
 			<div>
+				<h2 class="subtitle">Step 1: Select languages to include</h2>
 				<div v-for="language in languages">
-					<button v-if="selectedLanguageKeys.includes(language.key)" @click="removeLanguage(language.key)">
+					<button v-if="selectedLanguageKeys.includes(language.key)" @click="removeLanguage(language.key)" class="button is-success">
 						Remove {{language.displayName}}
 					</button>
-					<button v-else @click="addLanguage(language.key)">
+					<button v-else @click="addLanguage(language.key)" class="button is-outlined">
 						Add {{language.displayName}}
 					</button>
 				</div>
 			</div>
 			<div>
-				<h2>Step 2: Select rules to include</h2>
+				<h2 class="subtitle">Step 2: Select rules to include</h2>
 				<div v-for="rule in rules">
-					<button v-if="selectedRuleNames.includes(rule.name)" @click="removeRule(rule.name)">
+					<button v-if="selectedRuleNames.includes(rule.name)" @click="removeRule(rule.name)" class="button is-success">
 						Remove rule: {{rule.lang["en"]}}
 					</button>
-					<button v-else @click="addRule(rule.name)">
+					<button v-else @click="addRule(rule.name)" class="button is-outlined">
 						Add rule: {{rule.lang["en"]}}
 					</button>
 				</div>
@@ -64,7 +64,7 @@ const content = {
 			this.selectedLanguageKeys.push(languageKey);
 		},
 		removeLanguage(languageKey) {
-			this.selectedLanguageKeys.splice(this.selectedLanguages.indexOf(languageKey), 1);
+			this.selectedLanguageKeys.splice(this.selectedLanguageKeys.indexOf(languageKey), 1);
 		},
 	}
 };
