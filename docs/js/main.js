@@ -31,6 +31,11 @@ const content = {
 			</div>
 		</div>
 		<div class="preview-container">
+			<div>
+				<div v-for="languageKey in selectedLanguageKeys">
+					<img :src="'img/flags/' + languageKey + '.svg'" class="language-flag"/>
+				</div>
+			</div>
 			<div v-if="!(selectedLanguageKeys.length && selectedRuleNames.length)">
 				A preview of your sign will be shown here after you select at least one language and rule.
 			</div>
