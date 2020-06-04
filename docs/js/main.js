@@ -34,7 +34,9 @@ const content = {
 			<div v-if="!(selectedLanguageKeys.length && selectedRuleNames.length)">
 				A preview of your sign will be shown here after you select at least one language and rule.
 			</div>
-			<div v-for="rule in selectedRules" class="rule-container">
+			<div v-for="(rule, index) in selectedRules" class="rule-container">
+				<button v-if="index > 0" @click="moveRuleUp(index)">+</button>
+				<button v-if="index < selectedRules.length - 1" @click="moveRuleDown(index)">-</button>
 				<div v-for="languageKey in selectedLanguageKeys" class="translation-container">
 					{{rule.lang[languageKey]}}
 				</div>
@@ -51,7 +53,9 @@ const content = {
 	},
 	computed: {
 		selectedRules() {
-			return this.rules.filter((rule) => this.selectedRuleNames.includes(rule.name));
+			return this.rules
+				.filter((rule) => this.selectedRuleNames.includes(rule.name))
+				.sort((a, b) => this.selectedRuleNames.indexOf(a.name) - this.selectedRuleNames.indexOf(b.name));
 		},
 	},
 	methods: {
@@ -66,6 +70,18 @@ const content = {
 		},
 		removeLanguage(languageKey) {
 			this.selectedLanguageKeys.splice(this.selectedLanguageKeys.indexOf(languageKey), 1);
+		},
+		moveRuleUp(index) {
+			const top = this.selectedRuleNames.slice(0, index - 1);
+			const bottom = this.selectedRuleNames.slice(index + 1, this.selectedRuleNames.length);
+
+			this.selectedRuleNames = [...top, this.selectedRuleNames[index], this.selectedRuleNames[index - 1], ...bottom];
+		},
+		moveRuleDown(index) {
+			const top = this.selectedRuleNames.slice(0, index);
+			const bottom = this.selectedRuleNames.slice(index + 2, this.selectedRuleNames.length);
+
+			this.selectedRuleNames = [...top, this.selectedRuleNames[index + 1], this.selectedRuleNames[index], ...bottom];
 		},
 	},
 };
