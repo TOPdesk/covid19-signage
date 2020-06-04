@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64" height="64" viewBox="0 0 64 64">
+  <defs>
+    <clipPath id="clip-contactless_only">
+      <rect width="64" height="64"/>
+    </clipPath>
+  </defs>
+  <g id="contactless_only" clip-path="url(#clip-contactless_only)">
+    <g id="noun_Credit_Card_1588823" data-name="noun_Credit Card_1588823" transform="translate(0 -11.14)">
+      <path id="Path_383" data-name="Path 383" d="M58.57,64H5.43A5.435,5.435,0,0,1,0,58.57v-31a5.435,5.435,0,0,1,5.43-5.43H58.57A5.435,5.435,0,0,1,64,27.57v31A5.435,5.435,0,0,1,58.57,64ZM5.43,24.14A3.435,3.435,0,0,0,2,27.57v31A3.435,3.435,0,0,0,5.43,62H58.57A3.435,3.435,0,0,0,62,58.57v-31a3.435,3.435,0,0,0-3.43-3.43Z"/>
+      <path id="Path_384" data-name="Path 384" d="M27.455,59.72H19.71a2,2,0,0,1-2-2V51.6a2,2,0,0,1,2-2h7.745a2,2,0,0,1,2,2v6.12A2,2,0,0,1,27.455,59.72ZM19.71,51.6v6.12h7.745V51.6Z" transform="translate(-8.855 -13.73)"/>
+      <path id="Path_385" data-name="Path 385" d="M40.12,86.14H18.42a1,1,0,1,1,0-2h21.7a1,1,0,0,1,0,2Z" transform="translate(-8.71 -31)"/>
+      <path id="Path_386" data-name="Path 386" d="M77,86.14H70.69a1,1,0,0,1,0-2H77a1,1,0,0,1,0,2Z" transform="translate(-34.845 -31)"/>
+      <path id="Path_387" data-name="Path 387" d="M81.544,59.728a1,1,0,0,1-.815-1.575,4.43,4.43,0,0,0,0-5.1,1,1,0,1,1,1.635-1.15,6.425,6.425,0,0,1,0,7.4A1,1,0,0,1,81.544,59.728Z" transform="translate(-40.264 -14.658)"/>
+      <path id="Path_388" data-name="Path 388" d="M88.769,59.717a1,1,0,0,1-.85-1.525,8.46,8.46,0,0,0,0-8.89,1,1,0,0,1,1.7-1.055,10.46,10.46,0,0,1,0,11A1,1,0,0,1,88.769,59.717Z" transform="translate(-43.884 -12.817)"/>
+      <path id="Path_389" data-name="Path 389" d="M96.213,59.667a1,1,0,0,1-.86-1.5,12.665,12.665,0,0,0,0-12.785,1,1,0,1,1,1.725-1,14.665,14.665,0,0,1,0,14.81A1,1,0,0,1,96.213,59.667Z" transform="translate(-47.588 -10.837)"/>
+      <path id="Path_390" data-name="Path 390" d="M104,59.706a1,1,0,0,1-.87-1.5,17.045,17.045,0,0,0,0-16.82,1,1,0,0,1,1.74-1,19.05,19.05,0,0,1,0,18.795A1,1,0,0,1,104,59.706Z" transform="translate(-51.496 -8.871)"/>
+    </g>
+  </g>
+</svg>

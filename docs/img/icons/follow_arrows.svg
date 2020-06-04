@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64" height="64" viewBox="0 0 64 64">
+  <defs>
+    <clipPath id="clip-follow_arrows">
+      <rect width="64" height="64"/>
+    </clipPath>
+  </defs>
+  <g id="follow_arrows" clip-path="url(#clip-follow_arrows)">
+    <g id="Group_63" data-name="Group 63" transform="translate(-329.931 -1465.188)">
+      <g id="noun_up_857307" transform="translate(341.931 1487.879)">
+        <path id="Path_403" data-name="Path 403" d="M40.463,17.4a1.369,1.369,0,0,0-.45-.3l-.019-.006a1.335,1.335,0,0,0-1,0l-.019.006a1.363,1.363,0,0,0-.45.3L28.333,27.58a1.369,1.369,0,1,0,1.935,1.937l7.855-7.848V48.937a1.369,1.369,0,0,0,2.739,0V21.672l7.845,7.845a1.369,1.369,0,1,0,1.936-1.936Z" transform="translate(-27.931 -16.997)"/>
+      </g>
+      <g id="noun_up_857307-2" data-name="noun_up_857307" transform="translate(365.428 1499.306)">
+        <path id="Path_403-2" data-name="Path 403" d="M41.159,17.4a1.369,1.369,0,0,0-.45-.3l-.019-.006a1.335,1.335,0,0,0-1,0l-.019.006a1.363,1.363,0,0,0-.45.3l-7.1,6.578a1.369,1.369,0,0,0,1.935,1.937l4.763-4.245V37.062a1.369,1.369,0,0,0,2.739,0V21.672l4.473,4.242a1.369,1.369,0,0,0,1.936-1.936Z" transform="translate(-31.72 -16.997)"/>
+      </g>
+      <g id="noun_up_857307-3" data-name="noun_up_857307" transform="translate(360.715 1473.188)">
+        <path id="Path_403-3" data-name="Path 403" d="M41.159,17.4a1.369,1.369,0,0,0-.45-.3l-.019-.006a1.335,1.335,0,0,0-1,0l-.019.006a1.363,1.363,0,0,0-.45.3l-7.1,6.578a1.369,1.369,0,0,0,1.935,1.937l4.763-4.245V37.062a1.369,1.369,0,0,0,2.739,0V21.672l4.473,4.242a1.369,1.369,0,0,0,1.936-1.936Z" transform="translate(-31.72 -16.997)"/>
+      </g>
+    </g>
+  </g>
+</svg>

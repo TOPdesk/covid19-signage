@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64" height="64" viewBox="0 0 64 64">
+  <defs>
+    <clipPath id="clip-shopping_basket">
+      <rect width="64" height="64"/>
+    </clipPath>
+  </defs>
+  <g id="shopping_basket" clip-path="url(#clip-shopping_basket)">
+    <g id="noun_shopping_basket_1218427" data-name="noun_shopping basket_1218427" transform="translate(8.25 8.001)">
+      <path id="Path_400" data-name="Path 400" d="M47.477,19.478a1.194,1.194,0,0,0-.921-.434h-6.1L30.4.621a1.194,1.194,0,1,0-2.1,1.145L37.74,19.045H9.76L19.194,1.766A1.194,1.194,0,1,0,17.1.621L7.039,19.044H.944a1.194,1.194,0,0,0-1.173,1.42L4.849,46.793a1.194,1.194,0,0,0,1.173.968H41.478a1.2,1.2,0,0,0,1.173-.968l5.077-26.328A1.2,1.2,0,0,0,47.477,19.478ZM45.11,21.432l-1.4,7.268H3.792l-1.4-7.268Zm-4.617,23.94H7.008L4.252,31.088h39Z" transform="translate(0 0)"/>
+    </g>
+  </g>
+</svg>
