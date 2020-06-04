@@ -21,7 +21,7 @@ const content = {
 			<div>
 				<h2 class="subtitle">Step 2: Select rules to include</h2>
 				<div v-for="rule in rules">
-					<button v-if="selectedRuleNames.map(e => e.name).includes(rule.name)" @click="removeRule(rule.name)" class="button is-success">
+					<button v-if="selectedRuleNames.includes(rule.name)" @click="removeRule(rule.name)" class="button is-success">
 						Remove rule: {{rule.lang["en"]}}
 					</button>
 					<button v-else @click="addRule(rule.name)" class="button is-outlined">
@@ -35,7 +35,6 @@ const content = {
 				A preview of your sign will be shown here after you select at least one language and rule.
 			</div>
 			<div v-for="rule in selectedRules" class="rule-container">
-				<button>+</button><button>-</button>
 				<div v-for="languageKey in selectedLanguageKeys" class="translation-container">
 					{{rule.lang[languageKey]}}
 				</div>
@@ -52,31 +51,21 @@ const content = {
 	},
 	computed: {
 		selectedRules() {
-			return this.rules.filter((rule) =>
-				this.selectedRuleNames.map((e) => e.name).includes(rule.name),
-			);
+			return this.rules.filter((rule) => this.selectedRuleNames.includes(rule.name));
 		},
 	},
 	methods: {
 		addRule(ruleName) {
-			this.selectedRuleNames.push({
-				index: this.selectedRuleNames.length,
-				name: ruleName,
-			});
+			this.selectedRuleNames.push(ruleName);
 		},
 		removeRule(ruleName) {
-			const index = this.selectedRules.map((e) => e.name).indexOf(ruleName);
-			console.log(index);
-			this.selectedRuleNames.splice(index, 1);
+			this.selectedRuleNames.splice(this.selectedRules.indexOf(ruleName), 1);
 		},
 		addLanguage(languageKey) {
 			this.selectedLanguageKeys.push(languageKey);
 		},
 		removeLanguage(languageKey) {
-			this.selectedLanguageKeys.splice(
-				this.selectedLanguageKeys.indexOf(languageKey),
-				1,
-			);
+			this.selectedLanguageKeys.splice(this.selectedLanguageKeys.indexOf(languageKey), 1);
 		},
 	},
 };
