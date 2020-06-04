@@ -46,6 +46,10 @@ footer {
 	visibility: hidden;
 }
 
+.preview-flag .sort {
+	margin-top: 0.1em;
+}
+
 .preview-flag:only-child .sort {
 	visibility: hidden;
 }
@@ -64,6 +68,7 @@ footer {
 
 .rule-container {
 	margin-bottom: 2em;
+	margin-top: .5em;
 }	
 
 .rule-container:nth-child(even) {
