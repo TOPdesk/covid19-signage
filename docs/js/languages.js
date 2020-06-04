@@ -1,14 +1,14 @@
 export default [
 	{
-		key: "en",
-		displayName: "English"
+		key: "de",
+		displayName: "German"
 	},
 	{
 		key: "nl",
 		displayName: "Dutch"
 	},
 	{
-		key: "de",
-		displayName: "German"
-	}
+		key: "en",
+		displayName: "English"
+	},
 ];
