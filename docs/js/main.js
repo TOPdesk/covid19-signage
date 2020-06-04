@@ -38,8 +38,8 @@ const content = {
 				<div v-for="(languageKey, index) in selectedLanguageKeys" class="preview-flag">
 					<img :src="'img/flags/' + languageKey + '.svg'" class="language-flag"/>
 					<div class="sort" :class="index === 0 ? 'first' : index === selectedLanguageKeys.length - 1 ? 'last' : 'middle'">
-						<button @click="moveLanguageUp(index)" class="noprint">&lt;</button>
-						<button @click="moveLanguageDown(index)" class="noprint">&gt;</button>
+						<button @click="moveLanguageUp(index)" class="noprint">&#x2BC7;</button>
+						<button @click="moveLanguageDown(index)" class="noprint">&#x2BC8;</button>
 					</div>
 				</div>
 			</div>
@@ -48,8 +48,8 @@ const content = {
 			</div>
 			<div v-for="(rule, index) in selectedRules" class="rule-container">
 				<div class="sort" :class="[index === 0 ? 'first' : index === selectedRules.length - 1 ? 'last' : 'middle', selectedRules.length === 1 ? 'only' : '']">
-					<button @click="moveRuleUp(index)" class="noprint">+</button>
-					<button @click="moveRuleDown(index)" class="noprint">-</button>
+					<button @click="moveRuleUp(index)" class="noprint">&#x2BC5;</button>
+					<button @click="moveRuleDown(index)" class="noprint">&#x2BC6;</button>
 				</div>
 				<div class="columns is-vcentered rule-content">
 					<div :class="rule.type" class="columns is-centered icon">
