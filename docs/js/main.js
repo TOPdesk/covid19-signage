@@ -31,11 +31,13 @@ const content = {
 			</div>
 		</div>
 		<div class="preview-container">
-			<div>
-				<div v-for="(languageKey, index) in selectedLanguageKeys">
+			<div class="language-row">
+				<div v-for="(languageKey, index) in selectedLanguageKeys" class="preview-flag">
 					<img :src="'img/flags/' + languageKey + '.svg'" class="language-flag"/>
-					<button v-if="index > 0" @click="moveLanguageUp(index)" class="noprint">+</button>
-					<button v-if="index < selectedLanguageKeys.length - 1" @click="moveLanguageDown(index)" class="noprint">-</button>
+					<div class="sort" :class="index === 0 ? 'first' : index === selectedLanguageKeys.length - 1 ? 'last' : 'middle'">
+						<button @click="moveLanguageUp(index)" class="noprint">&lt;</button>
+						<button @click="moveLanguageDown(index)" class="noprint">&gt;</button>
+					</div>
 				</div>
 			</div>
 			<div v-if="!(selectedLanguageKeys.length && selectedRuleNames.length)">
