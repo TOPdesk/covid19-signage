@@ -34,3 +34,8 @@
 .language-flag {
 	width: 3em;
 }
+
+footer {
+	display: flex;
+	justify-content: center;
+}

@@ -46,7 +46,13 @@ const content = {
 					{{rule.lang[languageKey]}}
 				</div>
 			</div>
+			<footer v-if="selectedLanguageKeys.length && selectedRuleNames.length">
+				<span>https://www.covid19-signage.org</span>
+			</footer>
 		</div>
+		<footer>
+			<a href="https://github.com/TOPdesk/covid19-signage/issues">Feedback</a>
+		</footer>
     </div>`,
 	data() {
 		return {
