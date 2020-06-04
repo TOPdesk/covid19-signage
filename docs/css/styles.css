@@ -39,3 +39,13 @@ footer {
 	display: flex;
 	justify-content: center;
 }
+
+@media print {
+	.preview-container {
+		border-style: none;
+	}
+
+	.noprint {
+		display: none;
+	}
+}

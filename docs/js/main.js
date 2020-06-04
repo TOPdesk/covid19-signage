@@ -4,7 +4,7 @@ import rules from '../rules/index.js';
 const content = {
 	template: `
 	<div class="outer-container">
-		<div>
+		<div class="noprint">
 			<h1 class="title">COVID-19 Signage Generator</h1>
 			<div>
 				<h2 class="subtitle">Step 1: Select languages to include</h2>
@@ -34,16 +34,16 @@ const content = {
 			<div>
 				<div v-for="(languageKey, index) in selectedLanguageKeys">
 					<img :src="'img/flags/' + languageKey + '.svg'" class="language-flag"/>
-					<button v-if="index > 0" @click="moveLanguageUp(index)">+</button>
-					<button v-if="index < selectedLanguageKeys.length - 1" @click="moveLanguageDown(index)">-</button>
+					<button v-if="index > 0" @click="moveLanguageUp(index)" class="noprint">+</button>
+					<button v-if="index < selectedLanguageKeys.length - 1" @click="moveLanguageDown(index)" class="noprint">-</button>
 				</div>
 			</div>
 			<div v-if="!(selectedLanguageKeys.length && selectedRuleNames.length)">
 				A preview of your sign will be shown here after you select at least one language and rule.
 			</div>
 			<div v-for="(rule, index) in selectedRules" class="rule-container">
-				<button v-if="index > 0" @click="moveRuleUp(index)">+</button>
-				<button v-if="index < selectedRules.length - 1" @click="moveRuleDown(index)">-</button>
+				<button v-if="index > 0" @click="moveRuleUp(index)" class="noprint">+</button>
+				<button v-if="index < selectedRules.length - 1" @click="moveRuleDown(index)" class="noprint">-</button>
 				<div v-for="languageKey in selectedLanguageKeys" class="translation-container">
 					{{rule.lang[languageKey]}}
 				</div>
@@ -52,7 +52,7 @@ const content = {
 				<span>https://www.covid19-signage.org</span>
 			</footer>
 		</div>
-		<footer>
+		<footer class="noprint">
 			<a href="https://github.com/TOPdesk/covid19-signage/issues">Feedback</a>
 		</footer>
     </div>`,
