@@ -48,7 +48,7 @@ const content = {
 					<button @click="moveRuleUp(index)" class="noprint">+</button>
 					<button @click="moveRuleDown(index)" class="noprint">-</button>
 				</div>
-				<div>
+				<div :class="rule.type" class="columns is-centered icon">
 					<img :src="'img/icons/' + rule.icon + '.svg'" class="language-flag"/>
 				</div>
 				<div v-for="languageKey in selectedLanguageKeys" class="translation-container">

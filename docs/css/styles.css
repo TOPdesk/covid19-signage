@@ -82,6 +82,34 @@ footer {
 	background-color: #eeeeee;
 }	
 
+/**
+>> ICONS
+*/
+
+.icon {
+	width: 70px;
+	height: 70px;
+	border-radius: 15px;
+	margin-top: 1em;
+	margin-left: 1em;
+}
+
+.do {
+	background-color: #AEDBC2;
+	border: 2px #19A064;
+	border-style: solid;
+}
+
+.dont {
+	background-color: #EE7B5F88;
+	border: 2px #C24530;
+	border-style: solid;
+}
+
+/**
+<< ICONS
+*/
+
 @page {
 	size: A4;
 	margin: 0mm;
