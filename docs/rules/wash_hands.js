@@ -1,8 +1,12 @@
 export default {
 	name: "wash_hands",
+	type: "do",
+	icon: "wash_hands",
 	lang: {
-		nl: "Was voor en na het bezoek uw handen",
-		en: "Wash your hands before and after your visit",
-		de: "Bitte wachsen Sie vor und nach dein Besuch dein Hände",
+		en: "Wash your hands",
+		fr: "",
+		nl: "Was je handen",
+		tr: "",
+		zh: ""
 	}
-};
+}
