@@ -9,7 +9,7 @@ const content = {
 			<div>
 				<h2 class="subtitle">Step 1: Select languages to include</h2>
 				<div v-for="language in languages">
-					<img :src="'img/flags/' + language.key + '.svg'" width="50px"/>
+					<img :src="'img/flags/' + language.key + '.svg'" class="language-flag"/>
 					<button v-if="selectedLanguageKeys.includes(language.key)" @click="removeLanguage(language.key)" class="button is-success">
 						Remove
 					</button>
