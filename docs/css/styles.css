@@ -66,6 +66,14 @@ footer {
 	margin-bottom: 2em;
 }	
 
+.rule-container .first button:first-child, .rule-container .last button:last-child {
+	visibility: hidden;
+}
+
+.rule-container .only {
+	visibility: hidden;
+}
+
 .translation-container {
 	padding: 0.5em;
 }	

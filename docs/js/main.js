@@ -44,8 +44,10 @@ const content = {
 				A preview of your sign will be shown here after you select at least one language and rule.
 			</div>
 			<div v-for="(rule, index) in selectedRules" class="rule-container">
-				<button v-if="index > 0" @click="moveRuleUp(index)" class="noprint">+</button>
-				<button v-if="index < selectedRules.length - 1" @click="moveRuleDown(index)" class="noprint">-</button>
+				<div class="sort" :class="[index === 0 ? 'first' : index === selectedRules.length - 1 ? 'last' : 'middle', selectedRules.length === 1 ? 'only' : '']">
+					<button @click="moveRuleUp(index)" class="noprint">+</button>
+					<button @click="moveRuleDown(index)" class="noprint">-</button>
+				</div>
 				<div v-for="languageKey in selectedLanguageKeys" class="translation-container">
 					{{rule.lang[languageKey]}}
 				</div>
