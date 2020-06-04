@@ -1,12 +1,12 @@
 export default {
-	name: "keep_6ft_distance",
-	type: "do",
-	icon: "keep_6_feet",
-	lang: {
-		en: "Keep 6 feet apart",
-		fr: "",
-		nl: "Houd 1,5m afstand",
-		tr: "",
-		zh: ""
-	}
-}
+	  name: "keep_6ft_distance",
+	  type: "do",
+	  icon: "keep_6_feet",
+	  lang: {
+	    en: "Keep 6 feet apart",
+	    fr: "Rester à 6 pieds l'un de l'autre",
+	    nl: "Houd 1,5m afstand",
+	    tr: "Aranizda 1,5 metre mesafe bulundurun",
+	    zh: "保持6英尺距离"
+	  }
+	};
