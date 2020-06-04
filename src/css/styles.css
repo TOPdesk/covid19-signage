@@ -1,0 +1,11 @@
+.rule-container {
+	margin-bottom: 2em;
+}
+
+.translation-container {
+	padding: 0.5em;
+}
+
+.translation-container:nth-child(even) {
+	background-color: #eeeeee;
+}
