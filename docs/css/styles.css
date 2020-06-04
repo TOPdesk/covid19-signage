@@ -71,6 +71,7 @@ footer {
 .rule-container {
 	margin-bottom: 2em;
 	margin-top: .5em;
+	page-break-inside:avoid;
 }	
 
 .rule-container:nth-child(even) {
