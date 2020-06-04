@@ -3,6 +3,7 @@ export default {
 	  type: "do",
 	  icon: "elbow",
 	  lang: {
+	    ar: "غطي وجهك  بكوعك عندما تعطس",
 	    en: "Cover your face with your elbow when you sneeze",
 	    fr: "Couvrez votre visage avec votre bras lorsque vous ",
 	    nl: "Nies in je elleboog",

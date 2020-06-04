@@ -3,6 +3,7 @@ export default {
 	  type: "dont",
 	  icon: "no_covid",
 	  lang: {
+	    ar: "لا يوجد إدخال لأعراض COVID-19",
 	    en: "Do not enter if you have symptoms of COVID-19",
 	    fr: "N'entrez pas si vous avez des symptômes de COVID-19",
 	    nl: "Kom niet binnen als je symptomen van COVID-19 vertoont",

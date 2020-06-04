@@ -3,6 +3,7 @@ export default {
 	  type: "do",
 	  icon: "sanitize_hands",
 	  lang: {
+	    ar: "اغسل يديك",
 	    en: "Sanitize your hands",
 	    fr: "Désinfectez vos mains souvent",
 	    nl: "Gebruik desinfecterende handgel",

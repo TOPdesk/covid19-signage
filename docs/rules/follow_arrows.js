@@ -3,6 +3,7 @@ export default {
 	  type: "do",
 	  icon: "follow_arrows",
 	  lang: {
+	    ar: "اتبع السهام",
 	    en: "Follow the arrows",
 	    fr: "Suivez les flèches",
 	    nl: "Volg de pijlen",

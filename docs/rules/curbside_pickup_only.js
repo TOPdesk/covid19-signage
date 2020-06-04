@@ -3,6 +3,7 @@ export default {
 	  type: "do",
 	  icon: "curbside_pickup",
 	  lang: {
+	    ar: "رصيف فقط",
 	    en: "Curbside pickup only",
 	    fr: "Ramassage en bordure de rue",
 	    nl: "Alleen buiten afhalen",

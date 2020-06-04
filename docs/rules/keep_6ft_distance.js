@@ -3,6 +3,7 @@ export default {
 	  type: "do",
 	  icon: "keep_6_feet",
 	  lang: {
+	    ar: "ابق بعد 6 أقدام أو 1،5 م",
 	    en: "Keep 6 feet apart",
 	    fr: "Rester à 6 pieds l'un de l'autre",
 	    nl: "Houd 1,5m afstand",

@@ -3,6 +3,7 @@ export default {
 	  type: "do",
 	  icon: "stand_markings",
 	  lang: {
+	    ar: "الوقوف على العلامات",
 	    en: "Stand on designated markings",
 	    fr: "Placez-vous sur les marques désignées",
 	    nl: "Sta op de aangegeven markeringen",

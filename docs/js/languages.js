@@ -1,5 +1,9 @@
 export default [
 	{
+		key: "ar",
+		displayName: "Arabic"
+	},
+	{
 		key: "en",
 		displayName: "English"
 	},

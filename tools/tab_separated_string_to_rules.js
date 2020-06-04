@@ -1,6 +1,6 @@
 // Run this script with NodeJS to turn the multiline string in 'rawData' into 'rules' Javascript files.
 // Expected format is tab-separated values, which you get when you copy/paste an Excel table.
-const rawData = `name\ttype\ticon\tEnglish\tFrench\tDutch\tTurkish\tChinese`;
+const rawData = `name\ttype\ticon\tEnglish\tFrench\tDutch\tTurkish\tChinese\tArabic`;
 
 const fs = require("fs");
 
@@ -16,6 +16,7 @@ for (let line of lines) {
 	  type: "${cells[1]}",
 	  icon: "${cells[2]}",
 	  lang: {
+	    ar: "${cells[8]}",
 	    en: "${cells[3]}",
 	    fr: "${cells[4]}",
 	    nl: "${cells[5]}",

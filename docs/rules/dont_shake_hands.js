@@ -3,6 +3,7 @@ export default {
 	  type: "dont",
 	  icon: "no_handshake",
 	  lang: {
+	    ar: "لا تصافح",
 	    en: "No shaking hands",
 	    fr: "Pas de poignées de main",
 	    nl: "Schud geen handen",

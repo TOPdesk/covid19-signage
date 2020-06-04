@@ -3,6 +3,7 @@ export default {
 	  type: "do",
 	  icon: "contactless_only",
 	  lang: {
+	    ar: "",
 	    en: "Contactless payment only",
 	    fr: "Paiement sans contact seulement",
 	    nl: "Enkel contactloos betalen mogelijk",

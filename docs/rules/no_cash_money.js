@@ -3,6 +3,7 @@ export default {
 	  type: "dont",
 	  icon: "no_cash",
 	  lang: {
+	    ar: "غير نقدي",
 	    en: "No cash",
 	    fr: "L'argent n'est pas accepté",
 	    nl: "Geen contant geld",
