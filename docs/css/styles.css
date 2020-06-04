@@ -1,3 +1,15 @@
+.outer-container {
+	display: flex;
+	padding: 0.5em;
+}
+
+.preview-container {
+	border: 2px solid black;
+	flex: 1 0 0px;
+	margin-left: 1em;
+	padding: 0.5em;
+}
+
 .rule-container {
 	margin-bottom: 2em;
 }

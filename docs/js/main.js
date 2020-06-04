@@ -1,23 +1,71 @@
-import keep_1point5_meters_distance from "../rules/keep_1point5_meters_distance.js";
-import use_basket from "../rules/use_basket.js";
-import wash_hands from "../rules/wash_hands.js";
+import languages from "./languages.js";
+import rules from "../rules/index.js";
 
 const content = {
-	template: `<div class="outer-container">
-      <div v-for="rule in rules" class="rule-container">
-        <div v-for="translation in rule.lang" class="translation-container">
-          {{translation}}
-        </div>
-      </div>
+	template: `
+	<div class="outer-container">
+		<div>
+			<h1>COVID-19 Signage Generator</h1>
+			<h2>Step 1: Select languages to include</h2>
+			<div>
+				<div v-for="language in languages">
+					<button v-if="selectedLanguageKeys.includes(language.key)" @click="removeLanguage(language.key)">
+						Remove {{language.displayName}}
+					</button>
+					<button v-else @click="addLanguage(language.key)">
+						Add {{language.displayName}}
+					</button>
+				</div>
+			</div>
+			<div>
+				<h2>Step 2: Select rules to include</h2>
+				<div v-for="rule in rules">
+					<button v-if="selectedRuleNames.includes(rule.name)" @click="removeRule(rule.name)">
+						Remove rule: {{rule.lang["en"]}}
+					</button>
+					<button v-else @click="addRule(rule.name)">
+						Add rule: {{rule.lang["en"]}}
+					</button>
+				</div>
+			</div>
+		</div>
+		<div class="preview-container">
+			<div v-if="!(selectedLanguageKeys.length && selectedRuleNames.length)">
+				A preview of your sign will be shown here after you select at least one language and rule.
+			</div>
+			<div v-for="rule in selectedRules" class="rule-container">
+				<div v-for="languageKey in selectedLanguageKeys" class="translation-container">
+					{{rule.lang[languageKey]}}
+				</div>
+			</div>
+		</div>
     </div>`,
 	data() {
 		return {
-			rules: [
-				keep_1point5_meters_distance,
-				use_basket,
-				wash_hands
-			]
+			selectedLanguageKeys: [],
+			selectedRuleNames: [],
+			languages,
+			rules
 		}
+	},
+	computed: {
+		selectedRules() {
+			return this.rules.filter(rule => this.selectedRuleNames.includes(rule.name));
+		},
+	},
+	methods: {
+		addRule(ruleName) {
+			this.selectedRuleNames.push(ruleName);
+		},
+		removeRule(ruleName) {
+			this.selectedRuleNames.splice(this.selectedRules.indexOf(ruleName), 1);
+		},
+		addLanguage(languageKey) {
+			this.selectedLanguageKeys.push(languageKey);
+		},
+		removeLanguage(languageKey) {
+			this.selectedLanguageKeys.splice(this.selectedLanguages.indexOf(languageKey), 1);
+		},
 	}
 };
 
