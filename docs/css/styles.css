@@ -16,6 +16,7 @@ footer {
 .outer-container {
 	display: flex;
 	padding: 0.5em;
+	justify-content: space-around;
 }	
 
 .outer-container .language-flag {
@@ -142,7 +143,7 @@ footer {
 
 @page {
 	size: A4;
-	margin: 0mm;
+	margin: 0;
 }
 
 @media print {
@@ -171,7 +172,7 @@ footer {
 		display: block;
 		right: 10mm;
 		position: fixed;
-		bottom: 10mm;
+		bottom: 7mm;
 	}
 
 	.noprint {

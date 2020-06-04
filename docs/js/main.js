@@ -34,7 +34,7 @@ const content = {
 			</footer>
 		</div>
 		<div class="preview-container">
-			<div class="language-row">
+			<header class="language-row">
 				<div v-for="(languageKey, index) in selectedLanguageKeys" class="preview-flag">
 					<img :src="'img/flags/' + languageKey + '.svg'" class="language-flag"/>
 					<div class="sort" :class="index === 0 ? 'first' : index === selectedLanguageKeys.length - 1 ? 'last' : 'middle'">
@@ -42,7 +42,7 @@ const content = {
 						<button @click="moveLanguageDown(index)" class="noprint">&#x2BC8;</button>
 					</div>
 				</div>
-			</div>
+			</header>
 			<div v-if="!(selectedLanguageKeys.length && selectedRuleNames.length)">
 				A preview of your sign will be shown here after you select at least one language and rule.
 			</div>
