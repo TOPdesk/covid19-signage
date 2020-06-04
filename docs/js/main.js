@@ -32,8 +32,10 @@ const content = {
 		</div>
 		<div class="preview-container">
 			<div>
-				<div v-for="languageKey in selectedLanguageKeys">
+				<div v-for="(languageKey, index) in selectedLanguageKeys">
 					<img :src="'img/flags/' + languageKey + '.svg'" class="language-flag"/>
+					<button v-if="index > 0" @click="moveLanguageUp(index)">+</button>
+					<button v-if="index < selectedLanguageKeys.length - 1" @click="moveLanguageDown(index)">-</button>
 				</div>
 			</div>
 			<div v-if="!(selectedLanguageKeys.length && selectedRuleNames.length)">
@@ -91,6 +93,16 @@ const content = {
 			const goingDown = this.selectedRuleNames[index];
 			Vue.set(this.selectedRuleNames, index, this.selectedRuleNames[index + 1]);
 			Vue.set(this.selectedRuleNames, index + 1, goingDown);
+		},
+		moveLanguageUp(index) {
+			const goingUp = this.selectedLanguageKeys[index];
+			Vue.set(this.selectedLanguageKeys, index, this.selectedLanguageKeys[index - 1]);
+			Vue.set(this.selectedLanguageKeys, index - 1, goingUp);
+		},
+		moveLanguageDown(index) {
+			const goingDown = this.selectedLanguageKeys[index];
+			Vue.set(this.selectedLanguageKeys, index, this.selectedLanguageKeys[index + 1]);
+			Vue.set(this.selectedLanguageKeys, index + 1, goingDown);
 		},
 	},
 };
