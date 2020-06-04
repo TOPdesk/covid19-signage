@@ -66,6 +66,10 @@ footer {
 	margin-bottom: 2em;
 }	
 
+.rule-container:nth-child(even) {
+	background-color: #eeeeee;
+}	
+
 .rule-container .first button:first-child, .rule-container .last button:last-child {
 	visibility: hidden;
 }
@@ -81,10 +85,11 @@ footer {
 
 .translation-container {
 	padding: 0.5em;
+	font-size: 1.5em;
 }	
 
 .translation-container:nth-child(even) {
-	background-color: #eeeeee;
+	color: #0A7DA0;
 }	
 
 .translations {
