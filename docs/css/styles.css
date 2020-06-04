@@ -36,9 +36,7 @@
 }
 
 .preview-container footer {
-	right: 0;
-	position: fixed;
-	bottom: 0;
+	display: none;
 }
 
 footer {
@@ -48,29 +46,38 @@ footer {
 
 @page {
 	size: A4;
+	margin: 0mm;
 }
 
 @media print {
-	html, body {
+	html,
+	body {
 		margin: 0;
 		padding: 0;
 
 		width: 210mm;
-		height: 220mm;
+		height: 260mm;
 	}
 
 	.preview-container {
 		height: 100%;
 		position: relative;
 		display: block;
-		
+
 		page-break-after: always;
-		
+
 		border-style: none;
 		margin: 0;
 		padding: 7mm;
 	}
-	
+
+	.preview-container footer {
+		display: block;
+		right: 10mm;
+		position: fixed;
+		bottom: 10mm;
+	}
+
 	.noprint {
 		display: none;
 	}
