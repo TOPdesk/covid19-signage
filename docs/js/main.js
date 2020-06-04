@@ -11,10 +11,10 @@ const content = {
 				<div v-for="language in languages">
 					<img :src="'img/flags/' + language.key + '.svg'" class="language-flag"/>
 					<button v-if="selectedLanguageKeys.includes(language.key)" @click="removeLanguage(language.key)" class="button is-success">
-						Remove
+						Remove {{ language.displayName }}
 					</button>
 					<button v-else @click="addLanguage(language.key)" class="button is-outlined">
-						Add
+						Add {{ language.displayName }}
 					</button>
 				</div>
 			</div>
@@ -83,16 +83,14 @@ const content = {
 			this.selectedLanguageKeys.splice(this.selectedLanguageKeys.indexOf(languageKey), 1);
 		},
 		moveRuleUp(index) {
-			const top = this.selectedRuleNames.slice(0, index - 1);
-			const bottom = this.selectedRuleNames.slice(index + 1, this.selectedRuleNames.length);
-
-			this.selectedRuleNames = [...top, this.selectedRuleNames[index], this.selectedRuleNames[index - 1], ...bottom];
+			const goingUp = this.selectedRuleNames[index];
+			Vue.set(this.selectedRuleNames, index, this.selectedRuleNames[index - 1]);
+			Vue.set(this.selectedRuleNames, index - 1, goingUp);
 		},
 		moveRuleDown(index) {
-			const top = this.selectedRuleNames.slice(0, index);
-			const bottom = this.selectedRuleNames.slice(index + 2, this.selectedRuleNames.length);
-
-			this.selectedRuleNames = [...top, this.selectedRuleNames[index + 1], this.selectedRuleNames[index], ...bottom];
+			const goingDown = this.selectedRuleNames[index];
+			Vue.set(this.selectedRuleNames, index, this.selectedRuleNames[index + 1]);
+			Vue.set(this.selectedRuleNames, index + 1, goingDown);
 		},
 	},
 };
