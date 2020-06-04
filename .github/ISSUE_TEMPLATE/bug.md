@@ -11,6 +11,6 @@ assignees: ''
 
 **What did you expect to happen?**
 
-**What happene instead?**
+**What happened instead?**
 
 **Additional context**
