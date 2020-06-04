@@ -74,6 +74,11 @@ footer {
 	visibility: hidden;
 }
 
+.rule-content {
+	display: flex;
+	flex-direction: row;
+}
+
 .translation-container {
 	padding: 0.5em;
 }	
@@ -81,6 +86,12 @@ footer {
 .translation-container:nth-child(even) {
 	background-color: #eeeeee;
 }	
+
+.translations {
+	display: flex;
+	flex-direction: column;
+	margin-left: 2em;
+}
 
 /**
 >> ICONS

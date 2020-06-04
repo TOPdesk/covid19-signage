@@ -48,11 +48,15 @@ const content = {
 					<button @click="moveRuleUp(index)" class="noprint">+</button>
 					<button @click="moveRuleDown(index)" class="noprint">-</button>
 				</div>
-				<div :class="rule.type" class="columns is-centered icon">
-					<img :src="'img/icons/' + rule.icon + '.svg'" class="language-flag"/>
-				</div>
-				<div v-for="languageKey in selectedLanguageKeys" class="translation-container">
-					{{rule.lang[languageKey]}}
+				<div class="columns is-vcentered rule-content">
+					<div :class="rule.type" class="columns is-centered icon">
+						<img :src="'img/icons/' + rule.icon + '.svg'"/>
+					</div>
+					<div class="translations">
+						<div v-for="languageKey in selectedLanguageKeys" class="translation-container">
+							{{rule.lang[languageKey]}}
+						</div>
+					</div>
 				</div>
 			</div>
 			<footer v-if="selectedLanguageKeys.length && selectedRuleNames.length">
