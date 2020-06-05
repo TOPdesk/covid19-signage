@@ -9,7 +9,7 @@ const content = {
 			<div>
 				<h2 class="subtitle">Step 1: Select languages to include</h2>
 				<div v-for="language in languages" class="select-language">
-					<img :src="'img/flags/' + language.key + '.svg'" class="language-flag"/>
+					<img :src="'img/flags/' + language.key + '.svg'" class="language-flag" alt=""/>
 					<div v-if="selectedLanguageKeys.includes(language.key)" class="columns is-vcentered">
 						<button @click="removeLanguage(language.key)" class="button is-info">
 							Remove
@@ -27,7 +27,7 @@ const content = {
 			<div class="rule-selection">
 				<h2 class="subtitle">Step 2: Select rules to include</h2>
 				<div v-for="rule in rules" class="select-rule">
-					<img :src="'img/icons/' + rule.icon + '.svg'" :class="rule.type"/>
+					<img :src="'img/icons/' + rule.icon + '.svg'" :class="rule.type" alt=""/>
 					<div class="columns is-vcentered" v-if="selectedRuleNames.includes(rule.name)">
 						<button @click="removeRule(rule.name)" class="button is-info">
 							Remove
@@ -52,7 +52,7 @@ const content = {
 		<div class="preview-container">
 			<header class="language-row">
 				<div v-for="(languageKey, index) in selectedLanguageKeys" class="preview-flag">
-					<img :src="'img/flags/' + languageKey + '.svg'" class="language-flag"/>
+					<img :src="'img/flags/' + languageKey + '.svg'" class="language-flag" alt=""/>
 					<div class="sort" :class="index === 0 ? 'first' : index === selectedLanguageKeys.length - 1 ? 'last' : 'middle'">
 						<button @click="moveLanguageUp(index)" class="noprint">&#x2BC7;</button>
 						<button @click="moveLanguageDown(index)" class="noprint">&#x2BC8;</button>
@@ -68,7 +68,7 @@ const content = {
 					<button @click="moveRuleDown(index)" class="noprint">&#x2BC6;</button>
 				</div>
 				<div class="columns is-vcentered rule-content">
-					<img :src="'img/icons/' + rule.icon + '.svg'" :class="rule.type"/>
+					<img :src="'img/icons/' + rule.icon + '.svg'" :class="rule.type" alt=""/>
 					<div class="translations">
 						<div v-for="languageKey in selectedLanguageKeys" class="translation-container">
 							{{rule.lang[languageKey]}}
