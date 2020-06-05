@@ -12,6 +12,10 @@ export default [
 		displayName: "French"
 	},
 	{
+		key: "hu",
+		displayName: "Hungarian"
+	},
+	{
 		key: "nl",
 		displayName: "Dutch"
 	},

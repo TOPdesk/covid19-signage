@@ -6,6 +6,7 @@ export default {
 	    ar: "مطلوب عربة تسوق",
 	    en: "Shopping cart mandatory",
 	    fr: "Le panier est obligatoire",
+	    hu: "Bevásárlókocsi használata kötelező!",
 	    nl: "Gebruik van winkelwagentje is verplicht",
 	    tr: "Alisveris arabasi mecburidir",
 	    zh: "必须用购物车"

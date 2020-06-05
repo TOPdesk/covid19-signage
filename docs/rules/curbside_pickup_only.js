@@ -6,6 +6,7 @@ export default {
 	    ar: "رصيف فقط",
 	    en: "Curbside pickup only",
 	    fr: "Ramassage en bordure de rue",
+	    hu: "Csak érintkezésmentes átvétel lehetséges!",
 	    nl: "Alleen buiten afhalen",
 	    tr: "Yalnizca arabanizda servis yapilmaktadir",
 	    zh: "仅可路边交收"
