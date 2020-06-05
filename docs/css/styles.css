@@ -37,6 +37,7 @@ footer {
 	padding: 0.5em;
 	max-width: 21cm;
 	height: 100%;
+	color: black;
 }
 
 .preview-container footer {
@@ -80,7 +81,7 @@ footer {
 }
 
 .rule-container:nth-child(even) {
-	background-color: #eeeeee;
+	background-color: #f7f7f7;
 }	
 
 .rule-container .first button:first-child, .rule-container .last button:last-child {
