@@ -72,6 +72,7 @@ footer {
 .rule-container {
 	margin-bottom: 2em;
 	margin-top: .5em;
+	padding-top: .2em;;
 	page-break-inside:avoid;
 }
 
@@ -81,6 +82,10 @@ footer {
 
 .rule-container .first button:first-child, .rule-container .last button:last-child {
 	visibility: hidden;
+}
+
+.rule-container .sort {
+	margin-left: 3em;
 }
 
 .rule-container .only {
