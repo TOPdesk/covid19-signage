@@ -44,7 +44,7 @@ const content = {
 				</div>
 			</section>
 			<footer class="noprint">
-				<a href="https://github.com/TOPdesk/covid19-signage/issues" target="_blank" rel="noreferrer noopener">Feedback</a>
+				<a class="button" href="https://github.com/TOPdesk/covid19-signage/issues" target="_blank" rel="noreferrer noopener">Feedback</a>
 			</footer>
 		</div>
 		<section aria-describedby="step3" class="step3">
