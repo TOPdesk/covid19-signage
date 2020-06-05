@@ -86,6 +86,7 @@ footer {
 
 .rule-container .sort {
 	margin-left: 3em;
+	margin-bottom: .5em;
 }
 
 .rule-container .only {
@@ -129,20 +130,17 @@ footer {
 >> ICONS
 */
 
-.icon {
+.rule-container img {
 	width: 8em;
-	height: 8em;
+	height: auto;
 	border-radius: 15px;
 	margin-top: 1em;
 	margin-left: 2em;
+	margin-bottom: 0.5em;
+	margin-top: 0.5em;
 	border-style: solid;
 	border-width: 2px;
 	padding: 1em;
-}
-
-.icon img {
-	width: 6em;
-	height: 6em;
 }
 
 .select-rule img {

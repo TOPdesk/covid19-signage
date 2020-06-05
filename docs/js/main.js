@@ -68,9 +68,7 @@ const content = {
 					<button @click="moveRuleDown(index)" class="noprint">&#x2BC6;</button>
 				</div>
 				<div class="columns is-vcentered rule-content">
-					<div :class="rule.type" class="columns is-centered icon">
-						<img :src="'img/icons/' + rule.icon + '.svg'"/>
-					</div>
+					<img :src="'img/icons/' + rule.icon + '.svg'" :class="rule.type"/>
 					<div class="translations">
 						<div v-for="languageKey in selectedLanguageKeys" class="translation-container">
 							{{rule.lang[languageKey]}}
