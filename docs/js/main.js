@@ -22,12 +22,21 @@ const content = {
 				<h2 class="subtitle">Step 2: Select rules to include</h2>
 				<div v-for="rule in rules" class="select-rule">
 					<img :src="'img/icons/' + rule.icon + '.svg'" :class="rule.type"/>
-					<button v-if="selectedRuleNames.includes(rule.name)" @click="removeRule(rule.name)" class="button is-success">
-						Remove rule: {{rule.lang["en"]}}
-					</button>
-					<button v-else @click="addRule(rule.name)" class="button is-outlined">
-						Add rule: {{rule.lang["en"]}}
-					</button>
+					<div class="columns is-vcentered" v-if="selectedRuleNames.includes(rule.name)">
+						<button @click="removeRule(rule.name)" class="button is-success">
+							Remove 
+						</button>
+						<div>{{rule.lang["en"]}}</div>
+					</div>
+					
+					<div v-else class="columns is-vcentered">
+						<button @click="addRule(rule.name)" class="button is-outlined">
+							Add 
+						</button>
+						<div>
+							{{rule.lang["en"]}}
+						</div>
+					</div>
 				</div>
 			</div>
 			<footer class="noprint">
