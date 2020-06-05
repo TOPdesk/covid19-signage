@@ -48,7 +48,7 @@ const content = {
 			</footer>
 		</div>
 		<section aria-describedby="step3" class="step3">
-		<h2 class="subtitle" id="step3">Step 3: Preview and sort</h2>
+		<h2 class="subtitle noprint" id="step3">Step 3: Preview and sort</h2>
 		<div class="preview-container">
 			<header class="language-row">
 				<div v-for="(languageKey, index) in selectedLanguageKeys" class="preview-flag">
