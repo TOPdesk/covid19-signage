@@ -12,15 +12,15 @@ const content = {
 					<img :src="'img/flags/' + language.key + '.svg'" class="language-flag" alt=""/>
 					<div v-if="selectedLanguageKeys.includes(language.key)" class="columns is-vcentered">
 						<button @click="removeLanguage(language.key)" class="button is-info">
-							Remove
+							Remove<span class="scr-only">&nbsp;{{ language.displayName }}</span>
 						</button>
-						<div>{{ language.displayName }}</div>
+						<div aria-hidden="true">{{ language.displayName }}</div>
 					</div>
 					<div v-else class="columns is-vcentered">
 						<button @click="addLanguage(language.key)" class="button is-outlined">
-							Add
+							Add<span class="scr-only">&nbsp;{{ language.displayName }}</span>
 						</button>
-						<div>{{ language.displayName }}</div>
+						<div aria-hidden="true">{{ language.displayName }}</div>
 					</div>
 				</div>
 			</div>
@@ -30,18 +30,16 @@ const content = {
 					<img :src="'img/icons/' + rule.icon + '.svg'" :class="rule.type" alt=""/>
 					<div class="columns is-vcentered" v-if="selectedRuleNames.includes(rule.name)">
 						<button @click="removeRule(rule.name)" class="button is-info">
-							Remove
+							Remove<span class="scr-only">&nbsp;{{rule.lang["en"]}}</span>
 						</button>
-						<div>{{rule.lang["en"]}}</div>
+						<div aria-hidden="true">{{rule.lang["en"]}}</div>
 					</div>
 					
 					<div v-else class="columns is-vcentered">
 						<button @click="addRule(rule.name)" class="button is-outlined">
-							Add
+							Add<span class="scr-only">&nbsp;{{rule.lang["en"]}}</span>
 						</button>
-						<div>
-							{{rule.lang["en"]}}
-						</div>
+						<div aria-hidden="true">{{rule.lang["en"]}}</div>
 					</div>
 				</div>
 			</div>

@@ -102,6 +102,17 @@ footer {
 	flex-direction: row;
 }
 
+.scr-only {
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
+	height: 1px;
+	width: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+}
+
 .select-language, .select-rule {
 	display: flex;
 	flex-direction: row;
@@ -113,7 +124,6 @@ footer {
 	margin-right: 1em;
 	width: 6em;
 }
-
 
 .translation-container {
 	padding: 0.5em;
