@@ -8,14 +8,20 @@ const content = {
 			<h1 class="title">COVID-19 Signage Generator</h1>
 			<div>
 				<h2 class="subtitle">Step 1: Select languages to include</h2>
-				<div v-for="language in languages">
+				<div v-for="language in languages" class="select-language">
 					<img :src="'img/flags/' + language.key + '.svg'" class="language-flag"/>
-					<button v-if="selectedLanguageKeys.includes(language.key)" @click="removeLanguage(language.key)" class="button is-success">
-						Remove {{ language.displayName }}
-					</button>
-					<button v-else @click="addLanguage(language.key)" class="button is-outlined">
-						Add {{ language.displayName }}
-					</button>
+					<div v-if="selectedLanguageKeys.includes(language.key)" class="columns is-vcentered">
+						<button @click="removeLanguage(language.key)" class="button is-success">
+							Remove
+						</button>
+						<div>{{ language.displayName }}</div>
+					</div>
+					<div v-else class="columns is-vcentered">
+						<button @click="addLanguage(language.key)" class="button is-outlined">
+							Add
+						</button>
+						<div>{{ language.displayName }}</div>
+					</div>
 				</div>
 			</div>
 			<div class="rule-selection">

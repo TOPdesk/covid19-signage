@@ -92,17 +92,18 @@ footer {
 	flex-direction: row;
 }
 
-.select-rule {
+.select-language, .select-rule {
 	display: flex;
 	flex-direction: row;
 	margin-bottom: .2em;
 }
 
-.select-rule button {
+.select-language button, .select-rule button {
 	margin-left: 2em;
 	margin-right: 1em;
 	width: 6em;
 }
+
 
 .translation-container {
 	padding: 0.5em;
