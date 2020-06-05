@@ -124,6 +124,31 @@ footer {
 	width: 6em;
 }
 
+.sort .button {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: .8em;
+	width: 1.5em;
+	height: 1.5em;
+	padding: 0;
+}
+
+.sort .down {
+	background-image: url('../img/controls/down.svg');
+}
+
+.sort .left {
+	background-image: url('../img/controls/left.svg');
+}
+
+.sort .right {
+	background-image: url('../img/controls/right.svg');
+}
+
+.sort .up {
+	background-image: url('../img/controls/up.svg');
+}
+
 .step3 {
 	display: flex;
 	flex-direction: column;
@@ -149,7 +174,7 @@ footer {
 >> ICONS
 */
 
-.rule-container img {
+.rule-container .icon {
 	width: 8em;
 	height: auto;
 	border-radius: 15px;
@@ -162,7 +187,7 @@ footer {
 	padding: 1em;
 }
 
-.select-rule img {
+.select-rule .icon {
 	width: 2.5em;
 	height: auto;
 	margin-right: 0.2em;

@@ -27,7 +27,7 @@ const content = {
 			<section class="rule-selection" aria-labelledby="step2">
 				<h2 class="subtitle" id="step2">Step 2: Select rules to include</h2>
 				<div v-for="rule in rules" class="select-rule">
-					<img :src="'img/icons/' + rule.icon + '.svg'" :class="rule.type" alt=""/>
+					<img class="icon" :src="'img/icons/' + rule.icon + '.svg'" :class="rule.type" alt=""/>
 					<div class="columns is-vcentered" v-if="selectedRuleNames.includes(rule.name)">
 						<button @click="removeRule(rule.name)" class="button is-info">
 							Remove<span class="scr-only">&nbsp;{{rule.lang["en"]}}</span>
@@ -54,8 +54,8 @@ const content = {
 				<div v-for="(languageKey, index) in selectedLanguageKeys" class="preview-flag">
 					<img :src="'img/flags/' + languageKey + '.svg'" class="language-flag" alt=""/>
 					<div class="sort" :class="index === 0 ? 'first' : index === selectedLanguageKeys.length - 1 ? 'last' : 'middle'">
-						<button @click="moveLanguageUp(index)" class="noprint">&#x2BC7;</button>
-						<button @click="moveLanguageDown(index)" class="noprint">&#x2BC8;</button>
+						<button @click="moveLanguageUp(index)" class="noprint left button is-outlined"></button>
+						<button @click="moveLanguageDown(index)" class="noprint right button is-outlined"></button>
 					</div>
 				</div>
 			</header>
@@ -64,11 +64,11 @@ const content = {
 			</div>
 			<div v-for="(rule, index) in selectedRules" class="rule-container">
 				<div class="sort" :class="[index === 0 ? 'first' : index === selectedRules.length - 1 ? 'last' : 'middle', selectedRules.length === 1 ? 'only' : '']">
-					<button @click="moveRuleUp(index)" class="noprint">&#x2BC5;</button>
-					<button @click="moveRuleDown(index)" class="noprint">&#x2BC6;</button>
+					<button @click="moveRuleUp(index)" class="noprint up button is-outlined"></button>
+					<button @click="moveRuleDown(index)" class="noprint down button is-outlined"></button>
 				</div>
 				<div class="columns is-vcentered rule-content">
-					<img :src="'img/icons/' + rule.icon + '.svg'" :class="rule.type" alt=""/>
+					<img class="icon" :src="'img/icons/' + rule.icon + '.svg'" :class="rule.type" alt=""/>
 					<div class="translations">
 						<div v-for="languageKey in selectedLanguageKeys" class="translation-container">
 							{{rule.lang[languageKey]}}
