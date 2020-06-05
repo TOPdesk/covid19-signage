@@ -34,11 +34,10 @@ footer {
 
 .preview-container {
 	border: 2px solid black;
-	flex: 1 0 0px;
-	margin-left: 1em;
 	padding: 0.5em;
 	max-width: 21cm;
-}	
+	height: 100%;
+}
 
 .preview-container footer {
 	display: none;
@@ -123,6 +122,12 @@ footer {
 	margin-left: 2em;
 	margin-right: 1em;
 	width: 6em;
+}
+
+.step3 {
+	display: flex;
+	flex-direction: column;
+	margin-left: 1em;
 }
 
 .translation-container {
