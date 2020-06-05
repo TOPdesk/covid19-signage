@@ -11,7 +11,7 @@ const content = {
 				<div v-for="language in languages" class="select-language">
 					<img :src="'img/flags/' + language.key + '.svg'" class="language-flag"/>
 					<div v-if="selectedLanguageKeys.includes(language.key)" class="columns is-vcentered">
-						<button @click="removeLanguage(language.key)" class="button is-success">
+						<button @click="removeLanguage(language.key)" class="button is-info">
 							Remove
 						</button>
 						<div>{{ language.displayName }}</div>
@@ -29,7 +29,7 @@ const content = {
 				<div v-for="rule in rules" class="select-rule">
 					<img :src="'img/icons/' + rule.icon + '.svg'" :class="rule.type"/>
 					<div class="columns is-vcentered" v-if="selectedRuleNames.includes(rule.name)">
-						<button @click="removeRule(rule.name)" class="button is-success">
+						<button @click="removeRule(rule.name)" class="button is-info">
 							Remove 
 						</button>
 						<div>{{rule.lang["en"]}}</div>
