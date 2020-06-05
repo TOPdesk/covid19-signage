@@ -23,4 +23,4 @@ export default [
 		key: "zh",
 		displayName: "Chinese"
 	},
-];
+].sort((a, b) => a.displayName.localeCompare(b.displayName));;
