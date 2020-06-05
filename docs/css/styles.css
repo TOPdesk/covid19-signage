@@ -73,7 +73,7 @@ footer {
 	margin-bottom: 2em;
 	margin-top: .5em;
 	page-break-inside:avoid;
-}	
+}
 
 .rule-container:nth-child(even) {
 	background-color: #eeeeee;
@@ -90,6 +90,12 @@ footer {
 .rule-content {
 	display: flex;
 	flex-direction: row;
+}
+
+.select-rule {
+	display: flex;
+	flex-direction: row;
+	margin-bottom: .2em;
 }
 
 .translation-container {
@@ -127,6 +133,16 @@ footer {
 	height: 6em;
 }
 
+.select-rule img {
+	width: 2.5em;
+	height: auto;
+	margin-right: 0.2em;
+	border-radius: 5px;
+	border-style: solid;
+	border-width: 1px;
+	padding: .2em;
+}
+
 .do {
 	background-color: #AEDBC2;
 	border-color: #19A064;
@@ -136,6 +152,7 @@ footer {
 	background-color: #EE7B5F88;
 	border-color: #C24530;
 }
+
 
 /**
 << ICONS

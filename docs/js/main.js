@@ -18,9 +18,10 @@ const content = {
 					</button>
 				</div>
 			</div>
-			<div>
+			<div class="rule-selection">
 				<h2 class="subtitle">Step 2: Select rules to include</h2>
-				<div v-for="rule in rules">
+				<div v-for="rule in rules" class="select-rule">
+					<img :src="'img/icons/' + rule.icon + '.svg'" :class="rule.type"/>
 					<button v-if="selectedRuleNames.includes(rule.name)" @click="removeRule(rule.name)" class="button is-success">
 						Remove rule: {{rule.lang["en"]}}
 					</button>
