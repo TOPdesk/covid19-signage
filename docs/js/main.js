@@ -30,14 +30,14 @@ const content = {
 					<img :src="'img/icons/' + rule.icon + '.svg'" :class="rule.type"/>
 					<div class="columns is-vcentered" v-if="selectedRuleNames.includes(rule.name)">
 						<button @click="removeRule(rule.name)" class="button is-info">
-							Remove 
+							Remove
 						</button>
 						<div>{{rule.lang["en"]}}</div>
 					</div>
 					
 					<div v-else class="columns is-vcentered">
 						<button @click="addRule(rule.name)" class="button is-outlined">
-							Add 
+							Add
 						</button>
 						<div>
 							{{rule.lang["en"]}}
@@ -103,7 +103,7 @@ const content = {
 			this.selectedRuleNames.push(ruleName);
 		},
 		removeRule(ruleName) {
-			this.selectedRuleNames.splice(this.selectedRules.indexOf(ruleName), 1);
+			this.selectedRuleNames.splice(this.selectedRuleNames.indexOf(ruleName), 1);
 		},
 		addLanguage(languageKey) {
 			this.selectedLanguageKeys.push(languageKey);
