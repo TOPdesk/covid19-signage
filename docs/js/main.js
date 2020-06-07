@@ -11,13 +11,13 @@ const content = {
 				<div v-for="language in languages" class="select-language">
 					<img :src="'img/flags/' + language.key + '.svg'" class="language-flag" alt=""/>
 					<div v-if="selectedLanguageKeys.includes(language.key)" class="columns is-vcentered">
-						<button @click="removeLanguage(language.key)" class="button is-info">
+						<button @click="toggleLanguage(language.key)" class="button is-info">
 							Remove<span class="scr-only">&nbsp;{{ language.displayName }}</span>
 						</button>
 						<div aria-hidden="true">{{ language.displayName }}</div>
 					</div>
 					<div v-else class="columns is-vcentered">
-						<button @click="addLanguage(language.key)" class="button is-outlined">
+						<button @click="toggleLanguage(language.key)" class="button is-outlined">
 							Add<span class="scr-only">&nbsp;{{ language.displayName }}</span>
 						</button>
 						<div aria-hidden="true">{{ language.displayName }}</div>
@@ -29,14 +29,14 @@ const content = {
 				<div v-for="rule in rules" class="select-rule">
 					<img class="icon" :src="'img/icons/' + rule.icon + '.svg'" :class="rule.type" alt=""/>
 					<div class="columns is-vcentered" v-if="selectedRuleNames.includes(rule.name)">
-						<button @click="removeRule(rule.name)" class="button is-info">
+						<button @click="toggleRule(rule.name)" class="button is-info">
 							Remove<span class="scr-only">&nbsp;{{rule.lang["en"]}}</span>
 						</button>
 						<div aria-hidden="true">{{rule.lang["en"]}}</div>
 					</div>
 					
 					<div v-else class="columns is-vcentered">
-						<button @click="addRule(rule.name)" class="button is-outlined">
+						<button @click="toggleRule(rule.name)" class="button is-outlined">
 							Add<span class="scr-only">&nbsp;{{rule.lang["en"]}}</span>
 						</button>
 						<div aria-hidden="true">{{rule.lang["en"]}}</div>
@@ -98,17 +98,19 @@ const content = {
 		},
 	},
 	methods: {
-		addRule(ruleName) {
-			this.selectedRuleNames.push(ruleName);
+		toggleRule(ruleName) {
+			if (this.selectedRuleNames.includes(ruleName)) {
+				this.selectedRuleNames.splice(this.selectedRuleNames.indexOf(ruleName), 1);
+			} else {
+				this.selectedRuleNames.push(ruleName);
+			}
 		},
-		removeRule(ruleName) {
-			this.selectedRuleNames.splice(this.selectedRuleNames.indexOf(ruleName), 1);
-		},
-		addLanguage(languageKey) {
-			this.selectedLanguageKeys.push(languageKey);
-		},
-		removeLanguage(languageKey) {
-			this.selectedLanguageKeys.splice(this.selectedLanguageKeys.indexOf(languageKey), 1);
+		toggleLanguage(languageKey) {
+			if (this.selectedLanguageKeys.includes(languageKey)) {
+				this.selectedLanguageKeys.splice(this.selectedLanguageKeys.indexOf(languageKey), 1);
+			} else {
+				this.selectedLanguageKeys.push(languageKey);
+			}
 		},
 		moveRuleUp(index) {
 			const goingUp = this.selectedRuleNames[index];
