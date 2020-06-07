@@ -1,26 +1,32 @@
 export default [
 	{
 		key: "ar",
-		displayName: "Arabic"
+		displayName: "Arabic",
+		own: "العربية",
 	},
 	{
 		key: "en",
-		displayName: "English"
+		displayName: "English",
+		own: "English"
 	},
 	{
 		key: "fr",
-		displayName: "French"
+		displayName: "French",
+		own: "Français",
 	},
 	{
 		key: "nl",
-		displayName: "Dutch"
+		displayName: "Dutch",
+		own: "Nederlands",
 	},
 	{
 		key: "tr",
-		displayName: "Turkish"
+		displayName: "Turkish",
+		own: "Türkçe",
 	},
 	{
 		key: "zh",
-		displayName: "Chinese"
+		displayName: "Chinese",
+		own: "中文",
 	},
 ].sort((a, b) => a.displayName.localeCompare(b.displayName));;

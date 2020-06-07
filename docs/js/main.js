@@ -16,7 +16,9 @@ const content = {
 							<span class="scr-only">&nbsp;{{ language.displayName }}</span>
 						</button>
 						<img :src="'img/flags/' + language.key + '.svg'" class="language-flag" alt=""/>
-						<div aria-hidden="true">{{ language.displayName }}</div>
+						<span aria-hidden="true">{{ language.displayName }}
+							(<span :lang="language.key">{{ language.own }}</span>)
+						</span>
 					</li>
 				</ul>
 			</section>
@@ -30,7 +32,7 @@ const content = {
 							<span class="scr-only">&nbsp;{{rule.lang["en"]}}</span>
 						</button>
 						<img class="icon" :src="'img/icons/' + rule.icon + '.svg'" :class="rule.type" alt=""/>
-						<div aria-hidden="true">{{ rule.lang["en"] }}</div>
+						<span aria-hidden="true">{{ rule.lang["en"] }}</span>
 					</li>
 				</ul>
 			</section>
@@ -42,8 +44,8 @@ const content = {
 		<h2 class="subtitle noprint" id="step3">Step 3: Preview and sort</h2>
 		<div class="preview-container">
 			<header class="language-row">
-				<div v-for="(languageKey, index) in selectedLanguageKeys" class="preview-flag">
-					<img :src="'img/flags/' + languageKey + '.svg'" class="language-flag" alt=""/>
+				<div v-for="(language, index) in selectedLanguages" class="preview-flag">
+					<img :src="'img/flags/' + language.key + '.svg'" class="language-flag" alt=""/>
 					<div class="sort" :class="index === 0 ? 'first' : index === selectedLanguageKeys.length - 1 ? 'last' : 'middle'">
 						<button @click="moveLanguageUp(index)" class="noprint left button is-outlined"></button>
 						<button @click="moveLanguageDown(index)" class="noprint right button is-outlined"></button>
@@ -61,7 +63,7 @@ const content = {
 				<div class="columns is-vcentered rule-content">
 					<img class="icon" :src="'img/icons/' + rule.icon + '.svg'" :class="rule.type" alt=""/>
 					<div class="translations">
-						<div v-for="languageKey in selectedLanguageKeys" class="translation-container">
+						<div v-for="languageKey in selectedLanguageKeys" class="translation-container" :lang="languageKey">
 							{{rule.lang[languageKey]}}
 						</div>
 					</div>
@@ -86,6 +88,11 @@ const content = {
 			return this.rules
 				.filter((rule) => this.selectedRuleNames.includes(rule.name))
 				.sort((a, b) => this.selectedRuleNames.indexOf(a.name) - this.selectedRuleNames.indexOf(b.name));
+		},
+		selectedLanguages() {
+			return this.languages
+				.filter((language) => this.selectedLanguageKeys.includes(language.key))
+				.sort((a, b) => this.selectedLanguageKeys.indexOf(a.key) - this.selectedLanguageKeys.indexOf(b.key));
 		},
 	},
 	methods: {
