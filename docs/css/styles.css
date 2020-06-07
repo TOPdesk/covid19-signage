@@ -30,10 +30,11 @@ footer {
 
 .outer-container .language-flag {
 	width: 2.5em;
+	margin-right: .5em;
 }
 
 .outer-container .subtitle {
-	margin-top: 0.5em;
+	margin-top: 1em;
 	margin-bottom: 0.5em;
 }
 
@@ -125,9 +126,14 @@ footer {
 }
 
 .select-language button, .select-rule button {
-	margin-left: 2em;
 	margin-right: 1em;
 	width: 6em;
+}
+
+.select-list {
+	margin-top: 1em;
+	margin-bottom: 1em;
+	margin-left: .75em;
 }
 
 .sort .button {
@@ -196,7 +202,7 @@ footer {
 .select-rule .icon {
 	width: 2.5em;
 	height: auto;
-	margin-right: 0.2em;
+	margin-right: 0.5em;
 	border-radius: 5px;
 	border-style: solid;
 	border-width: 1px;

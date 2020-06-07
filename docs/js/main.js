@@ -8,33 +8,29 @@ const content = {
 			<h1 class="title">COVID-19 Signage Generator</h1>
 			<section aria-labelledby="step1">
 				<h2 class="subtitle" id="step1">Step 1: Select languages to include</h2>
-				<ul>
-					<li v-for="language in languages" class="select-language">
+				<ul class="select-list">
+					<li v-for="language in languages" class="select-language columns is-vcentered">
+						<button @click="toggleLanguage(language.key)" class="button"
+								:class="selectedLanguageKeys.includes(language.key) ?'is-info' : 'is-outlined'">
+							{{ selectedLanguageKeys.includes(language.key) ? 'Remove' : 'Add' }}
+							<span class="scr-only">&nbsp;{{ language.displayName }}</span>
+						</button>
 						<img :src="'img/flags/' + language.key + '.svg'" class="language-flag" alt=""/>
-						<div class="columns is-vcentered">
-							<button @click="toggleLanguage(language.key)" class="button"
-									:class="selectedLanguageKeys.includes(language.key) ?'is-info' : 'is-outlined'">
-								{{ selectedLanguageKeys.includes(language.key) ? 'Remove' : 'Add' }}
-								<span class="scr-only">&nbsp;{{ language.displayName }}</span>
-							</button>
-							<div aria-hidden="true">{{ language.displayName }}</div>
-						</div>
+						<div aria-hidden="true">{{ language.displayName }}</div>
 					</li>
 				</ul>
 			</section>
 			<section class="rule-selection" aria-labelledby="step2">
 				<h2 class="subtitle" id="step2">Step 2: Select rules to include</h2>
-				<ul>
-					<li v-for="rule in rules" class="select-rule">
+				<ul class="select-list">
+					<li v-for="rule in rules" class="select-rule columns is-vcentered">
+						<button @click="toggleRule(rule.name)" class="button"
+								:class="selectedRuleNames.includes(rule.name) ?'is-info' : 'is-outlined'">
+							{{ selectedRuleNames.includes(rule.name) ? 'Remove' : 'Add' }}
+							<span class="scr-only">&nbsp;{{rule.lang["en"]}}</span>
+						</button>
 						<img class="icon" :src="'img/icons/' + rule.icon + '.svg'" :class="rule.type" alt=""/>
-						<div class="columns is-vcentered">
-							<button @click="toggleRule(rule.name)" class="button"
-									:class="selectedRuleNames.includes(rule.name) ?'is-info' : 'is-outlined'">
-								{{ selectedRuleNames.includes(rule.name) ? 'Remove' : 'Add' }}
-								<span class="scr-only">&nbsp;{{rule.lang["en"]}}</span>
-							</button>
-							<div aria-hidden="true">{{rule.lang["en"]}}</div>
-						</div>
+						<div aria-hidden="true">{{ rule.lang["en"] }}</div>
 					</li>
 				</ul>
 			</section>
