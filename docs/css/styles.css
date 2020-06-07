@@ -11,6 +11,10 @@ html {
 	box-shadow: 0 0 0 0.125em rgba(0,0,0,.5);
 }
 
+.feedback {
+	margin-top: 2em;
+}
+
 footer {
 	display: flex;
 	justify-content: center;

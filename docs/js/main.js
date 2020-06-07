@@ -35,7 +35,7 @@ const content = {
 					</li>
 				</ul>
 			</section>
-			<footer class="noprint">
+			<footer class="noprint feedback">
 				<a class="button" href="https://github.com/TOPdesk/covid19-signage/issues" target="_blank" rel="noreferrer noopener">Feedback</a>
 			</footer>
 		</div>
