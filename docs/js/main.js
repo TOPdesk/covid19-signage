@@ -10,15 +10,11 @@ const content = {
 				<h2 class="subtitle" id="step1">Step 1: Select languages to include</h2>
 				<div v-for="language in languages" class="select-language">
 					<img :src="'img/flags/' + language.key + '.svg'" class="language-flag" alt=""/>
-					<div v-if="selectedLanguageKeys.includes(language.key)" class="columns is-vcentered">
-						<button @click="toggleLanguage(language.key)" class="button is-info">
-							Remove<span class="scr-only">&nbsp;{{ language.displayName }}</span>
-						</button>
-						<div aria-hidden="true">{{ language.displayName }}</div>
-					</div>
-					<div v-else class="columns is-vcentered">
-						<button @click="toggleLanguage(language.key)" class="button is-outlined">
-							Add<span class="scr-only">&nbsp;{{ language.displayName }}</span>
+					<div class="columns is-vcentered">
+						<button @click="toggleLanguage(language.key)" class="button"
+								:class="selectedLanguageKeys.includes(language.key) ?'is-info' : 'is-outlined'">
+							{{ selectedLanguageKeys.includes(language.key) ? 'Remove' : 'Add' }}
+							<span class="scr-only">&nbsp;{{ language.displayName }}</span>
 						</button>
 						<div aria-hidden="true">{{ language.displayName }}</div>
 					</div>
@@ -28,16 +24,11 @@ const content = {
 				<h2 class="subtitle" id="step2">Step 2: Select rules to include</h2>
 				<div v-for="rule in rules" class="select-rule">
 					<img class="icon" :src="'img/icons/' + rule.icon + '.svg'" :class="rule.type" alt=""/>
-					<div class="columns is-vcentered" v-if="selectedRuleNames.includes(rule.name)">
-						<button @click="toggleRule(rule.name)" class="button is-info">
-							Remove<span class="scr-only">&nbsp;{{rule.lang["en"]}}</span>
-						</button>
-						<div aria-hidden="true">{{rule.lang["en"]}}</div>
-					</div>
-					
-					<div v-else class="columns is-vcentered">
-						<button @click="toggleRule(rule.name)" class="button is-outlined">
-							Add<span class="scr-only">&nbsp;{{rule.lang["en"]}}</span>
+					<div class="columns is-vcentered">
+						<button @click="toggleRule(rule.name)" class="button"
+								:class="selectedRuleNames.includes(rule.name) ?'is-info' : 'is-outlined'">
+							{{ selectedRuleNames.includes(rule.name) ? 'Remove' : 'Add' }}
+							<span class="scr-only">&nbsp;{{rule.lang["en"]}}</span>
 						</button>
 						<div aria-hidden="true">{{rule.lang["en"]}}</div>
 					</div>
