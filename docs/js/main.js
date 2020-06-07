@@ -15,7 +15,6 @@ const content = {
 							{{ selectedLanguageKeys.includes(language.key) ? 'Remove' : 'Add' }}
 							<span class="scr-only">&nbsp;{{ language.displayName }}</span>
 						</button>
-						<img :src="'img/flags/' + language.key + '.svg'" class="language-flag" alt=""/>
 						<span aria-hidden="true">{{ language.displayName }}
 							(<span :lang="language.key">{{ language.own }}</span>)
 						</span>
@@ -43,9 +42,9 @@ const content = {
 		<section aria-describedby="step3" class="step3">
 		<h2 class="subtitle noprint" id="step3">Step 3: Preview and sort</h2>
 		<div class="preview-container">
-			<header class="language-row">
-				<div v-for="(language, index) in selectedLanguages" class="preview-flag">
-					<img :src="'img/flags/' + language.key + '.svg'" class="language-flag" alt=""/>
+			<header class="languages">
+				<div v-for="(language, index) in selectedLanguages" class="language">
+					<div :lang="language.key">{{ language.own }}</div>
 					<div class="sort" :class="index === 0 ? 'first' : index === selectedLanguageKeys.length - 1 ? 'last' : 'middle'">
 						<button @click="moveLanguageUp(index)" class="noprint left button is-outlined"></button>
 						<button @click="moveLanguageDown(index)" class="noprint right button is-outlined"></button>

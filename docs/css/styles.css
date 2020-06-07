@@ -16,10 +16,12 @@ footer {
 	justify-content: center;
 }
 
-.language-row {
+.languages {
 	display: flex;
 	flex-direction: row;
 	margin-bottom: 2em;
+	font-size: 1.8em;
+	justify-content: space-around;
 }
 
 .outer-container {
@@ -27,11 +29,6 @@ footer {
 	padding: 0.5em;
 	justify-content: space-around;
 }	
-
-.outer-container .language-flag {
-	width: 2.5em;
-	margin-right: .5em;
-}
 
 .outer-container .subtitle {
 	margin-top: 1em;
@@ -51,33 +48,30 @@ footer {
 	display: none;
 }
 
-.preview-flag {
+.language {
 	display: flex;
 	flex-direction: column;
+	margin-left: .5em;
+	margin-right: .5em;
+	white-space: nowrap;
 }
 
-.preview-flag .first button:first-child, .preview-flag .last button:last-child {
+.language .first button:first-child, .language .last button:last-child {
 	visibility: hidden;
 }
 
-.preview-flag .sort {
+.language .sort {
 	margin-top: 0.1em;
 }
 
-.preview-flag:only-child .sort {
+.language:only-child .sort {
 	visibility: hidden;
 }
 
-.preview-flag .language-flag {
-	margin-left: 1em;
-	margin-right: 1em;
-	width: 5em;
-}
-
-.preview-flag .sort {
+.language .sort {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-evenly;
+	justify-content: space-between;
 }
 
 .rule-container {
