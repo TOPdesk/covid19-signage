@@ -3,7 +3,8 @@ export default {
 	  type: "do",
 	  icon: "curbside_pickup",
 	  lang: {
-	    ar: "رصيف فقط",
+		ar: "رصيف فقط",
+		bg: "Вдигайте само в указаната посока",
 	    en: "Curbside pickup only",
 	    es: "Sólo para recoger",
 	    fr: "Ramassage en bordure de rue",
