@@ -40,7 +40,8 @@ footer {
 }
 
 .preview-container {
-	border: 2px solid black;
+	border: 1px solid black;
+	box-shadow: 4px 4px 9px 2px rgba(0,0,0,.25);
 	padding: 0.5em;
 	max-width: 21cm;
 	height: 100%;
@@ -263,6 +264,7 @@ footer {
 		page-break-after: always;
 
 		border-style: none;
+		box-shadow: none;
 		margin: 0;
 		padding: 7mm;
 	}
