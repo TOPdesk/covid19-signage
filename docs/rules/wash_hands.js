@@ -5,6 +5,7 @@ export default {
 	  lang: {
 	    ar: "اغسل يديك",
 	    en: "Wash your hands",
+	    es: "Lávese las manos",
 	    fr: "Lavez-vous les mains souvent",
         hu: "Mossa meg a kezét!",
 	    it: "Lava le tue mani",

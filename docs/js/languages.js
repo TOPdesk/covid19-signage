@@ -10,6 +10,11 @@ export default [
 		own: "English"
 	},
 	{
+		key: "es",
+		displayName: "Spanish",
+		own: "Español",
+	},
+	{
 		key: "fr",
 		displayName: "French",
 		own: "Français",

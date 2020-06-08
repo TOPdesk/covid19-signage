@@ -5,6 +5,7 @@ export default {
 	  lang: {
 	    ar: "",
 	    en: "All visitors must wear a mask",
+	    es: "Obligatorio el uso de mascarilla",
 	    fr: "Tout le monde doit porter un masque",
         hu: "Maszk használata kötelező!",
 	    it: "Tutti i visitatori devono indossare una mascherina",

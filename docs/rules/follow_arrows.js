@@ -5,6 +5,7 @@ export default {
 	  lang: {
 	    ar: "اتبع السهام",
 	    en: "Follow the arrows",
+	    es: "Siga las flechas",
 	    fr: "Suivez les flèches",
         hu: "Kövesse a nyilakat!",
 	    it: "Seguire le frecce",

@@ -5,6 +5,7 @@ export default {
 	  lang: {
 	    ar: "لا تصافح",
 	    en: "No shaking hands",
+	    es: "No apretones de manos",
 	    fr: "Pas de poignées de main",
         hu: "Ne fogjanak kezet!",
 	    it: "Non stringere le mani",
