@@ -15,6 +15,11 @@ export default [
 		own: "Français",
 	},
 	{
+		key: "hu",
+		displayName: "Hungarian",
+		own: "magyarul",
+	},
+	{
 		key: "nl",
 		displayName: "Dutch",
 		own: "Nederlands",
