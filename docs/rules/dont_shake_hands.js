@@ -3,7 +3,8 @@ export default {
 	  type: "dont",
 	  icon: "no_handshake",
 	  lang: {
-	    ar: "لا تصافح",
+		ar: "لا تصافح",
+		bg: "Никакво ръкостискане",
 	    en: "No shaking hands",
 	    fr: "Pas de poignées de main",
         hu: "Ne fogjanak kezet!",

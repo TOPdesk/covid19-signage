@@ -3,7 +3,8 @@ export default {
 	  type: "do",
 	  icon: "contactless_only",
 	  lang: {
-	    ar: "",
+		ar: "",
+		bg: "Само безконтактно плащане",
 	    en: "Contactless payment only",
 	    fr: "Paiement sans contact seulement",
 	    hu: "Csak érintőkártyát fogadunk el!",
