@@ -3,7 +3,8 @@ export default {
 	  type: "do",
 	  icon: "sanitize_hands",
 	  lang: {
-	    ar: "اغسل يديك",
+		ar: "اغسل يديك",
+		bg: "Дезинфекцирайте си ръцете",
 	    en: "Sanitize your hands",
 	    fr: "Désinfectez vos mains souvent",
         hu: "Fertőtlenítse a kezét!",

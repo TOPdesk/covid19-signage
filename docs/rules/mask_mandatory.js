@@ -3,7 +3,8 @@ export default {
 	  type: "do",
 	  icon: "wear_mask",
 	  lang: {
-	    ar: "",
+		ar: "",
+		bg: "Маската е задължителна за всички посетители",
 	    en: "All visitors must wear a mask",
 	    fr: "Tout le monde doit porter un masque",
         hu: "Maszk használata kötelező!",

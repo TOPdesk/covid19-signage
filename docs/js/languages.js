@@ -5,6 +5,11 @@ export default [
 		own: "العربية",
 	},
 	{
+		key: "bg",
+		displayName: "Bulgarian",
+		own: "Български",
+	},
+	{
 		key: "en",
 		displayName: "English",
 		own: "English"

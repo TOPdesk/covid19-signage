@@ -3,7 +3,8 @@ export default {
 	  type: "do",
 	  icon: "keep_6_feet",
 	  lang: {
-	    ar: "ابق بعد 6 أقدام أو 1،5 م",
+		ar: "ابق بعد 6 أقدام أو 1،5 م",
+		bg: "Спазвайте 1,5 метра дистанция",
 	    en: "Keep 6 feet (1.5 meters) apart",
 	    fr: "Rester à 1,5 mètre (6 pieds) l'un de l'autre",
         hu: "Tartson 1,5 méter távolságot!",

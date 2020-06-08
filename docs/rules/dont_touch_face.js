@@ -3,7 +3,8 @@ export default {
 	  type: "dont",
 	  icon: "dont_touch_face",
 	  lang: {
-	    ar: "لا تلمس وجهك",
+		ar: "لا تلمس وجهك",
+		bg: "Не си пипайте лицето",
 	    en: "Do not touch your face",
 	    fr: "Ne touchez pas votre visage",
         hu: "Ne nyúljon az arcához!",
