@@ -59,8 +59,12 @@ const content = {
 					<button @click="moveRuleUp(index)" class="noprint up button is-outlined"></button>
 					<button @click="moveRuleDown(index)" class="noprint down button is-outlined"></button>
 				</div>
+				<img v-if="index % 2 === 0" class="ledger-background" :src="'img/backgrounds/ledger.png'" alt=""/>
 				<div class="columns is-vcentered rule-content">
-					<img class="icon" :src="'img/icons/' + rule.icon + '.svg'" :class="rule.type" alt=""/>
+					<div class="icon-holder">
+						<img class="icon-background" :src="'img/backgrounds/' + rule.type + '.png'"  :class="rule.type" alt=""/>
+						<img class="icon" :src="'img/icons/' + rule.icon + '.svg'" alt=""/>
+					</div>
 					<div class="translations">
 						<div v-for="languageKey in selectedLanguageKeys" class="translation-container" :lang="languageKey">
 							{{rule.lang[languageKey]}}
