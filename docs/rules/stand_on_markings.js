@@ -5,7 +5,7 @@ export default {
 	  lang: {
 	    ar: "الوقوف على العلامات",
 	    en: "Stand on designated markings",
-	    es: "Permanezca en los lugares designados",
+	    es: "Permanezca en las marcas designadas",
 	    fr: "Placez-vous sur les marques désignées",
         hu: "Várakozzon a kijelölt helyen!",
 	    it: "Posizionarsi sui segnali predisposti",

@@ -5,7 +5,7 @@ export default {
 	  lang: {
 	    ar: "رصيف فقط",
 	    en: "Curbside pickup only",
-	    es: "Solo para llevar",
+	    es: "Sólo para recoger",
 	    fr: "Ramassage en bordure de rue",
 	    hu: "Csak autós átvétel lehetséges!",
 	    it: "Solo ritiro sul marciapiede",

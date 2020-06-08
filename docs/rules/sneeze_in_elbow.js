@@ -5,7 +5,7 @@ export default {
 	  lang: {
 	    ar: "غطي وجهك  بكوعك عندما تعطس",
 	    en: "Cover your face with your elbow when you sneeze",
-	    es: "Al estornudar, cúbrase con la parte interna del codo",
+	    es: "Al estornudar, use la parte interna del codo para cubrirse",
 	    fr: "Couvrez votre visage avec votre bras lorsque vous ",
         hu: "Tüsszentsen, köhögjön a könyökhajlatába!",
 	    it: "Copri la tua faccia con il gomito quando starnutisci",
