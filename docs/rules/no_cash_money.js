@@ -6,7 +6,7 @@ export default {
 	    ar: "غير نقدي",
 	    en: "No cash",
 	    fr: "L'argent n'est pas accepté",
-	    hu: "Készpénzes fizetés nem lehetséges!",
+	    hu: "Készpénzt nem fogadunk el!",
 	    nl: "Geen contant geld",
 	    tr: "Nakit para kabul edilmemektedir",
 	    zh: "不可用现金"
