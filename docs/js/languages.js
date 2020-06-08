@@ -20,6 +20,11 @@ export default [
 		own: "magyarul",
 	},
 	{
+		key: "it",
+		displayName: "Italian",
+		own: "Italiano",
+	},
+	{
 		key: "nl",
 		displayName: "Dutch",
 		own: "Nederlands",
