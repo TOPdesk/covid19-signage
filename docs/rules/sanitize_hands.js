@@ -6,6 +6,7 @@ export default {
 		ar: "اغسل يديك",
 		bg: "Дезинфекцирайте си ръцете",
 	    en: "Sanitize your hands",
+	    es: "Desinféctese las manos",
 	    fr: "Désinfectez vos mains souvent",
         hu: "Fertőtlenítse a kezét!",
 	    it: "Disinfetta le tue mani",

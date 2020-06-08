@@ -6,6 +6,7 @@ export default {
 		ar: "اتبع السهام",
 		bg: "Следвайте стрелките",
 	    en: "Follow the arrows",
+	    es: "Siga las flechas",
 	    fr: "Suivez les flèches",
         hu: "Kövesse a nyilakat!",
 	    it: "Seguire le frecce",
