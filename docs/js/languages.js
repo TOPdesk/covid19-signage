@@ -16,7 +16,8 @@ export default [
 	},
 	{
 		key: "hu",
-		displayName: "Hungarian"
+		displayName: "Hungarian",
+		own: "magyarul",
 	},
 	{
 		key: "nl",
