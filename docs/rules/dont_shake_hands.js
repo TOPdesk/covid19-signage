@@ -6,8 +6,9 @@ export default {
 	    ar: "لا تصافح",
 	    en: "No shaking hands",
 	    fr: "Pas de poignées de main",
-	    hu: "Ne fogjanak kezet!",
-	    nl: "Schud geen handen",
+        hu: "Ne fogjanak kezet!",
+	    it: "Non stringere le mani",
+        nl: "Schud geen handen",
 	    tr: "El sikismayin",
 	    zh: "不要握手"
 	  }

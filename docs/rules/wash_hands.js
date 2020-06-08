@@ -6,7 +6,8 @@ export default {
 	    ar: "اغسل يديك",
 	    en: "Wash your hands",
 	    fr: "Lavez-vous les mains souvent",
-	    hu: "Mossa meg a kezét!",
+        hu: "Mossa meg a kezét!",
+	    it: "Lava le tue mani",
 	    nl: "Was je handen",
 	    tr: "Ellerinizi yikayin",
 	    zh: "洗你的手"

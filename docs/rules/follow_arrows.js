@@ -6,7 +6,8 @@ export default {
 	    ar: "اتبع السهام",
 	    en: "Follow the arrows",
 	    fr: "Suivez les flèches",
-	    hu: "Kövesse a nyilakat!",
+        hu: "Kövesse a nyilakat!",
+	    it: "Seguire le frecce",
 	    nl: "Volg de pijlen",
 	    tr: "Oklari takip ediniz",
 	    zh: "跟随箭头"
