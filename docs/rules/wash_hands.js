@@ -3,7 +3,8 @@ export default {
 	  type: "do",
 	  icon: "wash_hands",
 	  lang: {
-	    ar: "اغسل يديك",
+		ar: "اغسل يديك",
+		bg: "Измийте си ръцете",
 	    en: "Wash your hands",
 	    fr: "Lavez-vous les mains souvent",
         hu: "Mossa meg a kezét!",

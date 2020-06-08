@@ -3,7 +3,8 @@ export default {
 	  type: "do",
 	  icon: "shopping_basket",
 	  lang: {
-	    ar: "مطلوب عربة تسوق",
+		ar: "مطلوب عربة تسوق",
+		bg: "Пазаруването с кошница е задължително",
 	    en: "Shopping basket mandatory",
 	    fr: "Le panier est obligatoire",
         hu: "Kosár használata kötelező!",

@@ -3,7 +3,8 @@ export default {
 	  type: "do",
 	  icon: "follow_arrows",
 	  lang: {
-	    ar: "اتبع السهام",
+		ar: "اتبع السهام",
+		bg: "Следвайте стрелките",
 	    en: "Follow the arrows",
 	    fr: "Suivez les flèches",
         hu: "Kövesse a nyilakat!",

@@ -3,7 +3,8 @@ export default {
 	  type: "dont",
 	  icon: "no_cash",
 	  lang: {
-	    ar: "غير نقدي",
+		ar: "غير نقدي",
+		bg: "Не се допуска плащане в брой",
 	    en: "No cash",
 	    fr: "L'argent n'est pas accepté",
         hu: "Készpénzt nem fogadunk el!",
