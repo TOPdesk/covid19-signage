@@ -199,9 +199,9 @@ footer {
 }
 
 .rule-container .icon-background {
-	border-radius: 15px;
+	border-radius: 1em;
 	border-style: solid;
-	border-width: 2px;
+	border-width: 0.125em;
 	position: absolute;
 	top: 0;
 	left: 0;
