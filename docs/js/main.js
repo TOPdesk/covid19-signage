@@ -55,11 +55,11 @@ const content = {
 				A preview of your sign will be shown here after you select at least one language and rule.
 			</div>
 			<div v-for="(rule, index) in selectedRules" class="rule-container">
+				<img v-if="index % 2 === 0" class="ledger-background" :src="'img/backgrounds/ledger.png'" alt=""/>
 				<div class="sort" :class="[index === 0 ? 'first' : index === selectedRules.length - 1 ? 'last' : 'middle', selectedRules.length === 1 ? 'only' : '']">
 					<button @click="moveRuleUp(index)" class="noprint up button is-outlined"></button>
 					<button @click="moveRuleDown(index)" class="noprint down button is-outlined"></button>
 				</div>
-				<img v-if="index % 2 === 0" class="ledger-background" :src="'img/backgrounds/ledger.png'" alt=""/>
 				<div class="columns is-vcentered rule-content">
 					<div class="icon-holder">
 						<img class="icon-background" :src="'img/backgrounds/' + rule.type + '.png'"  :class="rule.type" alt=""/>
