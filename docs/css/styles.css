@@ -83,7 +83,6 @@ footer {
 	margin-bottom: 2em;
 	margin-top: .5em;
 	padding-top: .2em;;
-	page-break-inside:avoid;
 	position: relative;
 }
 
@@ -241,9 +240,29 @@ footer {
 << ICONS
 */
 
+/**
+>> PRINTING
+*/
+
 @page {
 	size: A4;
-	margin: 0;
+	margin: 7mm;
+}
+
+.preview-container table {
+	page-break-before: always;
+}
+
+.preview-container thead {
+	display: table-header-group;
+}
+
+.preview-container tfoot {
+	display: table-footer-group;
+}
+
+.preview-container .rule-container {
+	page-break-inside: avoid;
 }
 
 @media print {
@@ -261,12 +280,10 @@ footer {
 		position: relative;
 		display: block;
 
-		page-break-after: always;
-
 		border-style: none;
 		box-shadow: none;
 		margin: 0;
-		padding: 7mm;
+		padding: 0;
 	}
 
 	.preview-container footer {
@@ -276,7 +293,15 @@ footer {
 		bottom: 7mm;
 	}
 
+	.preview-container .languages {
+		margin-top: 1em;
+	}
+
 	.noprint {
 		display: none;
 	}
 }
+
+/**
+<< PRINTING
+*/
