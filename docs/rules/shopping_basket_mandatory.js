@@ -14,6 +14,6 @@ export default {
 		nl: "Gebruik van winkelmandje is verplicht",
 		no: "Handlekurv er påbudt",
 		tr: "Alisveris sepeti mecburidir",
-		zh: "必须用购物篮"
+		zh: "請務必使用購物籃",
 	}
 };

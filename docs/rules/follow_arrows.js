@@ -14,6 +14,6 @@ export default {
 		nl: "Volg de pijlen",
 		no: "Følg pilene",
 		tr: "Oklari takip ediniz",
-		zh: "跟随箭头"
+		zh: "請跟隨箭頭",
 	}
 };

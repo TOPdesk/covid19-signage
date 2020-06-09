@@ -14,6 +14,6 @@ export default {
 		nl: "Enkel contactloos betalen mogelijk",
 		no: "Kun kontaktløs betaling",
 		tr: "Sadece temassiz ödemeler kabul edilmektedir",
-		zh: "仅非接触式付款"
+		zh: "僅限非接觸付款",
 	}
 };

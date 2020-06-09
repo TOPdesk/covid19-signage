@@ -14,6 +14,6 @@ export default {
 		nl: "Gebruik desinfecterende handgel",
 		no: "Desinfiser hendene dine",
 		tr: "Ellerinizi sterilize edin",
-		zh: "消毒你的手"
+		zh: "請消毒您的手",
 	}
 };

@@ -14,6 +14,6 @@ export default {
 		nl: "Geen contant geld",
 		no: "Ingen sedler eller mynter",
 		tr: "Nakit para kabul edilmemektedir",
-		zh: "不可用现金"
+		zh: "不接受現金",
 	}
 };

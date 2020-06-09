@@ -14,6 +14,6 @@ export default {
 		nl: "Raak je gezicht niet aan",
 		no: "Ikke ta deg i ansiktet",
 		tr: "Yüzünüze dokunmayin",
-		zh: "不要碰你的脸"
+		zh: "請勿觸碰您的臉",
 	}
 };

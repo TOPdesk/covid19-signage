@@ -14,6 +14,6 @@ export default {
 		nl: "Schud geen handen",
 		no: "Ingen håndhilsing",
 		tr: "El sikismayin",
-		zh: "不要握手"
+		zh: "請不要握手",
 	}
 };

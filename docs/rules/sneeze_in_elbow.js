@@ -14,6 +14,6 @@ export default {
 		nl: "Nies in je elleboog",
 		no: "Om du må hoste eller nyse, gjør det i armkroken",
 		tr: "Hapsirirken yüzünüzü dirseginizle kapatin",
-		zh: "打喷嚏时用手肘遮住脸"
+		zh: "打噴嚏時請用手肘遮口鼻",
 	}
 };

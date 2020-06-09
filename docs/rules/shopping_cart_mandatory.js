@@ -14,6 +14,6 @@ export default {
 		nl: "Gebruik van winkelwagentje is verplicht",
 		no: "Handlevogn er påbudt",
 		tr: "Alisveris arabasi mecburidir",
-		zh: "必须用购物车"
+		zh: "請務必使用購物車",
 	}
 };

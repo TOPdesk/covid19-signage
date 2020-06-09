@@ -14,6 +14,6 @@ export default {
 		nl: "Houd 1,5m afstand",
 		no: "Hold 1.5 meters avstand til andre personer",
 		tr: "Aranizda 1,5 metre mesafe bulundurun",
-		zh: "保持6英尺距离"
+		zh: "請保持1.5米距離",
 	}
 };

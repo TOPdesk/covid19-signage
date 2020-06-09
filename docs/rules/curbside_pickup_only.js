@@ -14,6 +14,6 @@ export default {
 		nl: "Alleen buiten afhalen",
 		no: "Levering skjer kun ved henting utenfor bygget på vei/fortau",
 		tr: "Yalnizca arabanizda servis yapilmaktadir",
-		zh: "仅可路边交收"
+		zh: "僅限室外交收",
 	}
 };

@@ -14,6 +14,6 @@ export default {
 		nl: "Kom niet binnen als je symptomen van COVID‑19 vertoont",
 		no: "Vennligst ikke gå inn om du har symptomer på COVID‑19",
 		tr: "COVID‑19 belirtileri gösterdiginiz takdirde girmeyiniz",
-		zh: "如果您有新冠的症状，不要进入"
+		zh: "如果您有新冠的症狀，請不要進入",
 	}
 };

@@ -14,6 +14,6 @@ export default {
 		nl: "Sta op de aangegeven markeringen",
 		no: "Stå på markerte plasser",
 		tr: "Belirlenmis çizgilerde durunuz",
-		zh: "站在指定的标记上"
+		zh: "請站在指定的標記上",
 	}
 };

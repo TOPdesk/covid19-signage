@@ -14,6 +14,6 @@ export default {
 		nl: "Alle bezoekers moeten een masker dragen",
 		no: "Alle besøkende må ha på seg munnbind",
 		tr: "Bütün ziyaretçiler maske takmalidir",
-		zh: "所有访客必须戴口罩"
+		zh: "所有訪客必須戴口罩",
 	}
 };

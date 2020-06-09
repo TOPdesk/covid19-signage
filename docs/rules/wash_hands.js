@@ -14,6 +14,6 @@ export default {
 		nl: "Was je handen",
 		no: "Vask hendene dine",
 		tr: "Ellerinizi yikayin",
-		zh: "洗你的手"
+		zh: "請洗手",
 	}
 };
