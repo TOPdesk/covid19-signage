@@ -11,6 +11,7 @@ export default {
 		hu: "Fertőtlenítse a kezét!",
 		it: "Disinfetta le tue mani",
 		nl: "Gebruik desinfecterende handgel",
+		no: "Desinfiser hendene dine",
 		tr: "Ellerinizi sterilize edin",
 		zh: "消毒你的手"
 	}

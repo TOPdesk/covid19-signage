@@ -40,6 +40,11 @@ export default [
 		own: "Nederlands",
 	},
 	{
+		key: "no",
+		displayName: "Norwegian",
+		own: "Norsk",
+	},
+	{
 		key: "tr",
 		displayName: "Turkish",
 		own: "Türkçe",

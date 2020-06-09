@@ -11,6 +11,7 @@ export default {
 		hu: "Csak autós átvétel lehetséges!",
 		it: "Solo ritiro sul marciapiede",
 		nl: "Alleen buiten afhalen",
+		no: "Levering skjer kun ved henting utenfor bygget på vei/fortau",
 		tr: "Yalnizca arabanizda servis yapilmaktadir",
 		zh: "仅可路边交收"
 	}

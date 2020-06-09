@@ -11,6 +11,7 @@ export default {
 		hu: "Tüsszentsen, köhögjön a könyökhajlatába!",
 		it: "Copri la tua faccia con il gomito quando starnutisci",
 		nl: "Nies in je elleboog",
+		no: "Om du må hoste eller nyse, gjør det i armkroken",
 		tr: "Hapsirirken yüzünüzü dirseginizle kapatin",
 		zh: "打喷嚏时用手肘遮住脸"
 	}

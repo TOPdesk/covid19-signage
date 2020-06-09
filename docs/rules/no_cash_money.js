@@ -11,6 +11,7 @@ export default {
 		hu: "Készpénzt nem fogadunk el!",
 		it: "Contante non accettato",
 		nl: "Geen contant geld",
+		no: "Ingen sedler eller mynter",
 		tr: "Nakit para kabul edilmemektedir",
 		zh: "不可用现金"
 	}

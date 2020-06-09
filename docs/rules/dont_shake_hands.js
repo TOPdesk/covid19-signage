@@ -11,6 +11,7 @@ export default {
 		hu: "Ne fogjanak kezet!",
 		it: "Non stringere le mani",
 		nl: "Schud geen handen",
+		no: "Ingen håndhilsing",
 		tr: "El sikismayin",
 		zh: "不要握手"
 	}

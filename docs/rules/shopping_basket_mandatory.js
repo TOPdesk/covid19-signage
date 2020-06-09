@@ -11,7 +11,8 @@ export default {
 		hu: "Kosár használata kötelező!",
 		it: "Cestino della spesa obbligatorio",
 		nl: "Gebruik van winkelmandje is verplicht",
+		no: "Handlekurv er påbudt",
 		tr: "Alisveris sepeti mecburidir",
-	zh: "必须用购物篮"
+		zh: "必须用购物篮"
 	}
 };

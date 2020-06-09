@@ -11,6 +11,7 @@ export default {
 		hu: "Várakozzon a kijelölt helyen!",
 		it: "Posizionarsi sui segnali predisposti",
 		nl: "Sta op de aangegeven markeringen",
+		no: "Stå på markerte plasser",
 		tr: "Belirlenmis çizgilerde durunuz",
 		zh: "站在指定的标记上"
 	}

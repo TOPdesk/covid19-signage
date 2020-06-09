@@ -11,6 +11,7 @@ export default {
 		hu: "Mossa meg a kezét!",
 		it: "Lava le tue mani",
 		nl: "Was je handen",
+		no: "Vask hendene dine",
 		tr: "Ellerinizi yikayin",
 		zh: "洗你的手"
 	}

@@ -11,6 +11,7 @@ export default {
 		hu: "Csak érintőkártyát fogadunk el!",
 		it: "Solo pagamento con sistema senza contatto",
 		nl: "Enkel contactloos betalen mogelijk",
+		no: "Kun kontaktløs betaling",
 		tr: "Sadece temassiz ödemeler kabul edilmektedir",
 		zh: "仅非接触式付款"
 	}

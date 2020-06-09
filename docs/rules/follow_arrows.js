@@ -11,6 +11,7 @@ export default {
 		hu: "Kövesse a nyilakat!",
 		it: "Seguire le frecce",
 		nl: "Volg de pijlen",
+		no: "Følg pilene",
 		tr: "Oklari takip ediniz",
 		zh: "跟随箭头"
 	}

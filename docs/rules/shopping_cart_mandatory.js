@@ -11,6 +11,7 @@ export default {
 		hu: "Bevásárlókocsi használata kötelező!",
 		it: "Carrello della spesa obbligatorio",
 		nl: "Gebruik van winkelwagentje is verplicht",
+		no: "Handlevogn er påbudt",
 		tr: "Alisveris arabasi mecburidir",
 		zh: "必须用购物车"
 	}

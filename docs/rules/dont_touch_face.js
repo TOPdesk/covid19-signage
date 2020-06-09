@@ -11,6 +11,7 @@ export default {
 		hu: "Ne nyúljon az arcához!",
 		it: "Non toccare la tua faccia",
 		nl: "Raak je gezicht niet aan",
+		no: "Ikke ta deg i ansiktet",
 		tr: "Yüzünüze dokunmayin",
 		zh: "不要碰你的脸"
 	}
