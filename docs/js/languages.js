@@ -27,7 +27,7 @@ export default [
 	{
 		key: "hu",
 		displayName: "Hungarian",
-		own: "magyarul",
+		own: "Magyar",
 	},
 	{
 		key: "it",
