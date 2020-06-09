@@ -196,6 +196,7 @@ footer {
 	height: auto;
 	padding: 1em;
 	position: relative;
+	max-width: none;
 }
 
 .rule-container .icon-background {
@@ -259,6 +260,7 @@ footer {
 
 .preview-container tfoot {
 	display: table-footer-group;
+	font-size: 1em;
 }
 
 .preview-container .rule-container {
