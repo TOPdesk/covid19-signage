@@ -5,6 +5,7 @@ export default {
 	lang: {
 		ar: "اتبع السهام",
 		bg: "Следвайте стрелките",
+		da: "Følg pilene",
 		en: "Follow the arrows",
 		es: "Siga las flechas",
 		fr: "Suivez les flèches",

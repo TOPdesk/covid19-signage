@@ -10,6 +10,11 @@ export default [
 		own: "Български",
 	},
 	{
+		key: "da",
+		displayName: "Danish",
+		own: "Dansk",
+	},
+	{
 		key: "en",
 		displayName: "English",
 		own: "English"

@@ -5,6 +5,7 @@ export default {
 	lang: {
 		ar: "",
 		bg: "Маската е задължителна за всички посетители",
+		da: "Alle besøgende skal bære maske",
 		en: "All visitors must wear a mask",
 		es: "Obligatorio el uso de mascarilla",
 		fr: "Tout le monde doit porter un masque",

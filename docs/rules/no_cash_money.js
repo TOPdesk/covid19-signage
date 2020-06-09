@@ -5,6 +5,7 @@ export default {
 	lang: {
 		ar: "غير نقدي",
 		bg: "Не се допуска плащане в брой",
+		da: "Ingen kontanter",
 		en: "No cash",
 		es: "No pagos en efectivo",
 		fr: "L'argent n'est pas accepté",

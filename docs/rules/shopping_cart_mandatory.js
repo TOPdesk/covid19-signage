@@ -5,6 +5,7 @@ export default {
 	lang: {
 		ar: "مطلوب عربة تسوق",
 		bg: "Пазаруването с количка е задължително",
+		da: "Indkøbsvogn er obligatorisk",
 		en: "Shopping cart mandatory",
 		es: "Carro de la compra obligatorio",
 		fr: "Le panier est obligatoire",

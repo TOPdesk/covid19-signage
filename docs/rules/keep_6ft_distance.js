@@ -5,6 +5,7 @@ export default {
 	lang: {
 		ar: "ابق بعد 6 أقدام أو 1،5 م",
 		bg: "Спазвайте 1,5 метра дистанция",
+		da: "Hold 1,5 meters afstand mellem hinanden",
 		en: "Keep 6 feet (1.5 meters) apart",
 		es: "Mantenga una distancia de al menos 1,5 metros",
 		fr: "Rester à 1,5 mètre (6 pieds) l'un de l'autre",
