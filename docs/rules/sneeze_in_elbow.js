@@ -13,6 +13,7 @@ export default {
 		it: "Copri la tua faccia con il gomito quando starnutisci",
 		nl: "Nies in je elleboog",
 		no: "Om du må hoste eller nyse, gjør det i armkroken",
+		pt: "Cubra seu nariz com o cotovelo ao espirrar",
 		tr: "Hapsirirken yüzünüzü dirseginizle kapatin",
 		zh: "打噴嚏時請用手肘遮口鼻",
 	}

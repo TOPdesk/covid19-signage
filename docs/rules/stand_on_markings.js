@@ -13,6 +13,7 @@ export default {
 		it: "Posizionarsi sui segnali predisposti",
 		nl: "Sta op de aangegeven markeringen",
 		no: "Stå på markerte plasser",
+		pt: "Fique nas áreas marcadas",
 		tr: "Belirlenmis çizgilerde durunuz",
 		zh: "請站在指定的標記上",
 	}

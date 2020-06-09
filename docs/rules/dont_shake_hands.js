@@ -13,6 +13,7 @@ export default {
 		it: "Non stringere le mani",
 		nl: "Schud geen handen",
 		no: "Ingen håndhilsing",
+		pt: "Sem apertos de mão",
 		tr: "El sikismayin",
 		zh: "請不要握手",
 	}

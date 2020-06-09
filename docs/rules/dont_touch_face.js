@@ -13,6 +13,7 @@ export default {
 		it: "Non toccare la tua faccia",
 		nl: "Raak je gezicht niet aan",
 		no: "Ikke ta deg i ansiktet",
+		pt: "Não toque seu rosto",
 		tr: "Yüzünüze dokunmayin",
 		zh: "請勿觸碰您的臉",
 	}

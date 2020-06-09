@@ -13,6 +13,7 @@ export default {
 		it: "Lava le tue mani",
 		nl: "Was je handen",
 		no: "Vask hendene dine",
+		pt: "Lave suas mãos",
 		tr: "Ellerinizi yikayin",
 		zh: "請洗手",
 	}

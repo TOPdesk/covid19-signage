@@ -13,6 +13,7 @@ export default {
 		it: "Disinfetta le tue mani",
 		nl: "Gebruik desinfecterende handgel",
 		no: "Desinfiser hendene dine",
+		pt: "Higienize suas mãos",
 		tr: "Ellerinizi sterilize edin",
 		zh: "請消毒您的手",
 	}

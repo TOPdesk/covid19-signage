@@ -13,6 +13,7 @@ export default {
 		it: "Seguire le frecce",
 		nl: "Volg de pijlen",
 		no: "Følg pilene",
+		pt: "Siga as setas",
 		tr: "Oklari takip ediniz",
 		zh: "請跟隨箭頭",
 	}

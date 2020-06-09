@@ -50,6 +50,11 @@ export default [
 		own: "Norsk",
 	},
 	{
+		key: "pt",
+		displayName: "Portuguese",
+		own: "Português",
+	},
+	{
 		key: "tr",
 		displayName: "Turkish",
 		own: "Türkçe",

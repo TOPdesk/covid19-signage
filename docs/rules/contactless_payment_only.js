@@ -13,6 +13,7 @@ export default {
 		it: "Solo pagamento con sistema senza contatto",
 		nl: "Enkel contactloos betalen mogelijk",
 		no: "Kun kontaktløs betaling",
+		pt: "Apenas pagamentos sem contato físico",
 		tr: "Sadece temassiz ödemeler kabul edilmektedir",
 		zh: "僅限非接觸付款",
 	}
