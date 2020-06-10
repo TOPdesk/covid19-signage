@@ -44,10 +44,6 @@ const content = {
 				<thead><tr><th role="columnheader" class="languages">
 					<div v-for="(language, index) in selectedLanguages" class="language">
 						<div :lang="language.key">{{ language.own }}</div>
-						<div class="sort" :class="index === 0 ? 'first' : index === selectedLanguageKeys.length - 1 ? 'last' : 'middle'">
-							<button @click="moveLanguageUp(index)" class="noprint left button is-outlined"></button>
-							<button @click="moveLanguageDown(index)" class="noprint right button is-outlined"></button>
-						</div>
 					</div>
 				</th></tr></thead>
 				<tbody><tr><td>
@@ -56,19 +52,16 @@ const content = {
 				</div>
 				<div v-for="(rule, index) in selectedRules" class="rule-container">
 					<img v-if="index % 2 === 0" class="ledger-background" :src="'img/backgrounds/ledger.png'" alt=""/>
-					<div class="sort" :class="[index === 0 ? 'first' : index === selectedRules.length - 1 ? 'last' : 'middle', selectedRules.length === 1 ? 'only' : '']">
-						<button @click="moveRuleUp(index)" class="noprint up button is-outlined"></button>
-						<button @click="moveRuleDown(index)" class="noprint down button is-outlined"></button>
-					</div>
 					<div class="columns is-vcentered rule-content">
 						<div class="icon-holder">
 							<img class="icon-background" :src="'img/backgrounds/' + rule.type + '.png'"  :class="rule.type" alt=""/>
 							<img class="icon" :src="'img/icons/' + rule.icon + '.svg'" alt=""/>
 						</div>
 						<div class="translations">
-							<div v-for="languageKey in selectedLanguageKeys" class="translation-container" :lang="languageKey">
-								{{rule.lang[languageKey]}}
-							</div>
+							<div v-for="language in selectedLanguages" :key="language['key']"
+								class="translation-container"
+								:lang="language['key']"
+							>{{rule.lang[language['key']]}}</div>
 						</div>
 					</div>
 				</div>
@@ -97,42 +90,6 @@ const content = {
 			return this.languages
 				.filter((language) => this.selectedLanguageKeys.includes(language.key))
 				.sort((a, b) => this.selectedLanguageKeys.indexOf(a.key) - this.selectedLanguageKeys.indexOf(b.key));
-		},
-	},
-	methods: {
-		toggleRule(ruleName) {
-			if (this.selectedRuleNames.includes(ruleName)) {
-				this.selectedRuleNames.splice(this.selectedRuleNames.indexOf(ruleName), 1);
-			} else {
-				this.selectedRuleNames.push(ruleName);
-			}
-		},
-		toggleLanguage(languageKey) {
-			if (this.selectedLanguageKeys.includes(languageKey)) {
-				this.selectedLanguageKeys.splice(this.selectedLanguageKeys.indexOf(languageKey), 1);
-			} else {
-				this.selectedLanguageKeys.push(languageKey);
-			}
-		},
-		moveRuleUp(index) {
-			const goingUp = this.selectedRuleNames[index];
-			Vue.set(this.selectedRuleNames, index, this.selectedRuleNames[index - 1]);
-			Vue.set(this.selectedRuleNames, index - 1, goingUp);
-		},
-		moveRuleDown(index) {
-			const goingDown = this.selectedRuleNames[index];
-			Vue.set(this.selectedRuleNames, index, this.selectedRuleNames[index + 1]);
-			Vue.set(this.selectedRuleNames, index + 1, goingDown);
-		},
-		moveLanguageUp(index) {
-			const goingUp = this.selectedLanguageKeys[index];
-			Vue.set(this.selectedLanguageKeys, index, this.selectedLanguageKeys[index - 1]);
-			Vue.set(this.selectedLanguageKeys, index - 1, goingUp);
-		},
-		moveLanguageDown(index) {
-			const goingDown = this.selectedLanguageKeys[index];
-			Vue.set(this.selectedLanguageKeys, index, this.selectedLanguageKeys[index + 1]);
-			Vue.set(this.selectedLanguageKeys, index + 1, goingDown);
 		},
 	},
 };
