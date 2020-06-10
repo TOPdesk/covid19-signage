@@ -61,6 +61,7 @@ const content = {
 							<div v-for="language in selectedLanguages" :key="language['key']"
 								class="translation-container"
 								:lang="language['key']"
+								:class="{bigfont: language['bigfont']}"
 							>{{rule.lang[language['key']]}}</div>
 						</div>
 					</div>

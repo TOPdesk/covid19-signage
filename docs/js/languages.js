@@ -3,6 +3,7 @@ export default [
 		key: "ar",
 		displayName: "Arabic",
 		own: "العربية",
+		bigfont: true,
 	},
 	{
 		key: "bg",
@@ -73,5 +74,6 @@ export default [
 		key: "zh",
 		displayName: "Chinese",
 		own: "中文",
+		bigfont: true,
 	},
 ].sort((a, b) => a.displayName.localeCompare(b.displayName));;
