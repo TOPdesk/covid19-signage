@@ -6,6 +6,7 @@ export default {
 		ar: "اتبع السهام",
 		bg: "Следвайте стрелките",
 		da: "Følg pilene",
+		de: "Den Pfeilen folgen",
 		en: "Follow the arrows",
 		es: "Siga las flechas",
 		fr: "Suivez les flèches",

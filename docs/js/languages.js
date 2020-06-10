@@ -15,6 +15,11 @@ export default [
 		own: "Dansk",
 	},
 	{
+		key: "de",
+		displayName: "German",
+		own: "Deutsch",
+	},
+	{
 		key: "en",
 		displayName: "English",
 		own: "English"

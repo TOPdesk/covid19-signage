@@ -6,6 +6,7 @@ export default {
 		ar: "لا تصافح",
 		bg: "Никакво ръкостискане",
 		da: "Ingen håndtryk",
+		de: "Händeschütteln vermeiden",
 		en: "No shaking hands",
 		es: "No apretones de manos",
 		fr: "Pas de poignées de main",

@@ -6,6 +6,7 @@ export default {
 		ar: "اغسل يديك",
 		bg: "Измийте си ръцете",
 		da: "Vask dine hænder",
+		de: "Hände waschen",
 		en: "Wash your hands",
 		es: "Lávese las manos",
 		fr: "Lavez-vous les mains souvent",

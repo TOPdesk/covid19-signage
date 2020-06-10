@@ -6,6 +6,7 @@ export default {
 		ar: "لا تلمس وجهك",
 		bg: "Не си пипайте лицето",
 		da: "Rør ikke dit ansigt",
+		de: "Gesicht nicht berühren",
 		en: "Do not touch your face",
 		es: "No se toque la cara",
 		fr: "Ne touchez pas votre visage",

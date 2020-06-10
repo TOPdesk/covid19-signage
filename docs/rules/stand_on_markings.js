@@ -6,6 +6,7 @@ export default {
 		ar: "الوقوف على العلامات",
 		bg: "Стойте на указаната маркировка",
 		da: "Stå på designerede markeringer",
+		de: "Markierungen beachten",
 		en: "Stand on designated markings",
 		es: "Permanezca en las marcas designadas",
 		fr: "Placez-vous sur les marques désignées",

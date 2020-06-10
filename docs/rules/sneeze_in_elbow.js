@@ -6,6 +6,7 @@ export default {
 		ar: "غطي وجهك  بكوعك عندما تعطس",
 		bg: "Закривайте лицето си с лакът при кихане",
 		da: "Dæk dit ansigt med din arm, når du nyser",
+		de: "In die Armbeuge niesen",
 		en: "Cover your face with your elbow when you sneeze",
 		es: "Al estornudar, use la parte interna del codo para cubrirse",
 		fr: "Couvrez votre visage avec votre bras lorsque vous ",
