@@ -60,6 +60,11 @@ export default [
 		own: "Português",
 	},
 	{
+		key: "sw",
+		displayName: "Swahili",
+		own: "Kiswahili",
+	},
+	{
 		key: "tr",
 		displayName: "Turkish",
 		own: "Türkçe",

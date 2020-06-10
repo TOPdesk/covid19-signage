@@ -15,6 +15,7 @@ export default {
 		nl: "Raak je gezicht niet aan",
 		no: "Ikke ta deg i ansiktet",
 		pt: "Não toque seu rosto",
+		sw: "Usi shike uso wako",
 		tr: "Yüzünüze dokunmayin",
 		zh: "請勿觸碰您的臉",
 	}

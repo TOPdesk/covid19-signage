@@ -15,6 +15,7 @@ export default {
 		nl: "Houd 1,5m afstand",
 		no: "Hold 1.5 meters avstand til andre personer",
 		pt: "Mantenha-se à 1,5M de distância",
+		sw: "Weka nafasi ya 1.5 mita",
 		tr: "Aranizda 1,5 metre mesafe bulundurun",
 		zh: "請保持1.5米距離",
 	}

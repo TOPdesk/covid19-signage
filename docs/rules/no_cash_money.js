@@ -15,6 +15,7 @@ export default {
 		nl: "Geen contant geld",
 		no: "Ingen sedler eller mynter",
 		pt: "Sem dinheiro físico",
+		sw: "Pesa ya mkono hairusiwi",
 		tr: "Nakit para kabul edilmemektedir",
 		zh: "不接受現金",
 	}

@@ -15,6 +15,7 @@ export default {
 		nl: "Alle bezoekers moeten een masker dragen",
 		no: "Alle besøkende må ha på seg munnbind",
 		pt: "Todos os visitantes devem utilizar máscara",
+		sw: "Kila mtu anaeingia lazima avae barakoa",
 		tr: "Bütün ziyaretçiler maske takmalidir",
 		zh: "所有訪客必須戴口罩",
 	}

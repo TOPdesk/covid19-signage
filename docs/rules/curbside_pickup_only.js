@@ -15,6 +15,7 @@ export default {
 		nl: "Alleen buiten afhalen",
 		no: "Levering skjer kun ved henting utenfor bygget på vei/fortau",
 		pt: "Retirada apenas do lado de fora",
+		sw: "Subiri muabiri nje",
 		tr: "Yalnizca arabanizda servis yapilmaktadir",
 		zh: "僅限室外交收",
 	}

@@ -15,6 +15,7 @@ export default {
 		nl: "Sta op de aangegeven markeringen",
 		no: "Stå på markerte plasser",
 		pt: "Fique nas áreas marcadas",
+		sw: "Simama katika alama zilizo wekwa chini",
 		tr: "Belirlenmis çizgilerde durunuz",
 		zh: "請站在指定的標記上",
 	}

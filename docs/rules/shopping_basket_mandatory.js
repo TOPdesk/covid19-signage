@@ -15,6 +15,7 @@ export default {
 		nl: "Gebruik van winkelmandje is verplicht",
 		no: "Handlekurv er påbudt",
 		pt: "Cesta de compras obrigatória",
+		sw: "Kutumia kikapu ni lazima",
 		tr: "Alisveris sepeti mecburidir",
 		zh: "請務必使用購物籃",
 	}

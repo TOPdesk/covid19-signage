@@ -15,6 +15,7 @@ export default {
 		nl: "Volg de pijlen",
 		no: "Følg pilene",
 		pt: "Siga as setas",
+		sw: "Fwata mshale",
 		tr: "Oklari takip ediniz",
 		zh: "請跟隨箭頭",
 	}

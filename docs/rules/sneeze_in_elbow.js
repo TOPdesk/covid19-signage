@@ -15,6 +15,7 @@ export default {
 		nl: "Nies in je elleboog",
 		no: "Om du må hoste eller nyse, gjør det i armkroken",
 		pt: "Cubra seu nariz com o cotovelo ao espirrar",
+		sw: "Finika uso wako kutumia pambaja",
 		tr: "Hapsirirken yüzünüzü dirseginizle kapatin",
 		zh: "打噴嚏時請用手肘遮口鼻",
 	}
