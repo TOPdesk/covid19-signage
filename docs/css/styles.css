@@ -2,6 +2,11 @@ html {
 	font-size: initial;
 }
 
+html,
+body {
+	background-color: #f5f5f5;
+}
+
 .button {
 	margin-bottom: 0.2em;
 }
@@ -47,6 +52,7 @@ footer {
 	height: 100%;
 	color: black;
 	font-size: 16px;
+	background-color: white;
 }
 
 .preview-container footer {
@@ -124,23 +130,6 @@ footer {
 	position: absolute;
 }
 
-.select-language, .select-rule {
-	display: flex;
-	flex-direction: row;
-	margin-bottom: .2em;
-}
-
-.select-language button, .select-rule button {
-	margin-right: 1em;
-	width: 6em;
-}
-
-.select-list {
-	margin-top: 1em;
-	margin-bottom: 1em;
-	margin-left: .75em;
-}
-
 .sort .button {
 	background-repeat: no-repeat;
 	background-position: center;
@@ -166,7 +155,7 @@ footer {
 	background-image: url('../img/controls/up.svg');
 }
 
-.step3 {
+.preview {
 	display: flex;
 	flex-direction: column;
 	margin-left: 1em;
@@ -185,6 +174,42 @@ footer {
 	display: flex;
 	flex-direction: column;
 	margin-left: 2em;
+}
+
+.multiselect-list {
+	max-height: 20em;
+	overflow-y: auto;
+	overflow-x: auto;
+	background-color: white;
+	border: 1px solid darkgray;
+}
+
+.multiselect-list:focus .current {
+	background-color: #f0f0ff;
+}
+
+.multiselect-list .current {
+	background-color: #f5f5f5;
+}
+
+.multiselect-list .option {
+	padding: .2em .5em;
+	line-height: 2.5em;
+	white-space: nowrap;
+	display: flex;
+	flex-direction: row;
+}
+.multiselect-list .option:before {
+	content: "\2715";
+	color: red;
+	font-size: 1.2em;
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.multiselect-list .option.selected:before {
+	content: "\2714";
+	color: green;
 }
 
 /**
@@ -215,8 +240,7 @@ footer {
 	position: relative;
 	line-height: 0;
 }
-
-.select-rule .icon {
+.multiselect-list .icon {
 	width: 2.5em;
 	height: auto;
 	margin-right: 0.5em;

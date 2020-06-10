@@ -1,5 +1,6 @@
 import languages from './languages.js';
 import rules from '../rules/index.js';
+import './multiselectlist.js';
 
 const content = {
 	template: `
@@ -8,38 +9,35 @@ const content = {
 			<h1 class="title">COVID-19 Signage Generator</h1>
 			<section aria-labelledby="step1">
 				<h2 class="subtitle" id="step1">Step 1: Select languages to include</h2>
-				<ul class="select-list">
-					<li v-for="language in languages" class="select-language columns is-vcentered">
-						<button @click="toggleLanguage(language.key)" class="button"
-								:class="selectedLanguageKeys.includes(language.key) ?'is-info' : 'is-outlined'">
-							{{ selectedLanguageKeys.includes(language.key) ? 'Remove' : 'Add' }}
-							<span class="scr-only">&nbsp;{{ language.displayName }}</span>
-						</button>
-						<span aria-hidden="true">{{ language.displayName }}
-							(<span :lang="language.key">{{ language.own }}</span>)
-						</span>
-					</li>
-				</ul>
+				<multiselect-list
+						:elements="languages"
+						:selected="selectedLanguageKeys"
+						keyfield="key"
+						autofocus>
+					<template v-slot:element="{element: language, selected}">
+						{{ language.displayName }}
+						<span aria-hidden="true" :lang="language.key">&nbsp;({{ language.own }})</span>
+					</template>
+				</multiselect-list>
 			</section>
 			<section class="rule-selection" aria-labelledby="step2">
 				<h2 class="subtitle" id="step2">Step 2: Select rules to include</h2>
-				<ul class="select-list">
-					<li v-for="rule in rules" class="select-rule columns is-vcentered">
-						<button @click="toggleRule(rule.name)" class="button"
-								:class="selectedRuleNames.includes(rule.name) ?'is-info' : 'is-outlined'">
-							{{ selectedRuleNames.includes(rule.name) ? 'Remove' : 'Add' }}
-							<span class="scr-only">&nbsp;{{rule.lang["en"]}}</span>
-						</button>
+				<multiselect-list
+						:elements="rules"
+						:selected="selectedRuleNames"
+						keyfield="name"
+						>
+					<template v-slot:element="{element: rule, selected}">
 						<img class="icon" :src="'img/icons/' + rule.icon + '.svg'" :class="rule.type" alt=""/>
-						<span aria-hidden="true">{{ rule.lang["en"] }}</span>
-					</li>
-				</ul>
+						<span>{{rule.lang["en"]}}<span>
+					</template>
+				</multiselect-list>
 			</section>
 			<footer class="noprint feedback">
 				<a class="button" href="https://github.com/TOPdesk/covid19-signage/issues" target="_blank" rel="noreferrer noopener">Feedback</a>
 			</footer>
 		</div>
-		<section aria-describedby="step3" class="step3">
+		<section aria-describedby="step3" class="preview">
 		<h2 class="subtitle noprint" id="step3">Step 3: Preview and sort</h2>
 		<div class="preview-container">
 			<table>
