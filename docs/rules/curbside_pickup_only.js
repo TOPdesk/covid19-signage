@@ -6,6 +6,7 @@ export default {
 		ar: "رصيف فقط",
 		bg: "Вдигайте само в указаната посока",
 		da: "Kun afhentning ved kantstenen",
+		de: "Nur Abholung",
 		en: "Curbside pickup only",
 		es: "Sólo para recoger",
 		fr: "Ramassage en bordure de rue",

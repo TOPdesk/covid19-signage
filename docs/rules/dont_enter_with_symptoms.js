@@ -6,6 +6,7 @@ export default {
 		ar: "لا يوجد إدخال لأعراض COVID‑19",
 		bg: "Забранено е влизането на лица, имащи симптоми на КОВИД‑19",
 		da: "Ingen adgang, hvis du har symptomer på COVID‑19",
+		de: "Symptome von COVID-19? Bitte bleiben Sie draußen",
 		en: "Do not enter if you have symptoms of COVID‑19",
 		es: "No entrar si tiene síntomas de COVID‑19",
 		fr: "N'entrez pas si vous avez des symptômes de COVID‑19",

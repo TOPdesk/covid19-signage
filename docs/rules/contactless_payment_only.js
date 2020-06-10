@@ -6,6 +6,7 @@ export default {
 		ar: "",
 		bg: "Само безконтактно плащане",
 		da: "Kun kontaktløs betaling",
+		de: "Nur Kartenzahlung",
 		en: "Contactless payment only",
 		es: "Sólo pago con tarjetas 'Contactless'",
 		fr: "Paiement sans contact seulement",
