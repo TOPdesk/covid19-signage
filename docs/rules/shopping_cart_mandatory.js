@@ -15,7 +15,7 @@ export default {
 		nl: "Gebruik van winkelwagentje is verplicht",
 		no: "Handlevogn er påbudt",
 		pt: "Carrinho de compras obrigatório",
-		sw: "Kutumia gari ya kuwekea vitu ni lazima",
+		sw: "Kutumia gari la ununuzi ni lazima",
 		tr: "Alisveris arabasi mecburidir",
 		zh: "請務必使用購物車",
 	}
