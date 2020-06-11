@@ -33,12 +33,16 @@ const content = {
 					</template>
 				</multiselect-list>
 			</section>
+			<section class="rule-selection" aria-labelledby="step2">
+				<h2 class="subtitle" id="step3">Step 3: Print this page</h2>
+				<button @click="window.print()" class="button">Print</button>
+			</section>
 			<footer class="noprint feedback">
 				<a class="button" href="https://github.com/TOPdesk/covid19-signage/issues" target="_blank" rel="noreferrer noopener">Feedback</a>
 			</footer>
 		</div>
-		<section aria-describedby="step3" class="preview">
-		<h2 class="subtitle noprint" id="step3">Step 3: Preview and sort</h2>
+		<section aria-describedby="preview" class="preview">
+		<h2 class="subtitle noprint" id="preview">Preview</h2>
 		<div class="preview-container">
 			<table>
 				<thead><tr><th role="columnheader" class="languages">
