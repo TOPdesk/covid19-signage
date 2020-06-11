@@ -10,6 +10,7 @@ export default {
 		en: "Stand on designated markings",
 		es: "Permanezca en las marcas designadas",
 		fr: "Placez-vous sur les marques désignées",
+		hi: "नामित चिह्नों पर खड़े हों",
 		hu: "Várakozzon a kijelölt helyen!",
 		it: "Posizionarsi sui segnali predisposti",
 		nl: "Sta op de aangegeven markeringen",

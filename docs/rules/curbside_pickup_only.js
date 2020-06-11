@@ -10,6 +10,7 @@ export default {
 		en: "Curbside pickup only",
 		es: "Sólo para recoger",
 		fr: "Ramassage en bordure de rue",
+		hi: "कर्बसाइड पिकअप",
 		hu: "Csak autós átvétel lehetséges!",
 		it: "Solo ritiro sul marciapiede",
 		nl: "Alleen buiten afhalen",

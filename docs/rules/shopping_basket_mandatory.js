@@ -10,6 +10,7 @@ export default {
 		en: "Shopping basket mandatory",
 		es: "Cesta de la compra obligatoria",
 		fr: "Le panier est obligatoire",
+		hi: "शॉपिंग बास्केट अनिवार्य",
 		hu: "Kosár használata kötelező!",
 		it: "Cestino della spesa obbligatorio",
 		nl: "Gebruik van winkelmandje is verplicht",

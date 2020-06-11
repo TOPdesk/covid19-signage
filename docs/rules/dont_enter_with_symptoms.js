@@ -10,6 +10,7 @@ export default {
 		en: "Do not enter if you have symptoms of COVID‑19",
 		es: "No entrar si tiene síntomas de COVID‑19",
 		fr: "N'entrez pas si vous avez des symptômes de COVID‑19",
+		hi: "यदि आपके पास COVID‑19 के लक्षण हैं तो प्रवेश न करें",
 		hu: "Ne jöjjön be, ha a COVID‑19 tüneteit észleli magán!",
 		it: "Non entrare se si presenta sintomi da COVID‑19",
 		nl: "Kom niet binnen als je symptomen van COVID‑19 vertoont",

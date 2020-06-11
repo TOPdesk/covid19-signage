@@ -10,6 +10,7 @@ export default {
 		en: "Contactless payment only",
 		es: "Sólo pago con tarjetas 'Contactless'",
 		fr: "Paiement sans contact seulement",
+		hi: "संपर्क रहित भुगतान",
 		hu: "Csak érintőkártyát fogadunk el!",
 		it: "Solo pagamento con sistema senza contatto",
 		nl: "Enkel contactloos betalen mogelijk",

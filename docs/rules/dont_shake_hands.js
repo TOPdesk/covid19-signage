@@ -10,6 +10,7 @@ export default {
 		en: "No shaking hands",
 		es: "No apretones de manos",
 		fr: "Pas de poignées de main",
+		hi: "हाथ नहीं मिलाते",
 		hu: "Ne fogjanak kezet!",
 		it: "Non stringere le mani",
 		nl: "Schud geen handen",

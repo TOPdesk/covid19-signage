@@ -10,6 +10,7 @@ export default {
 		en: "Shopping cart mandatory",
 		es: "Carro de la compra obligatorio",
 		fr: "Le panier est obligatoire",
+		hi: "शॉपिंग कार्ट अनिवार्य",
 		hu: "Bevásárlókocsi használata kötelező!",
 		it: "Carrello della spesa obbligatorio",
 		nl: "Gebruik van winkelwagentje is verplicht",

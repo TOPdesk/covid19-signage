@@ -10,6 +10,7 @@ export default {
 		en: "Do not touch your face",
 		es: "No se toque la cara",
 		fr: "Ne touchez pas votre visage",
+		hi: "अपना चेहरा मत छुओ",
 		hu: "Ne nyúljon az arcához!",
 		it: "Non toccare la tua faccia",
 		nl: "Raak je gezicht niet aan",

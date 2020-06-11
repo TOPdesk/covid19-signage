@@ -36,6 +36,11 @@ export default [
 		own: "Français",
 	},
 	{
+		key: "hi",
+		displayName: "Hindi",
+		own: "हिनदी",
+	},
+	{
 		key: "hu",
 		displayName: "Hungarian",
 		own: "Magyar",

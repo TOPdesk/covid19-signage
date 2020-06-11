@@ -10,6 +10,7 @@ export default {
 		en: "Sanitize your hands",
 		es: "Desinféctese las manos",
 		fr: "Désinfectez vos mains souvent",
+		hi: "अपने हाथों को पवित्र करें",
 		hu: "Fertőtlenítse a kezét!",
 		it: "Disinfetta le tue mani",
 		nl: "Gebruik desinfecterende handgel",

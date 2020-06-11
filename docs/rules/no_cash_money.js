@@ -10,6 +10,7 @@ export default {
 		en: "No cash",
 		es: "No pagos en efectivo",
 		fr: "L'argent n'est pas accepté",
+		hi: "कोई नकद नहीं",
 		hu: "Készpénzt nem fogadunk el!",
 		it: "Contante non accettato",
 		nl: "Geen contant geld",

@@ -10,6 +10,7 @@ export default {
 		en: "Follow the arrows",
 		es: "Siga las flechas",
 		fr: "Suivez les flèches",
+		hi: "तीर का पालन करें",
 		hu: "Kövesse a nyilakat!",
 		it: "Seguire le frecce",
 		nl: "Volg de pijlen",
