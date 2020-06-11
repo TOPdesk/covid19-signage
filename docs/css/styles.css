@@ -61,6 +61,15 @@ footer {
 	margin: 1.5em;
 	display: flex;
 	flex-direction: column;
+	position: relative;
+}
+
+.page:before {
+	content: attr(data-page);
+	position: absolute;
+	top: -1.6em;
+	left: .2em;
+	font-size: .8em;
 }
 
 .page-content {
@@ -269,6 +278,10 @@ footer {
 		width: 210mm;
 		height: 295mm;
 		display: block;
+	}
+
+	.page:before {
+		display: none;
 	}
 
 	.page-content {
