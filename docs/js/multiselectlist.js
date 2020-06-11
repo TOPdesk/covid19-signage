@@ -12,16 +12,11 @@ Vue.component('multiselect-list', {
 	data: () =>  ({
 		current: 0,
 		id: null,
-		focused: false,
-		eatClick: false,
 	}),
 	template: `
 		<ul role="listbox" class="multiselect-list" tabindex="0"
 			:id="id"
 			:aria-activedescendant="idFor(current)"
-			@focus="focused = true;"
-			@blur="focused = false;"
-			@mousedown="eatClick = !focused"
 			@keydown.space.prevent="toggleSelected(current)"
 			@keydown.enter.prevent="next(current)"
 			@keydown.home.prevent="moveSelectionTo(0)"
@@ -42,10 +37,6 @@ Vue.component('multiselect-list', {
 	`,
 	methods: {
 		toggleSelected(index) {
-			if (this.eatClick) {
-				this.eatClick = false;
-				return;
-			}
 			const key = this.elements[index][this.keyfield];
 			this.current = index;
 			if (this.isSelected(index)) {
