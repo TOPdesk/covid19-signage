@@ -146,6 +146,7 @@ footer {
 	white-space: nowrap;
 	display: flex;
 	flex-direction: row;
+	cursor: pointer;
 }
 .multiselect-list .option:before {
 	content: "\2715";
