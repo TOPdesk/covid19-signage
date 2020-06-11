@@ -153,6 +153,8 @@ footer {
 	display: flex;
 	flex-direction: column;
 	margin-left: 2em;
+	justify-content: center;
+	min-height: 9em;
 }
 
 .multiselect-list {
