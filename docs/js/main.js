@@ -48,8 +48,8 @@ const content = {
 		<section aria-describedby="preview" class="preview">
 		<h2 class="subtitle noprint" id="preview">Preview</h2>
 		<div class="preview-container">
-			<div v-for="page in pages" class="page">
-				<div class="page-content">
+			<div v-for="(page, index) in pages" class="page">
+				<div class="page-content" :class="{'first-page': index === 0}">
 					<header class="languages">
 						<div v-for="(language, index) in page['languages']" class="language">
 							<div :lang="language.key">{{ language.own }}</div>
