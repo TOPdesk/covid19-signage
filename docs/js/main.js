@@ -33,9 +33,13 @@ const content = {
 					</template>
 				</multiselect-list>
 			</section>
-			<section class="rule-selection" aria-labelledby="step2">
+			<section class="rule-selection" aria-labelledby="step3">
 				<h2 class="subtitle" id="step3">Step 3: Print this page</h2>
-				<button @click="window.print()" class="button">Print</button>
+				<button
+					@click="window.print()"
+					class="button"
+					:disabled="!(selectedLanguageKeys.length && selectedRuleNames.length)"
+				>Print</button>
 			</section>
 			<footer class="noprint feedback">
 				<a class="button" href="https://github.com/TOPdesk/covid19-signage/issues" target="_blank" rel="noreferrer noopener">Feedback</a>
