@@ -28,8 +28,7 @@ footer {
 .languages {
 	display: flex;
 	flex-direction: row;
-	margin-bottom: 2em;
-	font-size: 1.8em;
+	font-size: 1em;
 	justify-content: space-around;
 }
 
@@ -45,14 +44,33 @@ footer {
 }
 
 .preview-container {
+	display: block;
+}
+
+.page {
 	border: 1px solid black;
 	box-shadow: 4px 4px 9px 2px rgba(0,0,0,.25);
-	padding: 0.5em;
-	max-width: 21cm;
-	height: 100%;
+	padding: 5mm;
+	width: 21cm;
+	height: 29.7cm;
 	color: black;
-	font-size: 16px;
+	font-size: 5.33mm;
+	line-height: 1.5em;
 	background-color: white;
+	margin: 1.5em;
+	display: flex;
+	flex-direction: column;
+}
+
+.page-content {
+	display: flex;
+	flex-direction: column;
+}
+
+.languages {
+	display: flex;
+	flex-direction: row;
+	font-weight: bold;
 }
 
 .preview-container footer {
@@ -68,9 +86,8 @@ footer {
 }
 
 .rule-container {
-	margin-bottom: 2em;
-	margin-top: .5em;
-	padding-top: .2em;;
+	margin-top: 1.5em;
+	padding: 0.75em;
 	position: relative;
 }
 
@@ -106,12 +123,15 @@ footer {
 }
 
 .translation-container {
-	padding: 0.5em 1.5em 0.5em 0.5em;
-	font-size: 1.5em;
+	height: 3em;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
 .translation-container.bigfont {
-	font-size: 2em;
+	font-size: 1.25em;
+	height: 2.4em;
 }
 
 .translation-container:nth-child(even) {
@@ -166,7 +186,7 @@ footer {
 */
 
 .rule-container .icon {
-	width: 8em;
+	width: 8.75em;
 	height: auto;
 	padding: 1em;
 	position: relative;
@@ -184,11 +204,17 @@ footer {
 	height: 100%;
 }
 
+.rule-container .icon-column {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
 .rule-container .icon-holder {
-	margin: 0.5em 0 0.5em 2em;
 	position: relative;
 	line-height: 0;
 }
+
 .multiselect-list .icon {
 	width: 2.5em;
 	height: auto;
@@ -218,58 +244,48 @@ footer {
 >> PRINTING
 */
 
-@page {
-	size: A4;
-	margin: 7mm;
-}
-
-.preview-container table {
-	page-break-before: always;
-}
-
-.preview-container thead {
-	display: table-header-group;
-}
-
-.preview-container tfoot {
-	display: table-footer-group;
-	font-size: 1em;
-}
-
-.preview-container .rule-container {
-	page-break-inside: avoid;
-}
-
 @media print {
+	* {
+		overflow-x: visible;
+		overflow-y: visible;
+	}
+
 	html,
 	body {
 		margin: 0;
 		padding: 0;
-
-		width: 210mm;
-		height: 260mm;
 	}
 
 	.preview-container {
-		height: 100%;
-		position: relative;
-		display: block;
+		transform: initial;
+	}
 
+	.page {
 		border-style: none;
 		box-shadow: none;
 		margin: 0;
-		padding: 0;
+		width: 210mm;
+		height: 295mm;
+		display: block;
 	}
 
-	.preview-container footer {
+	.page-content {
+		page-break-inside: avoid;
+		-webkit-region-break-inside: avoid;
+	}
+
+	.page-break {
+		page-break-after: always;
+		height: 1px;
+		position: relative;
+	}
+
+	.page footer {
 		display: block;
 		right: 10mm;
 		position: fixed;
 		bottom: 7mm;
-	}
-
-	.preview-container .languages {
-		margin-top: 1em;
+		font-size: .75em;
 	}
 
 	.noprint {
