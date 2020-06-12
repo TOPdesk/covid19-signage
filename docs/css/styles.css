@@ -55,39 +55,40 @@ footer {
 	width: 39.375em;
 	height: 55.6875em;
 	color: black;
-	font-size: 20px;
 	line-height: 1.5em;
 	background-color: white;
-	margin-top: 30px;
+	margin-top: 2rem;
 	display: flex;
 	flex-direction: column;
 	position: relative;
+	/* base for the preview */
+	font-size: 1.25rem;
 }
 
-.page:before {
-	content: attr(data-page);
+.page-number {
 	position: absolute;
-	top: -32px;
-	left: 4px;
-	font-size: 16px;
+	font-size: 1rem;
+	top: -1.5rem;
+	left: .25rem;
+	line-height: 1.5em;
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 59.375rem) {
 	.page {
-		font-size: 10px;
+		font-size: .625rem;
 	}
 }
 
-@media screen and (min-width: 950px) and (max-width: 1400px) {
+@media screen and (min-width: 59.375rem) and (max-width: 87.5rem) {
 	.page {
-		font-size: calc((100vw - 500px)/45);
+		font-size: calc((100vw - 31.25rem)/45);
 	}
 }
 
 .page-content {
 	display: flex;
 	flex-direction: column;
-	padding-top: 5mm;
+	padding-top: .9375em;
 }
 
 .languages {

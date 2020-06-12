@@ -48,7 +48,8 @@ const content = {
 		<section aria-describedby="preview" class="preview">
 		<h2 class="subtitle noprint" id="preview">Preview</h2>
 		<div class="preview-container">
-			<div v-for="(page, index) in pages" class="page" :data-page="(index + 1) + '/' + pages.length">
+			<div v-for="(page, index) in pages" class="page">
+				<div class="page-number noprint">{{ (index + 1) + '/' + pages.length }}</div>
 				<div class="page-content" :class="{'first-page': index === 0}">
 					<header class="languages">
 						<div v-for="(language, index) in page['languages']" class="language">
@@ -86,7 +87,7 @@ const content = {
 			selectedRuleNames: [],
 			languages,
 			rules,
-			maxLanguagesPerPage: 5,
+			maxLanguagesPerPage: 4,
 		};
 	},
 	computed: {
