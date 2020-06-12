@@ -50,15 +50,15 @@ footer {
 .page {
 	border: 1px solid black;
 	box-shadow: 4px 4px 9px 2px rgba(0,0,0,.25);
-	padding: 5mm;
+	padding: .9375em;
 	padding-top: 0;
-	width: 21cm;
-	height: 29.7cm;
+	width: 39.375em;
+	height: 55.6875em;
 	color: black;
-	font-size: 5.33mm;
+	font-size: 20px;
 	line-height: 1.5em;
 	background-color: white;
-	margin: 1.5em;
+	margin-top: 30px;
 	display: flex;
 	flex-direction: column;
 	position: relative;
@@ -67,9 +67,21 @@ footer {
 .page:before {
 	content: attr(data-page);
 	position: absolute;
-	top: -1.6em;
-	left: .2em;
-	font-size: .8em;
+	top: -32px;
+	left: 4px;
+	font-size: 16px;
+}
+
+@media screen and (max-width: 950px) {
+	.page {
+		font-size: 10px;
+	}
+}
+
+@media screen and (min-width: 950px) and (max-width: 1400px) {
+	.page {
+		font-size: calc((100vw - 500px)/45);
+	}
 }
 
 .page-content {
@@ -280,6 +292,7 @@ footer {
 		width: 210mm;
 		height: 295mm;
 		display: block;
+		font-size: 5.33mm;
 	}
 
 	.page:before {
