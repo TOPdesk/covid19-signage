@@ -57,11 +57,22 @@ const content = {
 						</div>
 					</header>
 					<div v-for="(rule, index) in page['rules']" class="rule-container">
-						<img v-if="index % 2 === 0" class="ledger-background" :src="'img/backgrounds/ledger.png'" alt=""/>
+						<svg v-if="index % 2 === 0" class="ledger-background" alt=""
+							viewBox="0 0 1 1" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+							<rect width="1" height="1">
+						</svg>
 						<div class="rule-content">
 							<div class="icon-column">
 								<div class="icon-holder">
-									<img class="icon-background" :src="'img/backgrounds/' + rule.type + '.png'"  :class="rule.type" alt=""/>
+									<svg class="icon-background" :class="rule.type" alt=""
+										viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+										<defs>
+											<clipPath id="clipPath">
+												<rect width="50" height="50" rx="6" />
+											</clipPath>
+										</defs>
+										<rect width="50" height="50" rx="6" clip-path="url(#clipPath)" />
+									</svg>
 									<img class="icon" :src="'img/icons/' + rule.icon + '.svg'" alt=""/>
 								</div>
 							</div>
