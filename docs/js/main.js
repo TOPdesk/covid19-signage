@@ -13,7 +13,7 @@ const content = {
 						:elements="languages"
 						:selected="selectedLanguageKeys"
 						keyfield="key"
-						autofocus>
+						id="select-languages">
 					<template v-slot:element="{element: language, selected}">
 						{{ language.displayName }}
 						<span aria-hidden="true" :lang="language.key">&nbsp;({{ language.own }})</span>
@@ -138,4 +138,7 @@ const content = {
 
 new Vue({
 	render: (h) => h(content),
+	mounted: () => {
+		document.getElementById("select-languages").focus();
+	},
 }).$mount("#app");
