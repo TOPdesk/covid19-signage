@@ -1,15 +1,15 @@
-let nextId = function() {
+let nextId = (function () {
 	let counter = 0;
-	return () => 'multiselectlist' + counter++;
-}();
+	return () => "multiselectlist" + counter++;
+})();
 
-Vue.component('multiselect-list', {
+Vue.component("multiselect-list", {
 	props: {
-		elements: { type: Array, required: true, },
-		selected: { type: Array, default: () => [], },
-		keyfield: { type: String, required: true, },
+		elements: { type: Array, required: true },
+		selected: { type: Array, default: () => [] },
+		keyfield: { type: String, required: true },
 	},
-	data: () =>  ({
+	data: () => ({
 		current: 0,
 		id: null,
 	}),
@@ -46,7 +46,7 @@ Vue.component('multiselect-list', {
 			}
 		},
 		idFor(index) {
-			return this.id + '_'+ this.elements[index][this.keyfield];
+			return this.id + "_" + this.elements[index][this.keyfield];
 		},
 		isSelected(index) {
 			return this.selected.includes(this.elements[index][this.keyfield]);
@@ -61,12 +61,12 @@ Vue.component('multiselect-list', {
 		},
 		ensureCurrentVisible() {
 			document.getElementById(this.idFor(this.current)).scrollIntoView({
-				block: 'nearest',
-				behavior: 'smooth',
+				block: "nearest",
+				behavior: "smooth",
 			});
 		},
 	},
-	beforeMount () {
+	beforeMount() {
 		this.id = nextId();
 	},
 });

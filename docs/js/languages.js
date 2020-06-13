@@ -81,4 +81,4 @@ export default [
 		own: "中文",
 		bigfont: true,
 	},
-].sort((a, b) => a.displayName.localeCompare(b.displayName));;
+].sort((a, b) => a.displayName.localeCompare(b.displayName));

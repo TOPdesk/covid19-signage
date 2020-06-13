@@ -1,6 +1,6 @@
-import languages from './languages.js';
-import rules from '../rules/index.js';
-import './multiselectlist.js';
+import languages from "./languages.js";
+import rules from "../rules/index.js";
+import "./multiselectlist.js";
 
 const content = {
 	template: `
@@ -116,7 +116,7 @@ const content = {
 					entries[i % buckets]++;
 				}
 				const result = [];
-				entries.forEach(i => result.push(copy.splice(0, i)));
+				entries.forEach((i) => result.push(copy.splice(0, i)));
 				return result;
 			};
 
@@ -140,4 +140,4 @@ const content = {
 
 new Vue({
 	render: (h) => h(content),
-}).$mount('#app');
+}).$mount("#app");

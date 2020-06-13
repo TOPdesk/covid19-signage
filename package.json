@@ -1,0 +1,25 @@
+{
+	"name": "covid19-signage",
+	"version": "1.0.0",
+	"description": "Create multilingual instruction signs regarding COVID-19",
+	"directories": {
+		"doc": "docs"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/TOPdesk/covid19-signage.git"
+	},
+	"author": "TOPdesk",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/TOPdesk/covid19-signage/issues"
+	},
+	"homepage": "https://www.covid19-signage.org/",
+	"devDependencies": {
+		"eslint": "^7.2.0",
+		"eslint-plugin-vue": "^6.2.2"
+	},
+	"scripts": {
+		"lint": "eslint docs"
+	}
+}
