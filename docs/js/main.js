@@ -81,15 +81,13 @@ const content = {
 		</div>
 		</section>
     </div>`,
-	data() {
-		return {
-			selectedLanguageKeys: [],
-			selectedRuleNames: [],
-			languages,
-			rules,
-			maxLanguagesPerPage: 4,
-		};
-	},
+	data: () => ({
+		selectedLanguageKeys: [],
+		selectedRuleNames: [],
+		languages,
+		rules,
+		maxLanguagesPerPage: 4,
+	}),
 	computed: {
 		selectedRules() {
 			return this.rules
