@@ -102,7 +102,7 @@ const content = {
 				.sort((a, b) => this.selectedLanguageKeys.indexOf(a.key) - this.selectedLanguageKeys.indexOf(b.key));
 		},
 		pages() {
-			let distribute = (items, max) => {
+			const distribute = (items, max) => {
 				if (!items) {
 					return [];
 				}
