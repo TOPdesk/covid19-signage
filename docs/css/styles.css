@@ -95,6 +95,7 @@ footer {
 	display: flex;
 	flex-direction: row;
 	font-weight: bold;
+	font-size: 1.5em;
 }
 
 .preview-container footer {
@@ -127,6 +128,7 @@ footer {
 	display: flex;
 	flex-direction: row;
 	position: relative;
+	height: 10em;
 }
 
 .scr-only {
@@ -147,10 +149,11 @@ footer {
 }
 
 .translation-container {
-	height: 3em;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	height: 2.5em;
+	line-height: 1.25em;
 }
 
 .translation-container.bigfont {
@@ -165,9 +168,8 @@ footer {
 .translations {
 	display: flex;
 	flex-direction: column;
-	margin-left: 1.25em;
 	justify-content: center;
-	min-height: 9em;
+	margin-left: 1.25em;
 }
 
 .multiselect-list {

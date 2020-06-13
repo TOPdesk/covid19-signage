@@ -86,7 +86,6 @@ const content = {
 		selectedRuleNames: [],
 		languages,
 		rules,
-		maxLanguagesPerPage: 4,
 	}),
 	computed: {
 		selectedRules() {
@@ -119,11 +118,9 @@ const content = {
 			};
 
 			const pages = [];
-			const languageDistribution = distribute(this.selectedLanguages, this.maxLanguagesPerPage);
+			const languageDistribution = distribute(this.selectedLanguages, 4);
 			languageDistribution.forEach((pageLanguages) => {
-				const languageCount = pageLanguages.length;
-				const rulesPerPage = Math.min(4, 7 - languageCount);
-				const ruleDistribution = distribute(this.selectedRules, rulesPerPage);
+				const ruleDistribution = distribute(this.selectedRules, 4);
 				ruleDistribution.forEach((pageRules) => {
 					pages.push({
 						languages: pageLanguages,
