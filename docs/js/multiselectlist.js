@@ -1,4 +1,4 @@
-let nextId = (function () {
+const nextId = (function () {
 	let counter = 0;
 	return () => "multiselectlist" + counter++;
 })();
