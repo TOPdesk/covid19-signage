@@ -110,19 +110,30 @@ footer {
 	white-space: nowrap;
 }
 
+.horizontal-separator {
+	height: 1em;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.horizontal-separator .line {
+	height: .07em;
+	width: 100%;
+}
+
 .rule-container {
-	margin-top: 1.5em;
 	padding: 0.75em 0.75em 0.75em 1.25em;
 	position: relative;
 }
 
-.rule-container .ledger-background {
+.rule-container .rule-background {
 	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
-	fill: #F7F7F7;
+	fill: white;
 }
 
 .rule-content {
@@ -320,8 +331,12 @@ svg.dont {
 		padding-top: 3mm;
 	}
 
-	.page-content {
-		padding-top: 5mm;
+	.horizontal-separator {
+		height: 5mm;
+	}
+
+	.horizontal-separator .line {
+		height: .5mm;
 	}
 
 	.page-break {
