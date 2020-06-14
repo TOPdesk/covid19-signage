@@ -61,6 +61,11 @@ export default [
 		own: "Norsk",
 	},
 	{
+		key: "pl",
+		displayName: "Polish",
+		own: "Polski",
+	},
+	{
 		key: "pt",
 		displayName: "Portuguese",
 		own: "Português",

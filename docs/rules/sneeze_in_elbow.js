@@ -15,6 +15,7 @@ export default {
 		it: "Copri la tua faccia con il gomito quando starnutisci",
 		nl: "Nies in je elleboog",
 		no: "Om du må hoste eller nyse, gjør det i armkroken",
+		pl: "Kichać w łokieć",
 		pt: "Cubra seu nariz com o cotovelo ao espirrar",
 		sw: "Finika uso wako kutumia pambaja",
 		tr: "Hapsirirken yüzünüzü dirseginizle kapatin",

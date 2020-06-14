@@ -15,6 +15,7 @@ export default {
 		it: "Lava le tue mani",
 		nl: "Was je handen",
 		no: "Vask hendene dine",
+		pl: "Myć ręce",
 		pt: "Lave suas mãos",
 		sw: "Osha mikono",
 		tr: "Ellerinizi yikayin",

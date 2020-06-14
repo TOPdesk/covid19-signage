@@ -15,6 +15,7 @@ export default {
 		it: "Seguire le frecce",
 		nl: "Volg de pijlen",
 		no: "Følg pilene",
+		pl: "Podążać za strzałkami",
 		pt: "Siga as setas",
 		sw: "Fwata mshale",
 		tr: "Oklari takip ediniz",
