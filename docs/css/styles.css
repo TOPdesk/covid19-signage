@@ -264,22 +264,22 @@ footer {
 	position: relative;
 }
 
-img.do {
+.do {
 	background-color: #AEDBC2;
 	border-color: #19A064;
 }
 
-svg.do {
+.rule-do .icon-background {
 	stroke: #19A064;
 	fill: #AEDBC2;
 }
 
-img.dont {
+.dont {
 	background-color: #F6B9AA;
 	border-color: #C24530;
 }
 
-svg.dont {
+.rule-dont .icon-background {
 	stroke: #C24530;
 	fill: #F6B9AA;
 }

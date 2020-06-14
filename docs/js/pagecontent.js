@@ -34,7 +34,7 @@ Vue.component("page-content", {
                         <rect width="100" height="100" mask="url(#mask)"/>
                     </svg>
                 </div>
-                <div class="rule-container">
+                <div class="rule-container" :class="'rule-' + rule.type">
                     <svg class="rule-background" alt=""
                         viewBox="0 0 1 1" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
                         <rect width="1" height="1">
@@ -42,7 +42,7 @@ Vue.component("page-content", {
                     <div class="rule-content">
                         <div class="icon-column">
                             <div class="icon-holder">
-                                <svg class="icon-background" :class="rule.type" alt=""
+                                <svg class="icon-background" alt=""
                                     viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
                                     <defs>
                                         <clipPath id="clipPath">
