@@ -143,6 +143,35 @@ footer {
 	height: 10em;
 }
 
+.shout .horizontal-separator .line {
+	display: none;
+}
+
+.shout .rule-container .icon-background {
+	fill: none;
+	stroke: white;
+	stroke-width: 3;
+}
+
+.shout .rule-do .rule-background {
+	fill: green;
+}
+
+.shout .rule-dont .rule-background {
+	fill: red;
+}
+
+.shout .rule-container .icon {
+	filter: invert();
+}
+
+.shout .translation-container,
+.shout .translation-container:nth-child(even) {
+	color: white;
+	font-weight: bold;
+	-webkit-print-color-adjust: exact;
+}
+
 .scr-only {
 	clip: rect(1px, 1px, 1px, 1px);
 	clip-path: inset(50%);
@@ -175,7 +204,7 @@ footer {
 
 .translation-container:nth-child(even) {
 	color: #097190;
-}	
+}
 
 .translations {
 	display: flex;
