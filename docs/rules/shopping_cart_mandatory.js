@@ -15,6 +15,7 @@ export default {
 		it: "Carrello della spesa obbligatorio",
 		nl: "Gebruik van winkelwagentje is verplicht",
 		no: "Handlevogn er påbudt",
+		pl: "Używanie wózka jest obowiązkowe",
 		pt: "Carrinho de compras obrigatório",
 		sw: "Kutumia gari la ununuzi ni lazima",
 		tr: "Alisveris arabasi mecburidir",

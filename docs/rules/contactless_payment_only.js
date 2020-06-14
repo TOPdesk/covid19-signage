@@ -15,6 +15,7 @@ export default {
 		it: "Solo pagamento con sistema senza contatto",
 		nl: "Enkel contactloos betalen mogelijk",
 		no: "Kun kontaktløs betaling",
+		pl: "Płatność tylko kartą",
 		pt: "Apenas pagamentos sem contato físico",
 		sw: "Malipo niku pitia kadi pekeyake",
 		tr: "Sadece temassiz ödemeler kabul edilmektedir",

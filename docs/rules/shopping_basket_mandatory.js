@@ -15,6 +15,7 @@ export default {
 		it: "Cestino della spesa obbligatorio",
 		nl: "Gebruik van winkelmandje is verplicht",
 		no: "Handlekurv er påbudt",
+		pl: "Noszenie koszyka jest obowiązkowe",
 		pt: "Cesta de compras obrigatória",
 		sw: "Kutumia kikapu cha ununuzi ni lazima",
 		tr: "Alisveris sepeti mecburidir",

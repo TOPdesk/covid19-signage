@@ -15,6 +15,7 @@ export default {
 		it: "Non stringere le mani",
 		nl: "Schud geen handen",
 		no: "Ingen håndhilsing",
+		pl: "Nie podawać ręki",
 		pt: "Sem apertos de mão",
 		sw: "Hakuna ku salimiana na mikono",
 		tr: "El sikismayin",

@@ -15,6 +15,7 @@ export default {
 		it: "Disinfetta le tue mani",
 		nl: "Gebruik desinfecterende handgel",
 		no: "Desinfiser hendene dine",
+		pl: "Prosimy o dezynfekcję rąk",
 		pt: "Higienize suas mãos",
 		sw: "Toa viini kwa mikono kutumia sanitaiza",
 		tr: "Ellerinizi sterilize edin",

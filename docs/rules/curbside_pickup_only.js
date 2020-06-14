@@ -15,6 +15,7 @@ export default {
 		it: "Solo ritiro sul marciapiede",
 		nl: "Alleen buiten afhalen",
 		no: "Levering skjer kun ved henting utenfor bygget på vei/fortau",
+		pl: "Odbiór tylko na zewnątrz",
 		pt: "Retirada apenas do lado de fora",
 		sw: "Subiri muabiri nje",
 		tr: "Yalnizca arabanizda servis yapilmaktadir",
