@@ -172,6 +172,11 @@ footer {
 	-webkit-print-color-adjust: exact;
 }
 
+.shout .translation-container.bigfont,
+.shout .translation-container:nth-child(even).bigfont {
+	font-weight: normal;
+}
+
 .scr-only {
 	clip: rect(1px, 1px, 1px, 1px);
 	clip-path: inset(50%);
