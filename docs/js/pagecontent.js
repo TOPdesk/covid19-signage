@@ -1,4 +1,4 @@
-Vue.component("page-content", {
+export default {
 	props: {
 		languages: {type: Array, required: true},
 		rules: {type: Array, require: true},
@@ -64,6 +64,5 @@ Vue.component("page-content", {
                     </div>
                 </div>
             </div>
-        </div>
-    `,
-});
+        </div>`,
+};

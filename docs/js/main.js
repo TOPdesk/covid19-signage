@@ -1,9 +1,13 @@
 import languages from "./languages.js";
 import rules from "../rules/index.js";
-import "./multiselectlist.js";
-import "./pagecontent.js";
+import MultiselectListComponent from "./multiselectlist.js";
+import PageContent from "./pagecontent.js";
 
 const content = {
+	components: {
+		"multiselect-list": MultiselectListComponent,
+		PageContent
+	},
 	template: `
 	<div class="outer-container">
 		<div class="noprint">
