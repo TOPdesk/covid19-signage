@@ -1,12 +1,12 @@
 import languages from "./languages.js";
 import rules from "../rules/index.js";
 import MultiselectListComponent from "./multiselectlist.js";
-import PageContent from "./pagecontent.js";
+import Page from "./page.js";
 
 const content = {
 	components: {
 		"multiselect-list": MultiselectListComponent,
-		PageContent
+		Page
 	},
 	template: `
 	<div class="outer-container">
@@ -54,7 +54,7 @@ const content = {
 		<h2 class="subtitle noprint" id="preview">Preview</h2>
 		<div class="preview-container">
 			<template v-for="(page, index) in pages">
-				<page-content :class="{'first-page': index === 0}"
+				<page :class="{'first-page': index === 0}"
 					:languages="page['languages']"
 					:rules="page['rules']"
 					:label="(index + 1) + '/' + pages.length"
