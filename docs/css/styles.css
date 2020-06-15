@@ -98,8 +98,13 @@ footer {
 	font-size: 1.5em;
 }
 
-.preview-container footer {
-	display: none;
+.page footer {
+	position: absolute;
+	right: .9375em;
+	bottom: .9375em;
+	padding: 0 .5em;
+	font-size: .75em;
+	background-color: white;
 }
 
 .language {
@@ -357,6 +362,7 @@ footer {
 		height: 295mm; /* Prevent extra gages in Chrome */
 		display: block;
 		font-size: 5.33mm;
+		padding: 0 5mm;
 	}
 
 	.page:before {
@@ -366,9 +372,10 @@ footer {
 	.page-content {
 		page-break-inside: avoid;
 		-webkit-region-break-inside: avoid;
+		margin-left: -4mm;
 	}
 
-	.page-content.first-page {
+	.first-page .page-content {
 		padding-top: 3mm;
 	}
 
@@ -387,11 +394,11 @@ footer {
 	}
 
 	.page footer {
+		/* always in the same location */
 		display: block;
-		right: 7mm;
 		position: fixed;
-		bottom: 7mm;
-		font-size: .75em;
+		right: 5mm;
+		bottom: 5mm;
 	}
 
 	.noprint {
