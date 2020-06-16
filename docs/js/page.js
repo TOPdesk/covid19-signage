@@ -14,29 +14,7 @@ export default {
 					</div>
 				</header>
 				<template v-for="(rule, index) in rules">
-					<div class="horizontal-separator" :class="{ 'first-separator': index === 0 }">
-						<svg v-if="index !== 0" class="line" viewBox="0 0 100 100" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg">
-							<defs>
-								<linearGradient id="vertical" y1="0" y2="1">
-									<stop offset="0%" stop-color="black" />
-									<stop offset="50%" stop-color="white" />
-									<stop offset="100%" stop-color="black"/>
-								</linearGradient>
-								<linearGradient id="horizontal">
-									<stop offset="0%" stop-color="black" />
-									<stop offset="50%" stop-color="white" />
-									<stop offset="100%" stop-color="black"/>
-								</linearGradient>
-								<mask id="_mask">
-									<rect width="100" height="100" fill="url(#vertical)"  />
-								</mask>
-								<mask id="mask">
-									<rect width="100" height="100" fill="url(#horizontal)" mask="url(#_mask)"  />
-								</mask>
-							</defs>
-							<rect width="100" height="100" mask="url(#mask)"/>
-						</svg>
-					</div>
+					<div class="horizontal-separator" :class="{ 'first-separator': index === 0 }" />
 					<div class="rule-container" :class="'rule-' + rule.type">
 						<svg class="rule-background" alt=""
 							xmlns="http://www.w3.org/2000/svg">

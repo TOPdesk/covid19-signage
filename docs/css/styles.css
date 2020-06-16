@@ -136,6 +136,7 @@ footer {
 	width: 100%;
 	height: 100%;
 	fill: white;
+	stroke-width: .2em; /* only half will ve displayed */
 }
 
 .rule-content {
@@ -145,25 +146,12 @@ footer {
 	height: 10em;
 }
 
-
-.outline .horizontal-separator .line {
-	display: none;
+.rule-do .rule-background {
+	stroke: rgb(0, 128, 0);
 }
 
-.outline .rule-background {
-	stroke-width: .2em; /* only half will ve displayed */
-}
-
-.outline .rule-do .rule-background {
-	stroke: #19A064;
-}
-
-.outline .rule-dont .rule-background {
-	stroke: #C24530;
-}
-
-.shout .horizontal-separator .line {
-	display: none;
+.rule-dont .rule-background {
+	stroke: rgb(128, 0, 0);
 }
 
 .shout .rule-container .icon-background {
