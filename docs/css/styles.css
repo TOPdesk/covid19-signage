@@ -25,13 +25,6 @@ footer {
 	justify-content: center;
 }
 
-.languages {
-	display: flex;
-	flex-direction: row;
-	font-size: 1em;
-	justify-content: space-around;
-}
-
 .outer-container {
 	display: flex;
 	padding: 0.5em;
@@ -48,19 +41,22 @@ footer {
 }
 
 .page {
+	/* outside */
 	border: 1px solid black;
 	box-shadow: 4px 4px 9px 2px rgba(0,0,0,.25);
-	padding: .9375em;
-	padding-top: 0;
+	margin-top: 2rem;
+
+	/* inside */
+	background-color: white;
+	color: black;
+	padding: 1.171875em;
 	width: 39.375em;
 	height: 55.6875em;
-	color: black;
-	line-height: 1.5em;
-	background-color: white;
-	margin-top: 2rem;
 	display: flex;
 	flex-direction: column;
 	position: relative;
+	line-height: 1.5em;
+
 	/* base for the preview */
 	font-size: 1.25rem;
 }
@@ -88,7 +84,6 @@ footer {
 .page-content {
 	display: flex;
 	flex-direction: column;
-	padding-top: .9375em;
 }
 
 .languages {
@@ -96,12 +91,13 @@ footer {
 	flex-direction: row;
 	font-weight: bold;
 	font-size: 1.5em;
+	justify-content: space-around;
 }
 
 .page footer {
 	position: absolute;
-	right: .9375em;
-	bottom: .9375em;
+	right: 1.171875em;
+	bottom: 1.171875em;
 	padding: 0 .5em;
 	font-size: .75em;
 	background-color: white;
@@ -378,7 +374,7 @@ footer {
 		height: 295mm; /* Prevent extra gages in Chrome */
 		display: block;
 		font-size: 5.33mm;
-		padding: 0 5mm;
+		padding: 6.25mm;
 	}
 
 	.page:before {
@@ -391,8 +387,10 @@ footer {
 		margin-left: -4mm;
 	}
 
-	.first-page .page-content {
-		padding-top: 3mm;
+	/* Chrome firt page correction */
+	.page.first-page {
+		padding-top: 4.25mm;
+		padding-bottom: 8.25mm;
 	}
 
 	.horizontal-separator {
@@ -413,8 +411,8 @@ footer {
 		/* always in the same location */
 		display: block;
 		position: fixed;
-		right: 5mm;
-		bottom: 5mm;
+		right: 6.25mm;
+		bottom: 6.25mm;
 	}
 
 	.noprint {
