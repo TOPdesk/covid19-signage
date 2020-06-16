@@ -39,8 +39,13 @@ export default {
 					</div>
 					<div class="rule-container" :class="'rule-' + rule.type">
 						<svg class="rule-background" alt=""
-							viewBox="0 0 1 1" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-							<rect width="1" height="1">
+							xmlns="http://www.w3.org/2000/svg">
+							<defs>
+								<clipPath id="clipPath2" clipPathUnits="userSpaceOnUse">
+									<rect width="100%" height="100%" rx="1em" />
+								</clipPath>
+							</defs>
+							<rect width="100%" height="100%" clip-path="url(#clipPath2)" rx="1em">
 						</svg>
 						<div class="rule-content">
 							<div class="icon-column">

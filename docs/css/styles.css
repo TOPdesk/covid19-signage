@@ -139,7 +139,6 @@ footer {
 	width: 100%;
 	height: 100%;
 	fill: white;
-	border-radius: 1em;
 }
 
 .rule-content {
@@ -147,6 +146,23 @@ footer {
 	flex-direction: row;
 	position: relative;
 	height: 10em;
+}
+
+
+.outline .horizontal-separator .line {
+	display: none;
+}
+
+.outline .rule-background {
+	stroke-width: .2em; /* only half will ve displayed */
+}
+
+.outline .rule-do .rule-background {
+	stroke: #19A064;
+}
+
+.outline .rule-dont .rule-background {
+	stroke: #C24530;
 }
 
 .shout .horizontal-separator .line {
