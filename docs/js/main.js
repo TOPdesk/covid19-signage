@@ -2,6 +2,7 @@ import languages from "./languages.js";
 import rules from "../rules/index.js";
 import MultiselectListComponent from "./multiselectlist.js";
 import Page from "./page.js";
+import toPages from "./paging.js";
 
 const content = {
 	components: {
@@ -81,36 +82,7 @@ const content = {
 				.sort((a, b) => this.selectedLanguageKeys.indexOf(a.key) - this.selectedLanguageKeys.indexOf(b.key));
 		},
 		pages() {
-			const distribute = (items, max) => {
-				if (!items) {
-					return [];
-				}
-				const copy = [...items];
-				if (copy.length <= max) {
-					return [copy];
-				}
-				const buckets = Math.floor((copy.length - 1) / max) + 1;
-				const entries = new Array(buckets).fill(0);
-				for (let i = 0; i < copy.length; i++) {
-					entries[i % buckets]++;
-				}
-				const result = [];
-				entries.forEach((i) => result.push(copy.splice(0, i)));
-				return result;
-			};
-
-			const pages = [];
-			const languageDistribution = distribute(this.selectedLanguages, 4);
-			languageDistribution.forEach((pageLanguages) => {
-				const ruleDistribution = distribute(this.selectedRules, 4);
-				ruleDistribution.forEach((pageRules) => {
-					pages.push({
-						languages: pageLanguages,
-						rules: pageRules,
-					});
-				});
-			});
-			return pages;
+			return toPages(this.selectedLanguages, this.selectedRules);
 		},
 	},
 };

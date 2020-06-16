@@ -1,5 +1,6 @@
 {
 	"name": "covid19-signage",
+	"type": "module",
 	"version": "1.0.0",
 	"description": "Create multilingual instruction signs regarding COVID-19",
 	"directories": {
