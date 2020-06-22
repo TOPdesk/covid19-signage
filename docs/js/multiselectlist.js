@@ -6,7 +6,7 @@ const nextId = (function () {
 export default {
 	props: {
 		elements: { type: Array, required: true },
-		selected: { type: Array, default: () => [] },
+		selected: { type: Array, default: [] },
 		keyfield: { type: String, required: true },
 	},
 	data: () => ({
