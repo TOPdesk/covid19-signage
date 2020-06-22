@@ -1,6 +1,6 @@
 /*
 * Source for the numbers in the color matrix:
-* http://davengrace.com/cgi-bin/cspace.pl
+* http://davengrace.com/dave/cspace/
 */
 const redFilter = .21586; // #800000
 const greenFilter = .21586; // #008000
@@ -17,7 +17,7 @@ export default {
 	props: {
 		rule: {type: Object, require: true},
 		languages: {type: Array, required: true},
-		ruleStyle: {type: Object, default: () => {}},
+		ruleStyle: {type: Object, default: { ruleBackground: "light" }},
 	},
 	methods: {
 		fontWeight: (language) => (language["bigfont"] ?? false) ? "normal" : "bold",
@@ -37,24 +37,44 @@ export default {
 					<svg:style type="text/css">
 						text {
 							font-family: ${ff};
+							fill: black;
 						}
-						.svg-icon-background,
-						.svg-rule-background {
+						.svg-background-fill text {
 							fill: white;
 						}
-						.svg-rule-background {
-							stroke-width: 1;
-						}
-						.svg-icon-background {
-							stroke-width: 3;
-						}
-						.svg-rule-do .svg-icon-background,
+						
 						.svg-rule-do .svg-rule-background {
 							stroke: rgb(0, 128, 0);
+							fill: white;
 						}
-						.svg-rule-dont .svg-icon-background,
+						.svg-rule-do .svg-icon-background {
+							stroke: rgb(0, 128, 0);
+							fill: white;
+						}
 						.svg-rule-dont .svg-rule-background {
 							stroke: rgb(128, 0, 0);
+							fill: white;
+						}
+						.svg-rule-dont .svg-icon-background {
+							stroke: rgb(128, 0, 0);
+							fill: white;
+						}
+						
+						.svg-rule-do.svg-background-fill .svg-rule-background {
+							stroke: rgb(0, 128, 0);
+							fill: rgb(0, 128, 0);
+						}
+						.svg-rule-do.svg-background-fill .svg-icon-background {
+							stroke: white;
+							fill: rgb(0, 128, 0);
+						}
+						.svg-rule-dont.svg-background-fill .svg-rule-background {
+							stroke: rgb(128, 0, 0);
+							fill: rgb(128, 0, 0);
+						}
+						.svg-rule-dont.svg-background-fill .svg-icon-background {
+							stroke: white;
+							fill: rgb(128, 0, 0);
 						}
 						
 						.svg-rule-do .svg-icon {
@@ -63,6 +83,9 @@ export default {
 					   .svg-rule-dont .svg-icon {
 							filter: url(#go-dont);
 						}
+						.svg-background-fill  .svg-icon {
+							filter: url(#go-white);
+						}
 					</svg:style>
 					<clipPath id="ruleClip">
 						<rect width="200" height="60" rx="6" />
@@ -70,6 +93,14 @@ export default {
 					<clipPath id="iconClip">
 						<rect x="6" y="10" width="40" height="40" rx="6" />
 					</clipPath>
+					<filter id="go-white">
+						<feColorMatrix type="matrix" values="
+							0 0 0 0 1
+							0 0 0 0 1
+							0 0 0 0 1
+							0 0 0 1 0
+						" />
+					</filter>
 					<filter id="go-do">
 						<feColorMatrix type="matrix" values="
 							0 0 0 0 0
@@ -87,9 +118,9 @@ export default {
 						" />
 					</filter>
 				</defs>
-				<g :class="'svg-rule-' + rule['type']">
-					<rect class="svg-rule-background" width="200" height="60" clip-path="url(#ruleClip)" rx="6" />
-					<rect class="svg-icon-background" x="6" y="10" width="40" height="40" clip-path="url(#iconClip)" rx="6" />
+				<g :class="'svg-rule-' + rule['type'] + ' svg-background-' + ruleStyle['ruleBackground']">
+					<rect class="svg-rule-background" width="200" height="60" clip-path="url(#ruleClip)" rx="6" stroke-width="1" />
+					<rect class="svg-icon-background" x="6" y="10" width="40" height="40" clip-path="url(#iconClip)" rx="6" stroke-width="3" />
 					<image class="svg-icon" x="11" y="15" width="30" height="30" :xlink:href="'img/icons/' + rule['icon'] + '.svg'" />
 					<template v-for="language in languages">
 						<text x="123" :y="offsetY(language)" 
