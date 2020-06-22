@@ -3,7 +3,7 @@ export default {
 	type: "dont",
 	icon: "no_cash",
 	lang: {
-		ar: "غير نقدي",
+		ar: "الدفع بدون نقد",
 		bg: "Не се допуска плащане в брой",
 		da: "Ingen kontanter",
 		de: "Keine Barzahlung",

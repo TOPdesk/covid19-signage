@@ -3,7 +3,7 @@ export default {
 	type: "do",
 	icon: "contactless_only",
 	lang: {
-		ar: "",
+		ar: "الدفع عن طريق البطاقة المصرفية فقط",
 		bg: "Само безконтактно плащане",
 		da: "Kun kontaktløs betaling",
 		de: "Nur Kartenzahlung",
