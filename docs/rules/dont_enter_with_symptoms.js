@@ -20,5 +20,11 @@ export default {
 		sw: "Usi ingie kama uko na dalili ya COVID‑19",
 		tr: "COVID‑19 belirtileri gösterdiginiz takdirde girmeyiniz",
 		zh: "如果您有新冠的症狀，請不要進入",
-	}
+	},
+	adjustLength: {
+		bg: .8,
+		fr: .95,
+		nl: .9,
+		no: .9,
+	},
 };

@@ -4,6 +4,7 @@ export default [
 		displayName: "Arabic",
 		own: "العربية",
 		bigfont: true,
+		rtl: true,
 	},
 	{
 		key: "bg",

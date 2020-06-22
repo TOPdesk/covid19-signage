@@ -7,7 +7,7 @@ import toPages from "./paging.js";
 const content = {
 	components: {
 		"multiselect-list": MultiselectListComponent,
-		Page
+		Page,
 	},
 	template: `
 	<div class="outer-container">

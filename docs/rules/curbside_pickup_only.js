@@ -20,5 +20,8 @@ export default {
 		sw: "Subiri muabiri nje",
 		tr: "Yalnizca arabanizda servis yapilmaktadir",
 		zh: "僅限室外交收",
-	}
+	},
+	adjustLength: {
+		no: .85,
+	},
 };

@@ -1,8 +1,13 @@
+import SvgRule from "./rule.js";
+
 export default {
 	props: {
 		languages: {type: Array, required: true},
 		rules: {type: Array, require: true},
 		label: {type: String, default: () => null},
+	},
+	components: {
+		"svg-rule": SvgRule,
 	},
 	template: `
 		<div class="page">
@@ -15,40 +20,41 @@ export default {
 				</header>
 				<template v-for="(rule, index) in rules">
 					<div class="horizontal-separator" :class="{ 'first-separator': index === 0 }" />
-					<div class="rule-container" :class="'rule-' + rule.type">
-						<svg class="rule-background" alt=""
-							xmlns="http://www.w3.org/2000/svg">
-							<defs>
-								<clipPath id="clipPath2" clipPathUnits="userSpaceOnUse">
-									<rect width="100%" height="100%" rx="1em" />
-								</clipPath>
-							</defs>
-							<rect width="100%" height="100%" clip-path="url(#clipPath2)" rx="1em">
-						</svg>
-						<div class="rule-content">
-							<div class="icon-column">
-								<div class="icon-holder">
-									<svg class="icon-background" alt=""
-										viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
-										<defs>
-											<clipPath id="clipPath">
-												<rect width="50" height="50" rx="6" />
-											</clipPath>
-										</defs>
-										<rect width="50" height="50" rx="6" clip-path="url(#clipPath)" />
-									</svg>
-									<img class="icon" :src="'img/icons/' + rule.icon + '.svg'" alt=""/>
-								</div>
-							</div>
-							<div class="translations">
-								<div v-for="language in languages" :key="language['key']"
-									class="translation-container"
-									:lang="language['key']"
-									:class="{bigfont: language['bigfont']}"
-								>{{rule.lang[language['key']]}}</div>
-							</div>
-						</div>
-					</div>
+<!--					<div class="rule-container" :class="'rule-' + rule.type">-->
+<!--						<svg class="rule-background" alt=""-->
+<!--							xmlns="http://www.w3.org/2000/svg">-->
+<!--							<defs>-->
+<!--								<clipPath id="clipPath2" clipPathUnits="userSpaceOnUse">-->
+<!--									<rect width="100%" height="100%" rx="1em" />-->
+<!--								</clipPath>-->
+<!--							</defs>-->
+<!--							<rect width="100%" height="100%" clip-path="url(#clipPath2)" rx="1em">-->
+<!--						</svg>-->
+<!--						<div class="rule-content">-->
+<!--							<div class="icon-column">-->
+<!--								<div class="icon-holder">-->
+<!--									<svg class="icon-background" alt=""-->
+<!--										viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">-->
+<!--										<defs>-->
+<!--											<clipPath id="clipPath">-->
+<!--												<rect width="50" height="50" rx="6" />-->
+<!--											</clipPath>-->
+<!--										</defs>-->
+<!--										<rect width="50" height="50" rx="6" clip-path="url(#clipPath)" />-->
+<!--									</svg>-->
+<!--									<img class="icon" :src="'img/icons/' + rule.icon + '.svg'" alt=""/>-->
+<!--								</div>-->
+<!--							</div>-->
+<!--							<div class="translations">-->
+<!--								<div v-for="language in languages" :key="language['key']"-->
+<!--									class="translation-container"-->
+<!--									:lang="language['key']"-->
+<!--									:class="{bigfont: language['bigfont']}"-->
+<!--								>{{rule.lang[language['key']]}}</div>-->
+<!--							</div>-->
+<!--						</div>-->
+<!--					</div>-->
+					<svg-rule :rule="rule" :languages="languages" />
 				</template>
 			</div>
 			<div class="page-break">&nbsp;</div>

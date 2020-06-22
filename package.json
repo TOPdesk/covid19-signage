@@ -17,7 +17,7 @@
 	},
 	"homepage": "https://www.covid19-signage.org/",
 	"devDependencies": {
-		"eslint": "^7.2.0",
+		"eslint": "^7.3.0",
 		"eslint-plugin-vue": "^6.2.2"
 	},
 	"scripts": {
