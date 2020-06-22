@@ -51,7 +51,7 @@ const content = {
 				<a class="button" href="https://github.com/TOPdesk/covid19-signage/issues" target="_blank" rel="noreferrer noopener">Feedback</a>
 			</footer>
 		</div>
-		<section aria-describedby="preview" class="preview">
+		<section aria-labelledby="preview" class="preview">
 		<h2 class="subtitle noprint" id="preview">Preview</h2>
 		<div class="preview-container">
 			<template v-for="(page, index) in pages">
