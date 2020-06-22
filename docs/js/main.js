@@ -13,8 +13,8 @@ const content = {
 	<div class="outer-container">
 		<div class="noprint">
 			<h1 class="title">COVID-19 Signage Generator</h1>
-			<section aria-labelledby="step1">
-				<h2 class="subtitle" id="step1">Step 1: Select languages to include</h2>
+			<section aria-labelledby="step-select-languages">
+				<h2 class="subtitle" id="step-select-languages">Step 1: Select languages to include</h2>
 				<multiselect-list
 						:elements="languages"
 						:selected="selectedLanguageKeys"
@@ -26,8 +26,8 @@ const content = {
 					</template>
 				</multiselect-list>
 			</section>
-			<section class="rule-selection" aria-labelledby="step2">
-				<h2 class="subtitle" id="step2">Step 2: Select rules to include</h2>
+			<section aria-labelledby="step-select-rules">
+				<h2 class="subtitle" id="step-select-rules">Step 2: Select rules to include</h2>
 				<multiselect-list
 						:elements="rules"
 						:selected="selectedRuleNames"
@@ -39,8 +39,8 @@ const content = {
 					</template>
 				</multiselect-list>
 			</section>
-			<section class="rule-selection" aria-labelledby="step3">
-				<h2 class="subtitle" id="step3">Step 3: Print this page</h2>
+			<section aria-labelledby="step-print">
+				<h2 class="subtitle" id="step-print">Step 3: Print this page</h2>
 				<button
 					@click="window.print()"
 					class="button"
