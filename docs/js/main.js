@@ -50,6 +50,7 @@ const content = {
 						:selected="selectedStyleKey"
 						v-on:update:selected="selectedStyleKey=$event"
 						keyfield="key"
+						labelfield="description"
 						>
 					<template v-slot:element="{element: style}">
 						<page

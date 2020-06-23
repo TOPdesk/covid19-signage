@@ -8,6 +8,7 @@ export default {
 		elements: { type: Array, required: true },
 		selected: { type: String, required: true },
 		keyfield: { type: String, required: true },
+		labelfield: {type: String, default: undefined},
 	},
 	data: () => ({
 		current: 0,
@@ -33,7 +34,7 @@ export default {
 		moveSelectionTo(index) {
 			this.current = (index + this.elements.length) % this.elements.length;
 			this.selected = this.elements[this.current][this.keyfield];
-			this.$emit('update:selected', this.elements[this.current][this.keyfield])
+			this.$emit("update:selected", this.elements[this.current][this.keyfield]);
 			this.ensureCurrentVisible();
 		},
 		idFor(index) {
@@ -65,6 +66,7 @@ export default {
 		>
 			<li v-for="(element, index) in elements" :key="element[keyfield]"
 				role="radio"
+				:aria-label="labelfield ? element[labelfield] : undefined"
 				@click="moveSelectionTo(index)"
 				:aria-checked="isSelected(index) ? 'true' : 'false'"
 				:tabindex="isSelected(index) ? 0 : -1"
