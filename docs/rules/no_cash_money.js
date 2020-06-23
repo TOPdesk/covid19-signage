@@ -9,6 +9,7 @@ export default {
 		de: "Keine Barzahlung",
 		en: "No cash",
 		es: "No pagos en efectivo",
+		fa: "بدون پرداخت نقدی",
 		fr: "L'argent n'est pas accepté",
 		hi: "कोई नकद नहीं",
 		hu: "Készpénzt nem fogadunk el!",

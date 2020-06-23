@@ -32,6 +32,13 @@ export default [
 		own: "Español",
 	},
 	{
+		key: "fa",
+		displayName: "Farsi",
+		own: "فارسی",
+		bigfont: true,
+		rtl: true,
+	},
+	{
 		key: "fr",
 		displayName: "French",
 		own: "Français",

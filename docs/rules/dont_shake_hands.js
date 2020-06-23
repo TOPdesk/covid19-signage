@@ -9,6 +9,7 @@ export default {
 		de: "Händeschütteln vermeiden",
 		en: "No shaking hands",
 		es: "No apretones de manos",
+		fa: "از دست دادن خودداری کن",
 		fr: "Pas de poignées de main",
 		hi: "हाथ नहीं मिलाते",
 		hu: "Ne fogjanak kezet!",

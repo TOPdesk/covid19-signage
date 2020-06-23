@@ -9,6 +9,7 @@ export default {
 		de: "Gesichtsmaske tragen",
 		en: "All visitors must wear a mask",
 		es: "Obligatorio el uso de mascarilla",
+		fa: "تمام بازدیدکنندگان می بایست از ماسک استفاده کنند",
 		fr: "Tout le monde doit porter un masque",
 		hi: "सभी आगंतुकों को मास्क पहनना चाहिए",
 		hu: "Maszk használata kötelező!",
@@ -20,5 +21,8 @@ export default {
 		sw: "Kila mtu anaeingia lazima avae barakoa",
 		tr: "Bütün ziyaretçiler maske takmalidir",
 		zh: "所有訪客必須戴口罩",
-	}
+	},
+	adjustLength: {
+		fa: .95,
+	},
 };

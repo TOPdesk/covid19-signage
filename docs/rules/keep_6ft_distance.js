@@ -9,6 +9,7 @@ export default {
 		de: "1,5 Meter Abstand halten",
 		en: "Keep 6 feet (1.5 meters) apart",
 		es: "Mantenga una distancia de al menos 1,5 metros",
+		fa: "۱.۵متر فاصله را حفظ کن",
 		fr: "Rester à 1,5 mètre (6 pieds) l'un de l'autre",
 		hi: "6 फीट (1.5 मीटर) अलग रखें",
 		hu: "Tartson 1,5 méter távolságot!",

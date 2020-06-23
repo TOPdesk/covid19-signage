@@ -9,6 +9,7 @@ export default {
 		de: "Einkaufskorb benutzen",
 		en: "Shopping basket mandatory",
 		es: "Cesta de la compra obligatoria",
+		fa: "استفاده از سبد خرید اجباری است",
 		fr: "Le panier est obligatoire",
 		hi: "शॉपिंग बास्केट अनिवार्य",
 		hu: "Kosár használata kötelező!",

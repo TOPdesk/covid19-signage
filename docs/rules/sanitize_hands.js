@@ -9,6 +9,7 @@ export default {
 		de: "Hände desinfizieren",
 		en: "Sanitize your hands",
 		es: "Desinféctese las manos",
+		fa: "از ژل ضد عفونی استفاده کن",
 		fr: "Désinfectez vos mains souvent",
 		hi: "अपने हाथों को पवित्र करें",
 		hu: "Fertőtlenítse a kezét!",

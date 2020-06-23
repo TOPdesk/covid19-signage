@@ -9,6 +9,7 @@ export default {
 		de: "Den Pfeilen folgen",
 		en: "Follow the arrows",
 		es: "Siga las flechas",
+		fa: "علامتها رو دنبال کن",
 		fr: "Suivez les flèches",
 		hi: "तीर का पालन करें",
 		hu: "Kövesse a nyilakat!",

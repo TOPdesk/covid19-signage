@@ -9,6 +9,7 @@ export default {
 		de: "Hände waschen",
 		en: "Wash your hands",
 		es: "Lávese las manos",
+		fa: "دست هایت را بشوی",
 		fr: "Lavez-vous les mains souvent",
 		hi: "हाथ धो लो",
 		hu: "Mossa meg a kezét!",

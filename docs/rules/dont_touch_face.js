@@ -9,6 +9,7 @@ export default {
 		de: "Gesicht nicht berühren",
 		en: "Do not touch your face",
 		es: "No se toque la cara",
+		fa: "از تماس دست به صورت خودداری کن",
 		fr: "Ne touchez pas votre visage",
 		hi: "अपना चेहरा मत छुओ",
 		hu: "Ne nyúljon az arcához!",

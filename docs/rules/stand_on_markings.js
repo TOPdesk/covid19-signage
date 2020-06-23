@@ -9,6 +9,7 @@ export default {
 		de: "Markierungen beachten",
 		en: "Stand on designated markings",
 		es: "Permanezca en las marcas designadas",
+		fa: "در جای مشخص شده بایست",
 		fr: "Placez-vous sur les marques désignées",
 		hi: "नामित चिह्नों पर खड़े हों",
 		hu: "Várakozzon a kijelölt helyen!",

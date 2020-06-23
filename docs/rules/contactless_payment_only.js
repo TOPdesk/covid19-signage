@@ -9,6 +9,7 @@ export default {
 		de: "Nur Kartenzahlung",
 		en: "Contactless payment only",
 		es: "Sólo pago con tarjetas 'Contactless'",
+		fa: "پرداخت فقط با کارت بانکی امکان دارد",
 		fr: "Paiement sans contact seulement",
 		hi: "संपर्क रहित भुगतान",
 		hu: "Csak érintőkártyát fogadunk el!",

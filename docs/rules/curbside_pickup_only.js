@@ -9,6 +9,7 @@ export default {
 		de: "Nur Abholung",
 		en: "Curbside pickup only",
 		es: "Sólo para recoger",
+		fa: "از بیرون تحویل داده میشود",
 		fr: "Ramassage en bordure de rue",
 		hi: "कर्बसाइड पिकअप",
 		hu: "Csak autós átvétel lehetséges!",

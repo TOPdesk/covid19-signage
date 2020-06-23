@@ -9,6 +9,7 @@ export default {
 		de: "Einkaufswagen benutzen",
 		en: "Shopping cart mandatory",
 		es: "Carro de la compra obligatorio",
+		fa: "استفاده از سبد خرید چرخ دار اجباری است",
 		fr: "Le panier est obligatoire",
 		hi: "शॉपिंग कार्ट अनिवार्य",
 		hu: "Bevásárlókocsi használata kötelező!",
