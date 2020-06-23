@@ -1,3 +1,8 @@
+const nextId = (function () {
+	let counter = 0;
+	return () => "svg-rule-" + counter++;
+})();
+
 /*
 * Source for the numbers in the color matrix:
 * http://davengrace.com/dave/cspace/
@@ -18,6 +23,12 @@ export default {
 		rule: {type: Object, require: true},
 		languages: {type: Array, required: true},
 		ruleStyle: {type: Object, default: { ruleBackground: "light" }},
+	},
+	data: () => ({
+		id: null,
+	}),
+	created() {
+		this.id = nextId();
 	},
 	methods: {
 		fontWeight: (language) => (language["bigfont"] ?? false) ? "normal" : "bold",
@@ -78,22 +89,22 @@ export default {
 						}
 						
 						.svg-rule-do .svg-icon {
-							filter: url(#go-do);
+							filter: url(#{{id}}-go-do);
 						}
 					   .svg-rule-dont .svg-icon {
-							filter: url(#go-dont);
+							filter: url(#{{id}}-go-dont);
 						}
 						.svg-background-fill  .svg-icon {
-							filter: url(#go-white);
+							filter: url(#{{id}}-go-white);
 						}
 					</svg:style>
-					<clipPath id="ruleClip">
+					<clipPath :id="id + '-rule-clip'">
 						<rect width="200" height="60" rx="6" />
 					</clipPath>
-					<clipPath id="iconClip">
+					<clipPath :id="id + '-icon-clip'">
 						<rect x="6" y="10" width="40" height="40" rx="6" />
 					</clipPath>
-					<filter id="go-white">
+					<filter :id="id + '-go-white'">
 						<feColorMatrix type="matrix" values="
 							0 0 0 0 1
 							0 0 0 0 1
@@ -101,7 +112,7 @@ export default {
 							0 0 0 1 0
 						" />
 					</filter>
-					<filter id="go-do">
+					<filter :id="id + '-go-do'">
 						<feColorMatrix type="matrix" values="
 							0 0 0 0 0
 							0 0 0 0 ${greenFilter}
@@ -109,7 +120,7 @@ export default {
 							0 0 0 1 0
 						" />
 					</filter>
-					<filter id="go-dont">
+					<filter :id="id + '-go-dont'">
 						<feColorMatrix type="matrix" values="
 							0 0 0 0 ${redFilter}
 							0 0 0 0 0
@@ -119,8 +130,8 @@ export default {
 					</filter>
 				</defs>
 				<g :class="'svg-rule-' + rule['type'] + ' svg-background-' + ruleStyle['ruleBackground']">
-					<rect class="svg-rule-background" width="200" height="60" clip-path="url(#ruleClip)" rx="6" stroke-width="1" />
-					<rect class="svg-icon-background" x="6" y="10" width="40" height="40" clip-path="url(#iconClip)" rx="6" stroke-width="3" />
+					<rect class="svg-rule-background" width="200" height="60" :clip-path="'url(#' + id + '-rule-clip)'" rx="6" stroke-width="1" />
+					<rect class="svg-icon-background" x="6" y="10" width="40" height="40" :clip-path="'url(#'  + id + '-icon-clip)'" rx="6" stroke-width="3" />
 					<image class="svg-icon" x="11" y="15" width="30" height="30" :xlink:href="'img/icons/' + rule['icon'] + '.svg'" />
 					<template v-for="language in languages">
 						<text x="123" :y="offsetY(language)" 
@@ -132,7 +143,7 @@ export default {
 							:direction="language['rtl'] ? 'rtl' : 'ltr'"
 							:transform-origin="'123 ' + offsetY(language)"
 							:transform="'scale(' + adjustLength(language) + ', 1)'"
-							:id="'svg-rule-' + rule['name'] + '-' + language['key']">{{ rule['lang'][language['key']] }}</text>
+							:id="id + '-' + rule['name'] + '-' + language['key']">{{ rule['lang'][language['key']] }}</text>
 					</template>
 				</g>
 			</svg>
