@@ -4,6 +4,7 @@ export default {
 	props: {
 		languages: {type: Array, required: true},
 		rules: {type: Array, require: true},
+		selectedStyle: {type: Object, require: true },
 		label: {type: String, default: () => null},
 	},
 	components: {
@@ -54,7 +55,7 @@ export default {
 <!--							</div>-->
 <!--						</div>-->
 <!--					</div>-->
-					<svg-rule :rule="rule" :languages="languages" />
+					<svg-rule :rule="rule" :languages="languages" :ruleStyle="selectedStyle" />
 				</template>
 			</div>
 			<div class="page-break">&nbsp;</div>

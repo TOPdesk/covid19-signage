@@ -260,6 +260,35 @@ footer {
 	color: green;
 }
 
+.style-selection {
+	display: flex;
+	flex-direction: row;
+	overflow-x: auto;
+	background-color: white;
+	border: 1px solid darkgray;
+	height: 9.2em;
+	align-items: center;
+	padding: .25em;
+}
+
+.style-selection .option {
+	padding: .5em;
+}
+
+.style-selection .option.selected {
+	background-color: #c0c0ff;
+}
+
+.style-selection .page {
+	font-size: .125rem;
+	margin-top: 0;
+	box-shadow: none;
+}
+
+.style-selection .page footer {
+	display: none;
+}
+
 /**
 >> ICONS
 */
