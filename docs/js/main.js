@@ -57,6 +57,7 @@ const content = {
 							:languages="languagesFor(['en', 'fr'])"
 							:rules="rulesFor(['follow_arrows', 'shopping_basket_mandatory', 'dont_enter_with_symptoms', 'no_cash_money'])"
 							:selectedStyle="styleFor(style.key)"
+							aria-hidden="true"
 						>
 					</template>
 				</single-option-list>
