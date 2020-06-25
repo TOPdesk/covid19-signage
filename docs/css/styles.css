@@ -22,7 +22,7 @@ body {
 
 footer {
 	display: flex;
-	justify-content: center;
+	justify-content: space-evenly;
 }
 
 .outer-container {

@@ -72,6 +72,7 @@ const content = {
 			</section>
 			<footer class="noprint feedback">
 				<a class="button" href="https://github.com/TOPdesk/covid19-signage/issues" target="_blank" rel="noreferrer noopener">Feedback</a>
+				<a class="button" href="https://www.topdesk.com/nl/privacyverklaring/" target="_blank" rel="noreferrer noopener">Privacy Policy</a>
 			</footer>
 		</div>
 		<section aria-labelledby="preview" class="preview">
