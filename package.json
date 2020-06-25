@@ -26,6 +26,6 @@
 	},
 	"scripts": {
 		"lint": "eslint docs",
-		"start": "node index.js"
+		"start": "node --experimental-modules index.js"
 	}
 }
