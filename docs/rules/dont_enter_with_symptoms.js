@@ -14,6 +14,7 @@ export default {
 		hi: "यदि आपके पास COVID‑19 के लक्षण हैं तो प्रवेश न करें",
 		hu: "Ne jöjjön be, ha a COVID‑19 tüneteit észleli magán!",
 		it: "Non entrare se si presenta sintomi da COVID‑19",
+		ja: "新型コロナウィルスの症状がある場合はご入店をお控えください",
 		nl: "Kom niet binnen als je symptomen van COVID‑19 vertoont",
 		no: "Vennligst ikke gå inn om du har symptomer på COVID‑19",
 		pl: "Nie wchodzić z symptomami COVID-19",
@@ -25,6 +26,7 @@ export default {
 	adjustLength: {
 		bg: .8,
 		fr: .95,
+		ja: .7,
 		nl: .9,
 		no: .9,
 	},

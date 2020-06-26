@@ -14,6 +14,7 @@ export default {
 		hi: "संपर्क रहित भुगतान",
 		hu: "Csak érintőkártyát fogadunk el!",
 		it: "Solo pagamento con sistema senza contatto",
+		ja: "タッチ決済のみ承ります",
 		nl: "Enkel contactloos betalen mogelijk",
 		no: "Kun kontaktløs betaling",
 		pl: "Płatność tylko kartą",

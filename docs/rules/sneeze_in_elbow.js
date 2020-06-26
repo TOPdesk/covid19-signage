@@ -14,6 +14,7 @@ export default {
 		hi: "जब आप छींकते हैं तो अपना चेहरा अपनी कोहनी से ढक लें",
 		hu: "Tüsszentsen, köhögjön a könyökhajlatába!",
 		it: "Copri la tua faccia con il gomito quando starnutisci",
+		ja: "席エチケットにご協力下さい",
 		nl: "Nies in je elleboog",
 		no: "Om du må hoste eller nyse, gjør det i armkroken",
 		pl: "Kichać w łokieć",

@@ -14,6 +14,7 @@ export default {
 		hi: "अपने हाथों को पवित्र करें",
 		hu: "Fertőtlenítse a kezét!",
 		it: "Disinfetta le tue mani",
+		ja: "手指の消毒にご協力下さい",
 		nl: "Gebruik desinfecterende handgel",
 		no: "Desinfiser hendene dine",
 		pl: "Prosimy o dezynfekcję rąk",

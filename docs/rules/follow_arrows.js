@@ -14,6 +14,7 @@ export default {
 		hi: "तीर का पालन करें",
 		hu: "Kövesse a nyilakat!",
 		it: "Seguire le frecce",
+		ja: "矢印に沿って進んで下さい",
 		nl: "Volg de pijlen",
 		no: "Følg pilene",
 		pl: "Podążać za strzałkami",

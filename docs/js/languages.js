@@ -59,6 +59,12 @@ export default [
 		own: "Italiano",
 	},
 	{
+		key: "ja",
+		displayName: "Japanese",
+		own: "日本語",
+		bigfont: true,
+	},
+	{
 		key: "nl",
 		displayName: "Dutch",
 		own: "Nederlands",

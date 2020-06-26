@@ -14,6 +14,7 @@ export default {
 		hi: "हाथ धो लो",
 		hu: "Mossa meg a kezét!",
 		it: "Lava le tue mani",
+		ja: "手洗いにご協力下さい",
 		nl: "Was je handen",
 		no: "Vask hendene dine",
 		pl: "Myć ręce",

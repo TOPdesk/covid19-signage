@@ -14,6 +14,7 @@ export default {
 		hi: "6 फीट (1.5 मीटर) अलग रखें",
 		hu: "Tartson 1,5 méter távolságot!",
 		it: "Mantenere 1,5 metri di distanza",
+		ja: "1.5メートルのスペース確保にご協力下さい",
 		nl: "Houd 1,5m afstand",
 		no: "Hold 1.5 meters avstand til andre personer",
 		pl: "Zachować odstęp 1,5 metra",

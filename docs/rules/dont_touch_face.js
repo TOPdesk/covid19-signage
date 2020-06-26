@@ -14,6 +14,7 @@ export default {
 		hi: "अपना चेहरा मत छुओ",
 		hu: "Ne nyúljon az arcához!",
 		it: "Non toccare la tua faccia",
+		ja: "顔は触らないで下さい",
 		nl: "Raak je gezicht niet aan",
 		no: "Ikke ta deg i ansiktet",
 		pl: "Nie dotykać twarzy",

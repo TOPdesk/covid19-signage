@@ -14,6 +14,7 @@ export default {
 		hi: "नामित चिह्नों पर खड़े हों",
 		hu: "Várakozzon a kijelölt helyen!",
 		it: "Posizionarsi sui segnali predisposti",
+		ja: "フロアマーキングに沿ってお並び下さい",
 		nl: "Sta op de aangegeven markeringen",
 		no: "Stå på markerte plasser",
 		pl: "Stać na wyznaczonych miejscach",

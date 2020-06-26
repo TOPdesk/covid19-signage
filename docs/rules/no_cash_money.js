@@ -14,6 +14,7 @@ export default {
 		hi: "कोई नकद नहीं",
 		hu: "Készpénzt nem fogadunk el!",
 		it: "Contante non accettato",
+		ja: "現金払いは出来ません",
 		nl: "Geen contant geld",
 		no: "Ingen sedler eller mynter",
 		pl: "Nie płacić gotówką",

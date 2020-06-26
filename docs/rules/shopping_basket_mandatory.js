@@ -14,6 +14,7 @@ export default {
 		hi: "शॉपिंग बास्केट अनिवार्य",
 		hu: "Kosár használata kötelező!",
 		it: "Cestino della spesa obbligatorio",
+		ja: "買い物かごをご利用ください",
 		nl: "Gebruik van winkelmandje is verplicht",
 		no: "Handlekurv er påbudt",
 		pl: "Noszenie koszyka jest obowiązkowe",

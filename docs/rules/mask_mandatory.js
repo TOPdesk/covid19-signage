@@ -14,6 +14,7 @@ export default {
 		hi: "सभी आगंतुकों को मास्क पहनना चाहिए",
 		hu: "Maszk használata kötelező!",
 		it: "Tutti i visitatori devono indossare una mascherina",
+		ja: "マスクの着用をお願い致します",
 		nl: "Alle bezoekers moeten een masker dragen",
 		no: "Alle besøkende må ha på seg munnbind",
 		pl: "Nakaz noszenia maseczki",

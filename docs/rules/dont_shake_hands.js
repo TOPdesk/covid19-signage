@@ -14,6 +14,7 @@ export default {
 		hi: "हाथ नहीं मिलाते",
 		hu: "Ne fogjanak kezet!",
 		it: "Non stringere le mani",
+		ja: "握手はお控えください",
 		nl: "Schud geen handen",
 		no: "Ingen håndhilsing",
 		pl: "Nie podawać ręki",
