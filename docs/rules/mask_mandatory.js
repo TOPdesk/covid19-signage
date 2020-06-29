@@ -9,7 +9,7 @@ export default {
 		de: "Gesichtsmaske tragen",
 		en: "All visitors must wear a mask",
 		es: "Obligatorio el uso de mascarilla",
-		fa: "تمام بازدیدکنندگان می بایست از ماسک استفاده کنند",
+		fa: "تمام بازدیدکنندگان از ماسک استفاده کنند",
 		fr: "Tout le monde doit porter un masque",
 		hi: "सभी आगंतुकों को मास्क पहनना चाहिए",
 		hu: "Maszk használata kötelező!",
