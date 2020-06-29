@@ -6,6 +6,37 @@ import SingleOptionList from "./singleoptionlist.js";
 import Page from "./page.js";
 import toPages from "./paging.js";
 
+function getInitialConfig(queryString) {
+	const initialConfig = {
+		languages: [],
+		rules: [],
+		style: "classic"
+	};
+
+	if (!queryString) {
+		return initialConfig;
+	}
+
+	const queryFragments = queryString
+		.substring(1)
+		.split("&");
+
+	for (let fragment of queryFragments) {
+		const [key, value] = fragment.split("=");
+		if (!value) {
+			continue;
+		}
+
+		if (key === "languages" || key === "rules") {
+			initialConfig[key] = value.split(",");
+		}
+		if (key === "style") {
+			initialConfig.style = value;
+		}
+	}
+	return initialConfig;
+};
+
 const content = {
 	components: {
 		"multiselect-list": MultiselectListComponent,
@@ -89,14 +120,18 @@ const content = {
 		</div>
 		</section>
     </div>`,
-	data: () => ({
-		selectedLanguageKeys: [],
-		selectedRuleNames: [],
-		selectedStyleKey: "classic",
-		languages,
-		rules,
-		styleOptions,
-	}),
+	data: () => {
+		const initialConfig = getInitialConfig(document.location.search);
+
+		return {
+			selectedLanguageKeys: initialConfig.languages,
+			selectedRuleNames: initialConfig.rules,
+			selectedStyleKey: initialConfig.style,
+			languages,
+			rules,
+			styleOptions,
+		}
+	},
 	computed: {
 		selectedRules() {
 			return this.rulesFor(this.selectedRuleNames);
@@ -125,7 +160,29 @@ const content = {
 		styleFor(key) {
 			return this.styleOptions.filter((style) => style.key === key)[0];
 		},
+		updateQueryString() {
+			let queryString = "?style=" + this.selectedStyleKey;
+			if (this.selectedLanguageKeys.length) {
+				queryString += "&languages=" + this.selectedLanguageKeys.join(",");
+			}
+			if (this.selectedRuleNames.length) {
+				queryString += "&rules=" + this.selectedRuleNames.join(",");
+			}
+
+			history.replaceState(null, "", document.location.pathname + queryString);
+		}
 	},
+	watch: {
+		selectedLanguageKeys() {
+			this.updateQueryString();
+		},
+		selectedRuleNames() {
+			this.updateQueryString();
+		},
+		selectedStyleKey() {
+			this.updateQueryString();
+		}
+	}
 };
 
 new Vue({

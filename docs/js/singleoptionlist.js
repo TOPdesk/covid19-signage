@@ -17,18 +17,14 @@ export default {
 	created() {
 		this.id = nextId();
 
-		let found = -1;
 		for (let i = 0; i < this.elements.length; i++) {
-			if (this.elements[this.keyfield] === this.selected) {
-				found = i;
-				break;
+			if (this.elements[i][this.keyfield] === this.selected) {
+				this.current = i;
+				return;
 			}
 		}
-		if (found === -1) {
-			this.selected = this.elements[this.current];
-		} else {
-			this.current = found;
-		}
+		
+		this.selected = this.elements[this.current];
 	},
 	methods: {
 		moveSelectionTo(index) {
