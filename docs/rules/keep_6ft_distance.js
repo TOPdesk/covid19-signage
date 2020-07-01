@@ -1,5 +1,4 @@
 export default {
-	name: "keep_6ft_distance",
 	key: "kd",
 	type: "do",
 	icon: "keep_6_feet",

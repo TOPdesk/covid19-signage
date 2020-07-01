@@ -1,5 +1,4 @@
 export default {
-	name: "sneeze_in_elbow",
 	key: "se",
 	type: "do",
 	icon: "elbow",

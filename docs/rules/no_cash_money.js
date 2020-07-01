@@ -1,5 +1,4 @@
 export default {
-	name: "no_cash_money",
 	key: "nm",
 	type: "dont",
 	icon: "no_cash",

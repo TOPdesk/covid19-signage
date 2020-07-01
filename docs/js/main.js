@@ -64,8 +64,8 @@ const content = {
 				<h2 class="subtitle" id="step-select-rules">Step 2: Select rules to include</h2>
 				<multiselect-list
 						:elements="rules"
-						:selected="selectedRuleNames"
-						keyfield="name"
+						:selected="selectedRuleKeys"
+						keyfield="key"
 						>
 					<template v-slot:element="{element: rule, selected}">
 						<img class="icon" :src="'img/icons/' + rule.icon + '.svg'" :class="rule.type" alt=""/>
@@ -86,7 +86,7 @@ const content = {
 					<template v-slot:element="{element: style}">
 						<page
 							:languages="languagesFor(['en', 'fr'])"
-							:rules="rulesFor(['follow_arrows', 'shopping_basket_mandatory', 'dont_enter_with_symptoms', 'no_cash_money'])"
+							:rules="rulesFor(['fa', 'bm', 'nc', 'nm'])"
 							:selectedStyle="styleFor(style.key)"
 							aria-hidden="true"
 						>
@@ -98,7 +98,7 @@ const content = {
 				<button
 					@click="window.print()"
 					class="button"
-					:disabled="!(selectedLanguageKeys.length && selectedRuleNames.length)"
+					:disabled="!(selectedLanguageKeys.length && selectedRuleKeys.length)"
 				>Print</button>
 			</section>
 			<footer class="noprint feedback">
@@ -125,7 +125,7 @@ const content = {
 
 		return {
 			selectedLanguageKeys: initialConfig.languages,
-			selectedRuleNames: initialConfig.rules,
+			selectedRuleKeys: initialConfig.rules,
 			selectedStyleKey: initialConfig.style,
 			languages,
 			rules,
@@ -134,7 +134,7 @@ const content = {
 	},
 	computed: {
 		selectedRules() {
-			return this.rulesFor(this.selectedRuleNames);
+			return this.rulesFor(this.selectedRuleKeys);
 		},
 		selectedLanguages() {
 			return this.languagesFor(this.selectedLanguageKeys);
@@ -152,10 +152,10 @@ const content = {
 				.filter((language) => keys.includes(language.key))
 				.sort((a, b) => keys.indexOf(a.key) - keys.indexOf(b.key));
 		},
-		rulesFor(names) {
+		rulesFor(keys) {
 			return this.rules
-				.filter((rule) => names.includes(rule.name))
-				.sort((a, b) => names.indexOf(a.name) - names.indexOf(b.name));
+				.filter((rule) => keys.includes(rule.key))
+				.sort((a, b) => keys.indexOf(a.key) - keys.indexOf(b.key));
 		},
 		styleFor(key) {
 			return this.styleOptions.filter((style) => style.key === key)[0];
@@ -165,8 +165,8 @@ const content = {
 			if (this.selectedLanguageKeys.length) {
 				queryString += "&languages=" + this.selectedLanguageKeys.join(",");
 			}
-			if (this.selectedRuleNames.length) {
-				queryString += "&rules=" + this.selectedRuleNames.join(",");
+			if (this.selectedRuleKeys.length) {
+				queryString += "&rules=" + this.selectedRuleKeys.join(",");
 			}
 
 			history.replaceState(null, "", document.location.pathname + queryString);
@@ -176,7 +176,7 @@ const content = {
 		selectedLanguageKeys() {
 			this.updateQueryString();
 		},
-		selectedRuleNames() {
+		selectedRuleKeys() {
 			this.updateQueryString();
 		},
 		selectedStyleKey() {

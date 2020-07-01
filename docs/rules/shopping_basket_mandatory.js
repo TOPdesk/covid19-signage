@@ -1,5 +1,4 @@
 export default {
-	name: "shopping_basket_mandatory",
 	key: "bm",
 	type: "do",
 	icon: "shopping_basket",

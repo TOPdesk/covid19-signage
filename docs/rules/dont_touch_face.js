@@ -1,5 +1,4 @@
 export default {
-	name: "dont_touch_face",
 	key: "tf",
 	type: "dont",
 	icon: "dont_touch_face",

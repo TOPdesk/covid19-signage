@@ -1,5 +1,4 @@
 export default {
-	name: "wash_hands",
 	key: "wh",
 	type: "do",
 	icon: "wash_hands",
