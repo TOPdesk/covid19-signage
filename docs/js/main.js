@@ -35,7 +35,7 @@ function getInitialConfig(queryString) {
 		}
 	}
 	return initialConfig;
-};
+}
 
 const content = {
 	components: {
@@ -130,7 +130,7 @@ const content = {
 			languages,
 			rules,
 			styleOptions,
-		}
+		};
 	},
 	computed: {
 		selectedRules() {
