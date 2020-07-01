@@ -27,6 +27,7 @@ footer {
 
 .outer-container {
 	display: flex;
+	flex-direction: row;
 	padding: 0.5em;
 	justify-content: space-around;
 }	
@@ -70,13 +71,16 @@ footer {
 	line-height: 1.5em;
 }
 
-@media screen and (max-width: 59.375rem) {
+@media screen and (max-width: 40rem) {
+	.outer-container {
+		flex-direction: column;
+	}
 	.page {
-		font-size: .625rem;
+		font-size: calc(100vw/45);
 	}
 }
 
-@media screen and (min-width: 59.375rem) and (max-width: 87.5rem) {
+@media screen and (min-width: 40rem) and (max-width: 87.5rem) {
 	.page {
 		font-size: calc((100vw - 31.25rem)/45);
 	}
