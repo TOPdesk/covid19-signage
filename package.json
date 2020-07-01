@@ -26,6 +26,6 @@
 	},
 	"scripts": {
 		"lint": "eslint docs",
-		"start": "node --experimental-modules index.js"
+		"start": "node --experimental-modules --tls-cipher-list='ECDHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES128-GCM-SHA256' index.js"
 	}
 }
