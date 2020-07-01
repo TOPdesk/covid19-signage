@@ -1,5 +1,6 @@
 export default {
 	name: "curbside_pickup_only",
+	key: "cp",
 	type: "do",
 	icon: "curbside_pickup",
 	lang: {

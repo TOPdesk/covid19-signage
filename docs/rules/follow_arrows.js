@@ -1,5 +1,6 @@
 export default {
 	name: "follow_arrows",
+	key: "fa",
 	type: "do",
 	icon: "follow_arrows",
 	lang: {

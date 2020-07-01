@@ -1,5 +1,6 @@
 export default {
 	name: "contactless_payment_only",
+	key: "co",
 	type: "do",
 	icon: "contactless_only",
 	lang: {

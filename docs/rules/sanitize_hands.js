@@ -1,5 +1,6 @@
 export default {
 	name: "sanitize_hands",
+	key: "sh",
 	type: "do",
 	icon: "sanitize_hands",
 	lang: {

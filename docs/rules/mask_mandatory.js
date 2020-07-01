@@ -1,5 +1,6 @@
 export default {
 	name: "mask_mandatory",
+	key: "mm",
 	type: "do",
 	icon: "wear_mask",
 	lang: {

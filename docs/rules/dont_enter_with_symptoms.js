@@ -1,5 +1,6 @@
 export default {
 	name: "dont_enter_with_symptoms",
+	key: "nc",
 	type: "dont",
 	icon: "no_covid",
 	lang: {

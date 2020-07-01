@@ -1,5 +1,6 @@
 export default {
 	name: "stand_on_markings",
+	key: "sm",
 	type: "do",
 	icon: "stand_markings",
 	lang: {

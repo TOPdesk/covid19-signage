@@ -1,5 +1,6 @@
 export default {
 	name: "dont_shake_hands",
+	key: "nh",
 	type: "dont",
 	icon: "no_handshake",
 	lang: {

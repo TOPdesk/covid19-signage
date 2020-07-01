@@ -1,5 +1,6 @@
 export default {
 	name: "shopping_cart_mandatory",
+	key: "cm",
 	type: "do",
 	icon: "shopping_cart",
 	lang: {
