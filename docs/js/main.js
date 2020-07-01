@@ -130,7 +130,33 @@ const content = {
 			languages,
 			rules,
 			styleOptions,
+			modifiedSinceLastPrint: true,
 		};
+	},
+	created() {
+		const reportPrintOptions = () => {
+			if (this.modifiedSinceLastPrint) {
+				this.modifiedSinceLastPrint = false;
+				const state = {
+					languages: [...this.selectedLanguageKeys],
+					rules: [...this.selectedRuleKeys],
+					style: this.selectedStyleKey,
+				};
+				appInsights.trackEvent({
+					name: "print",
+					properties: state,
+				});
+			}
+		};
+		window.addEventListener("beforeprint", reportPrintOptions);
+		const mediaQueryList = window.matchMedia('print');
+		if (mediaQueryList.addListener) {
+			mediaQueryList.addListener(function (mql) {
+				if (mql.matches) {
+					reportPrintOptions();
+				}
+			});
+		}
 	},
 	computed: {
 		selectedRules() {
@@ -160,6 +186,10 @@ const content = {
 		styleFor(key) {
 			return this.styleOptions.filter((style) => style.key === key)[0];
 		},
+		modification() {
+			this.updateQueryString();
+			this.modifiedSinceLastPrint = true;
+		},
 		updateQueryString() {
 			let queryString = "?style=" + this.selectedStyleKey;
 			if (this.selectedLanguageKeys.length) {
@@ -174,13 +204,13 @@ const content = {
 	},
 	watch: {
 		selectedLanguageKeys() {
-			this.updateQueryString();
+			this.modification();
 		},
 		selectedRuleKeys() {
-			this.updateQueryString();
+			this.modification();
 		},
 		selectedStyleKey() {
-			this.updateQueryString();
+			this.modification();
 		}
 	}
 };
