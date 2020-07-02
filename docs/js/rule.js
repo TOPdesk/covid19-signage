@@ -83,7 +83,7 @@ export default {
 					<rect x="6" y="10" width="40" height="40" rx="6" :clip-path="'url(#'  + id + '-icon-clip)'" stroke-width="3" :stroke="color('stroke', 'icon')" :fill="color('fill', 'icon')" />
 					<image x="11" y="15" width="30" height="30" :filter="'url(#' + id + '-color-filter)'" :xlink:href="'img/icons/' + rule['icon'] + '.svg'" />
 					<template v-for="language in languages">
-						<text x="123" :y="offsetY(language)" 
+						<text
 							:font-size="fontSize(language)"
 							:font-weight="fontWeight(language)" 
 							:fill="textColor()"
@@ -92,9 +92,8 @@ export default {
 							text-anchor="middle"
 							:lang="language['key']"
 							:direction="language['rtl'] ? 'rtl' : 'ltr'"
-							:transform-origin="'123 ' + offsetY(language)"
-							:transform="'scale(' + adjustLength(language) + ', 1)'"
-							:id="id + '-' + rule['name'] + '-' + language['key']">{{ rule['lang'][language['key']] }}</text>
+							:transform="'scale(' + adjustLength(language) + ' 1) translate(' + 123 / adjustLength(language) + ' ' + offsetY(language) + ')'"
+							>{{ rule['lang'][language['key']] }}</text>
 					</template>
 				</g>
 			</svg>
