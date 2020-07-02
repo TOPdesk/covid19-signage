@@ -5,6 +5,7 @@ html {
 html,
 body {
 	background-color: #f5f5f5;
+	width: 100%;
 }
 
 .button {
@@ -76,13 +77,13 @@ footer {
 		flex-direction: column;
 	}
 	.page {
-		font-size: calc(100vw/45);
+		font-size: calc(100vw / 45);
 	}
 }
 
 @media screen and (min-width: 40rem) and (max-width: 87.5rem) {
 	.page {
-		font-size: calc((100vw - 31.25rem)/45);
+		font-size: calc((100vw - 31.25rem) / 45);
 	}
 }
 
