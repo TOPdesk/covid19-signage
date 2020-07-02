@@ -48,55 +48,26 @@ export default {
 			}
 			return `0 0 0 0 ${redFilter} 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0`;
 		},
+		textColor() {
+			return (this.ruleStyle["ruleBackground"] === "fill") ? "white" : "black";
+		},
+		color(strokeOrFill, ruleOrIcon) {
+			const backgroundFill = this.ruleStyle["ruleBackground"] === "fill";
+			const isDo = this.rule['type'] === "do";
+			const isStroke = strokeOrFill  === "stroke";
+			const isRule = ruleOrIcon === "rule";
+
+			if ((!backgroundFill && isStroke) || (backgroundFill && (isRule || !isStroke))) {
+				return isDo ? "rgb(0, 128, 0)" : "rgb(128, 0, 0)";
+			}
+			return "white";
+		},
 	},
 	template: `
 		<div><svg 
 				viewBox="0 0 200 60"
 				xmlns="http://www.w3.org/2000/svg">
 				<defs>
-					<svg:style type="text/css">
-						text {
-							font-family: ${ff};
-							fill: black;
-						}
-						.svg-background-fill text {
-							fill: white;
-						}
-						
-						.svg-rule-do .svg-rule-background {
-							stroke: rgb(0, 128, 0);
-							fill: white;
-						}
-						.svg-rule-do .svg-icon-background {
-							stroke: rgb(0, 128, 0);
-							fill: white;
-						}
-						.svg-rule-dont .svg-rule-background {
-							stroke: rgb(128, 0, 0);
-							fill: white;
-						}
-						.svg-rule-dont .svg-icon-background {
-							stroke: rgb(128, 0, 0);
-							fill: white;
-						}
-						
-						.svg-rule-do.svg-background-fill .svg-rule-background {
-							stroke: rgb(0, 128, 0);
-							fill: rgb(0, 128, 0);
-						}
-						.svg-rule-do.svg-background-fill .svg-icon-background {
-							stroke: white;
-							fill: rgb(0, 128, 0);
-						}
-						.svg-rule-dont.svg-background-fill .svg-rule-background {
-							stroke: rgb(128, 0, 0);
-							fill: rgb(128, 0, 0);
-						}
-						.svg-rule-dont.svg-background-fill .svg-icon-background {
-							stroke: white;
-							fill: rgb(128, 0, 0);
-						}
-					</svg:style>
 					<clipPath :id="id + '-rule-clip'">
 						<rect width="200" height="60" rx="6" />
 					</clipPath>
@@ -107,14 +78,16 @@ export default {
 						<feColorMatrix type="matrix" :values="colorMatrix()" />
 					</filter>
 				</defs>
-				<g :class="'svg-rule-' + rule['type'] + ' svg-background-' + ruleStyle['ruleBackground']">
-					<rect class="svg-rule-background" width="200" height="60" :clip-path="'url(#' + id + '-rule-clip)'" rx="6" stroke-width="1" />
-					<rect class="svg-icon-background" x="6" y="10" width="40" height="40" :clip-path="'url(#'  + id + '-icon-clip)'" rx="6" stroke-width="3" />
-					<image class="svg-icon" x="11" y="15" width="30" height="30" :filter="'url(#' + id + '-color-filter)'" :xlink:href="'img/icons/' + rule['icon'] + '.svg'" />
+				<g>
+					<rect width="200" height="60" rx="6" :clip-path="'url(#' + id + '-rule-clip)'" stroke-width="1" :stroke="color('stroke', 'rule')" :fill="color('fill', 'rule')" />
+					<rect x="6" y="10" width="40" height="40" rx="6" :clip-path="'url(#'  + id + '-icon-clip)'" stroke-width="3" :stroke="color('stroke', 'icon')" :fill="color('fill', 'icon')" />
+					<image x="11" y="15" width="30" height="30" :filter="'url(#' + id + '-color-filter)'" :xlink:href="'img/icons/' + rule['icon'] + '.svg'" />
 					<template v-for="language in languages">
 						<text x="123" :y="offsetY(language)" 
 							:font-size="fontSize(language)"
 							:font-weight="fontWeight(language)" 
+							:fill="textColor()"
+							font-family="${ff}"
 							dominant-baseline="central"
 							text-anchor="middle"
 							:lang="language['key']"
