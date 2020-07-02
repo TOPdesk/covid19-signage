@@ -270,13 +270,14 @@ footer {
 	overflow-x: auto;
 	background-color: white;
 	border: 1px solid darkgray;
-	height: 9.2em;
+	height: 9.2rem;
 	align-items: center;
-	padding: .25em;
+	padding: .25rem;
+	font-size: 0;
 }
 
 .style-selection .option {
-	padding: .5em;
+	padding: .5rem;
 }
 
 .style-selection .option.selected {
