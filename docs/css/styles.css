@@ -384,6 +384,7 @@ footer {
 	body {
 		margin: 0;
 		padding: 0;
+		background-color: white;
 	}
 
 	.preview-container {
@@ -395,7 +396,7 @@ footer {
 		box-shadow: none;
 		margin: 0;
 		width: 210mm;
-		height: 295mm; /* Prevent extra pages in Chrome */
+		height: 285mm; /* Prevent extra pages */
 		display: block;
 		font-size: 5.33mm;
 		padding: 6.25mm;
@@ -437,10 +438,15 @@ footer {
 		position: fixed;
 		right: 6.25mm;
 		bottom: 6.25mm;
+		background-color: transparent;
 	}
 
 	.noprint {
 		display: none;
+	}
+
+	.outer-container, .preview {
+		display: block; /* Allows printing more than 1 page in Firefox */
 	}
 }
 
