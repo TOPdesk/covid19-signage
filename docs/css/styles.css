@@ -31,7 +31,7 @@ footer {
 	flex-direction: row;
 	padding: 0.5em;
 	justify-content: space-around;
-}	
+}
 
 .outer-container .subtitle {
 	margin-top: 1em;
@@ -230,8 +230,8 @@ footer {
 
 .multiselect-list {
 	max-height: 20em;
-	overflow-y: auto;
-	overflow-x: auto;
+	overflow-y: scroll;
+	overflow-x: hidden;
 	background-color: white;
 	border: 1px solid darkgray;
 }
