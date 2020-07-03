@@ -395,7 +395,7 @@ footer {
 		box-shadow: none;
 		margin: 0;
 		width: 210mm;
-		height: 295mm; /* Prevent extra gages in Chrome */
+		height: 295mm; /* Prevent extra pages in Chrome */
 		display: block;
 		font-size: 5.33mm;
 		padding: 6.25mm;
