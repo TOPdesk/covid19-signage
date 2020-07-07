@@ -10,7 +10,7 @@ export default {
 		en: "Cover your face with your elbow when you sneeze",
 		es: "Al estornudar, use la parte interna del codo para cubrirse",
 		fa: "عطسه در قسمت بالای آستین",
-		fr: "Couvrez votre visage avec votre bras lorsque vous ",
+		fr: "Couvrez votre visage avec votre bras lorsque vous éternuez",
 		hi: "जब आप छींकते हैं तो अपना चेहरा अपनी कोहनी से ढक लें",
 		hu: "Tüsszentsen, köhögjön a könyökhajlatába!",
 		it: "Copri la tua faccia con il gomito quando starnutisci",
