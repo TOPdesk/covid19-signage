@@ -6,6 +6,9 @@ import SingleOptionList from "./singleoptionlist.js";
 import Page from "./page.js";
 import toPages from "./paging.js";
 
+document.body.classList.toggle("firefox", /Gecko\//.test(navigator.userAgent));
+
+
 function getInitialConfig(queryString) {
 	const initialConfig = {
 		languages: [],
@@ -142,6 +145,7 @@ const content = {
 					rules: [...this.selectedRuleKeys],
 					style: this.selectedStyleKey,
 				};
+				/*global appInsights*/
 				appInsights.trackEvent({
 					name: "print",
 					properties: state,
@@ -149,7 +153,7 @@ const content = {
 			}
 		};
 		window.addEventListener("beforeprint", reportPrintOptions);
-		const mediaQueryList = window.matchMedia('print');
+		const mediaQueryList = window.matchMedia("print");
 		if (mediaQueryList.addListener) {
 			mediaQueryList.addListener(function (mql) {
 				if (mql.matches) {
