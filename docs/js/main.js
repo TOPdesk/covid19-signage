@@ -7,7 +7,7 @@ import Page from "./page.js";
 import toPages from "./paging.js";
 
 document.body.classList.toggle("firefox", /Gecko\//.test(navigator.userAgent));
-
+document.body.classList.toggle("android", /Android/.test(navigator.userAgent));
 
 function getInitialConfig(queryString) {
 	const initialConfig = {

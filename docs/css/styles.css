@@ -259,6 +259,11 @@ footer {
 		margin-left: -6mm;
 	}
 
+	body.android .page-content {
+		height: auto;
+		width: auto;
+	}
+
 	/* Chrome first page correction */
 	.first-page {
 		padding-top: calc(3vw - 2mm);
@@ -290,6 +295,11 @@ footer {
 	body.firefox .page-content {
 		width: 94%;
 	}
+
+	body.android .page-content {
+		margin: -3%;
+		margin-left: calc(-3% - 6mm);
+	}
 }
 
 /* Wider than A0 - A6 */
@@ -297,6 +307,11 @@ footer {
 	.page-content {
 		height: calc(99vh - 6vw);
 		width: auto;
+	}
+
+	body.android .page-content {
+		margin-left: calc(3.05% - 6mm);
+		margin-right: 3.05%;
 	}
 }
 
