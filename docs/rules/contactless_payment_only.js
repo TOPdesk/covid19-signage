@@ -17,7 +17,7 @@ export default {
 		ja: "タッチ決済のみ承ります",
 		nl: "Enkel contactloos betalen mogelijk",
 		no: "Kun kontaktløs betaling",
-		pl: "Płatność tylko kartą",
+		pl: "Akecptujemy tylko płatności zbliżeniowe",
 		pt: "Apenas pagamentos sem contato físico",
 		sw: "Malipo niku pitia kadi pekeyake",
 		tr: "Sadece temassiz ödemeler kabul edilmektedir",

@@ -17,7 +17,7 @@ export default {
 		ja: "現金払いは出来ません",
 		nl: "Geen contant geld",
 		no: "Ingen sedler eller mynter",
-		pl: "Nie płacić gotówką",
+		pl: "Zakaz płacenia gotówką",
 		pt: "Sem dinheiro físico",
 		sw: "Pesa ya mkono hairusiwi",
 		tr: "Nakit para kabul edilmemektedir",

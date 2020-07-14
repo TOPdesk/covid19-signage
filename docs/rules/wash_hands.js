@@ -17,7 +17,7 @@ export default {
 		ja: "手洗いにご協力下さい",
 		nl: "Was je handen",
 		no: "Vask hendene dine",
-		pl: "Myć ręce",
+		pl: "Myj ręce",
 		pt: "Lave suas mãos",
 		sw: "Osha mikono",
 		tr: "Ellerinizi yikayin",

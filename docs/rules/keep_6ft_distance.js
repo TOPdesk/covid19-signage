@@ -17,7 +17,7 @@ export default {
 		ja: "1.5メートルのスペース確保にご協力下さい",
 		nl: "Houd 1,5m afstand",
 		no: "Hold 1.5 meters avstand til andre personer",
-		pl: "Zachować odstęp 1,5 metra",
+		pl: "Zachowaj 1,5 metra odstępu",
 		pt: "Mantenha-se à 1,5M de distância",
 		sw: "Weka nafasi ya 1.5 mita",
 		tr: "Aranizda 1,5 metre mesafe bulundurun",

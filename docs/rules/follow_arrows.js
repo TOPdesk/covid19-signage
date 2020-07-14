@@ -17,7 +17,7 @@ export default {
 		ja: "矢印に沿って進んで下さい",
 		nl: "Volg de pijlen",
 		no: "Følg pilene",
-		pl: "Podążać za strzałkami",
+		pl: "Podążaj za strzałkami",
 		pt: "Siga as setas",
 		sw: "Fwata mshale",
 		tr: "Oklari takip ediniz",

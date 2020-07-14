@@ -17,7 +17,7 @@ export default {
 		ja: "フロアマーキングに沿ってお並び下さい",
 		nl: "Sta op de aangegeven markeringen",
 		no: "Stå på markerte plasser",
-		pl: "Stać na wyznaczonych miejscach",
+		pl: "Stój na wyznaczonych miejscach",
 		pt: "Fique nas áreas marcadas",
 		sw: "Simama katika alama zilizo wekwa chini",
 		tr: "Belirlenmis çizgilerde durunuz",

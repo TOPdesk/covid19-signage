@@ -17,7 +17,7 @@ export default {
 		ja: "席エチケットにご協力下さい",
 		nl: "Nies in je elleboog",
 		no: "Om du må hoste eller nyse, gjør det i armkroken",
-		pl: "Kichać w łokieć",
+		pl: "Przoszę kichać w łokieć",
 		pt: "Cubra seu nariz com o cotovelo ao espirrar",
 		sw: "Finika uso wako kutumia pambaja",
 		tr: "Hapsirirken yüzünüzü dirseginizle kapatin",
