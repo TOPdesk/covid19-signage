@@ -6,7 +6,7 @@ name: Build and deploy Node.js app to Azure Web App - covid19-signage
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   build-and-deploy:
